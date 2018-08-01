@@ -6,7 +6,6 @@
 
 /* COMMON */
 #header {
-	text-align:center; @include background("test/tset.png",no-repeat 0 0);  
 }
 #footer {
 }
@@ -259,7 +258,7 @@ p.txt-important {
 
 
 	/* LAYER */
-	#layer .layer-inner .layer-container {width:95%; 
+	#layer .layer-inner .layer-container {width:95%;
 		&.large {width: 95%}
 		&.medium {width: 95%}
 		&.medium2 {width: 95%}
@@ -336,8 +335,8 @@ p.txt-important {
 		& > li {font-size:12px; line-height:18px;}
 	}
 	.txt-important {font-size:11px;}
-	
-	
+
+
 
 	/* TAB */
 	.tab-zone {

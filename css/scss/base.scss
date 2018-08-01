@@ -1,13 +1,15 @@
 @charset "utf-8";
 
 // mixin
-// @mixin background($path,$repeat,$x,$y) {background:url("../images/"+$path) $repeat $x $y; }
-@mixin background($path,$repeat) {background:url("../images/"+$path) $repeat;}
+@mixin background($path,$repeat) {background:url("../../images/frontend/"+$path) $repeat;}
+
 // color
-$color1 : #16a0d0;
+$color1 : #000;
 $color2 : #000;
 
 // font
-$font1: 'Nanum Gothic','맑은고딕','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
-$font2: 'Nanum Square','Nanum Gothic','맑은고딕','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
+$font1: 'NotoKr-Light','Nanum Gothic', '맑은고딕','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
+$font2: 'NotoKr-Regular','Nanum Gothic','맑은고딕','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
+$font3: 'NotoKr-Medium','Nanum Gothic','맑은고딕','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
+$font4: 'NotoKr-Bold','Nanum Gothic','맑은고딕','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
 $font-ios: Helvetica Neue, "Apple SD Gothic Neo";
