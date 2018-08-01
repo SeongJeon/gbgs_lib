@@ -1,12 +1,10 @@
 @charset "UTF-8";
 /* FONTS */
-@font-face { font-family: "NotoKr-Thin"; font-weight: 100; src: url("../../fonts/NotoKr-Thin.eot"); src: url("../../fonts/NotoKr-Thin.eot?#iefix") format("embedded-opentype"), url("../../fonts/NotoKr-Thin.woff") format("woff"), url("../../fonts/NotoKr-Thin.ttf") format("truetype"); }
-@font-face { font-family: "NotoKr-Light"; font-weight: 200; src: url("../../fonts/NotoKr-Light.eot"); src: url("../../fonts/NotoKr-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/NotoKr-Light.woff") format("woff"), url("../../fonts/NotoKr-Light.ttf") format("truetype"); }
-@font-face { font-family: "NotoKr-DemiLight"; font-weight: 300; src: url("../../fonts/NotoKr-DemiLight.eot"); src: url("../../fonts/NotoKr-DemiLight.eot?#iefix") format("embedded-opentype"), url("../../fonts/NotoKr-DemiLight.woff") format("woff"), url("../../fonts/NotoKr-DemiLight.ttf") format("truetype"); }
-@font-face { font-family: "NotoKr-Regular"; font-weight: 400; src: url("../../fonts/NotoKr-Regular.eot"); src: url("/cauin/fontst/NotoKr-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/NotoKr-Regular.woff") format("woff"), url("../../fonts/NotoKr-Regular.ttf") format("truetype"); }
-@font-face { font-family: "NotoKr-Medium"; font-weight: 500; src: url("../../fonts/NotoKr-Medium.eot"); src: url("../../fonts/NotoKr-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/NotoKr-Medium.woff") format("woff"), url("../../fonts/NotoKr-Medium.ttf") format("truetype"); }
-@font-face { font-family: "NotoKr-Bold"; font-weight: bold; src: url("../../fonts/NotoKr-Bold.eot"); src: url("../../fonts/NotoKr-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/NotoKr-Bold.woff") format("woff"), url("../../fonts/NotoKr-Bold.ttf") format("truetype"); }
-html { font-family: "NotoKr-Light", "Nanum Gothic", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #000; -webkit-text-size-adjust: none; font-size: 15px; letter-spacing: -0.25px; -webkit-overflow-scrolling: touch; }
+@font-face { font-family: "NanumGothic-Regular"; font-weight: 300; src: url("../../fonts/NanumGothic-Regular.eot"); src: url("../../fonts/NanumGothic-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/NanumGothic-Regular.woff") format("woff"), url("../../fonts/NanumGothic-Regular.ttf") format("truetype"); }
+@font-face { font-family: "NanumGothic-Regular"; font-weight: 400; src: url("../../fonts/NanumGothic-Regular.eot"); src: url("/cauin/fontst/NanumGothic-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/NanumGothic-Regular.woff") format("woff"), url("../../fonts/NanumGothic-Regular.ttf") format("truetype"); }
+@font-face { font-family: "NanumGothic-ExtraBold"; font-weight: 500; src: url("../../fonts/NanumGothic-ExtraBold.eot"); src: url("../../fonts/NanumGothic-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/NanumGothic-ExtraBold.woff") format("woff"), url("../../fonts/NanumGothic-ExtraBold.ttf") format("truetype"); }
+@font-face { font-family: "NanumGothic-Bold"; font-weight: bold; src: url("../../fonts/NanumGothic-Bold.eot"); src: url("../../fonts/NanumGothic-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/NanumGothic-Bold.woff") format("woff"), url("../../fonts/NanumGothic-Bold.ttf") format("truetype"); }
+html { font-family: "NanumGothic-Regular", "Nanum Gothic", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #000; -webkit-text-size-adjust: none; font-size: 15px; letter-spacing: -0.25px; -webkit-overflow-scrolling: touch; }
 
 html body.ios { font-family: Helvetica Neue, "Apple SD Gothic Neo"; }
 
@@ -69,4 +67,4 @@ em, address { font-style: normal; }
 @media (max-width: 600px) { html { font-size: 13px; } }
 @media (max-width: 430px) { html { font-size: 11px; } }
 @media (max-width: 375px) { html { font-size: 10px; } }
-.main .visual-zone { background: url("../images/images/temp/@img.jpg") no-repeat 50% 50%; }
+.main .visual-zone { background: url("../../images/frontend/images/temp/@img.jpg") no-repeat 50% 50%; }
