@@ -492,7 +492,7 @@ $("table tbody tr").each(function(){
 		case 2: $("td:nth-child(7)",this).text("완료"); $(this).addClass("complete"); break;
 	}
 
-	$("a",this).attr("href", "/html/"+$("td:nth-child(4)",this).text()+$("a",this).text());
+	$("a",this).attr("href", "/gbgs_lib/html/"+$("td:nth-child(4)",this).text()+$("a",this).text());
 })
 
 $("table a").on("click", function(){
