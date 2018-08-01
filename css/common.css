@@ -3,7 +3,9 @@
 @font-face { font-family: "NanumGothic-Regular"; font-weight: normal; src: url("../fonts/NanumGothic-Regular.eot"); src: url("../fonts/NanumGothic-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumGothic-Regular.woff") format("woff"), url("../fonts/NanumGothic-Regular.ttf") format("truetype"); }
 @font-face { font-family: "NanumGothic-ExtraBold"; font-weight: normal; src: url("../fonts/NanumGothic-ExtraBold.eot"); src: url("../fonts/NanumGothic-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumGothic-ExtraBold.woff") format("woff"), url("../fonts/NanumGothic-ExtraBold.ttf") format("truetype"); }
 @font-face { font-family: "NanumGothic-Bold"; font-weight: normal; src: url("../fonts/NanumGothic-Bold.eot"); src: url("../fonts/NanumGothic-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumGothic-Bold.woff") format("woff"), url("../fonts/NanumGothic-Bold.ttf") format("truetype"); }
-html { font-family: "NanumGothic-Regular", "Nanum Gothic", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #000; -webkit-text-size-adjust: none; font-size: 15px; letter-spacing: -0.25px; -webkit-overflow-scrolling: touch; }
+@font-face { font-family: 'Nanum Square R'; font-style: normal; src: url("../fonts/NanumSquareR.eot"); src: local("Nanum Square Regular"), local("NanumSquareR"), url("../fonts/NanumSquareR.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareR.woff2") format("woff2"), url("../fonts/NanumSquareR.woff") format("woff"), url("../fonts/NanumSquareR.ttf") format("truetype"); }
+@font-face { font-family: 'Nanum Square B'; font-style: bold; src: url("../fonts/NanumSquareB.eot"); src: local("Nanum Square Bold"), local("NanumSquareB"), url("../fonts/NanumSquareB.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareB.woff2") format("woff2"), url("../fonts/NanumSquareB.woff") format("woff"), url("../fonts/NanumSquareB.ttf") format("truetype"); }
+html { font-family: "NanumGothic-Regular", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #555; -webkit-text-size-adjust: none; font-size: 15px; letter-spacing: -0.25px; -webkit-overflow-scrolling: touch; }
 
 html body.ios { font-family: Helvetica Neue, "Apple SD Gothic Neo"; }
 
@@ -67,6 +69,36 @@ em, address { font-style: normal; }
 @media (max-width: 430px) { html { font-size: 11px; } }
 @media (max-width: 375px) { html { font-size: 10px; } }
 /* COMMON */
+#header:after { display: block; clear: both; content: ""; }
+#header .utile-zone { background: #30809f; color: #fff; font-size: 13px; }
+#header .utile-zone .inner { overflow: hidden; max-width: 1320px; margin: 0 auto; }
+#header .utile-zone .outlnk-group { float: left; }
+#header .utile-zone .outlnk-group:after { display: block; clear: both; content: ""; }
+#header .utile-zone .outlnk-group li { float: left; border-right: 1px solid rgba(255, 255, 255, 0.3); }
+#header .utile-zone .outlnk-group li:first-child { background: #00658c; border-right: 0; }
+#header .utile-zone .outlnk-group a { display: block; padding: 0 15px; line-height: 40px; }
+#header .utile-zone .outlnk-group a:hover { margin: 0 -1px; padding: 0 16px; background: #4acdef; }
+#header .utile-zone .join-group { float: right; }
+#header .utile-zone .join-group:after { display: block; clear: both; content: ""; }
+#header .utile-zone .join-group li { float: left; border-right: 1px solid rgba(255, 255, 255, 0.3); }
+#header .utile-zone .join-group a { display: block; padding: 0 20px 0 15px; line-height: 40px; }
+#header .utile-zone .join-group a:hover { margin: 0 -1px; padding: 0 21px 0 16px; background: #4acdef; }
+#header .header-zone { height: 90px; }
+#header .logo { float: left; margin: 15px 0 0 74px; }
+#header .logo a { display: block; }
+#header .lib-group { float: right; }
+#header .lib-group:after { display: block; clear: both; content: ""; }
+#header .lib-group li { float: left; }
+#header .lib-group a { display: block; width: 90px; height: 90px; font-size: 14px; color: #555; text-align: center; }
+#header .lib-group a.btn-sitemap { background: #eeeee2; }
+#header .lib-group a.btn-lib { background: #e9f1fa; }
+#header #gnb { position: relative; max-width: 1320px; margin: 0 auto; }
+#header #gnb .menu { position: absolute; right: 0; top: 35px; }
+#header #gnb .menu:after { display: block; clear: both; content: ""; }
+#header #gnb .menu > li { float: left; width: 180px; }
+#header #gnb .menu > li h2 a { font-family: "NanumGothic-Bold", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: normal; }
+#header #gnb .menu .depth { display: none; }
+
 /* SUB LAYOUT */
 /* POINT COLOR */
 /* BUTTON */
@@ -97,7 +129,7 @@ em, address { font-style: normal; }
 .radio-lst > li { float: left; }
 .radio-lst > li + li { margin-left: 15px; }
 
-.textarea { width: 100%; padding: 15px; border: 1px solid #d2d2d2; background: #fff; resize: none; font-family: "NanumGothic-ExtraBold", "Nanum Gothic", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 15px; box-sizing: border-box; }
+.textarea { width: 100%; padding: 15px; border: 1px solid #d2d2d2; background: #fff; resize: none; font-family: "NanumGothic-ExtraBold", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 15px; box-sizing: border-box; }
 .textarea::-webkit-input-placeholder { color: #c9c9c9; }
 .textarea::-moz-placeholder { color: #c9c9c9; }
 .textarea:-ms-input-placeholder { color: #c9c9c9; }
@@ -114,7 +146,7 @@ p.txt-dotted:before { display: block; position: absolute; content: ""; left: 0; 
 
 .txt-dotted > li { position: relative; padding-left: 16px; font-size: 15px; line-height: 30px; color: #535353; }
 .txt-dotted > li:before { display: block; position: absolute; content: ""; left: 0; top: 13px; width: 5px; height: 5px; background: #7d7d7d; border-radius: 100px; }
-.txt-dotted.color1 > li:before { background: #000; }
+.txt-dotted.color1 > li:before { background: #555; }
 .txt-dotted.color2 > li:before { background: #444444; }
 
 p.txt-hyphen { position: relative; padding-left: 11px; line-height: 30px; }
@@ -150,11 +182,11 @@ p.txt-important:before { display: inline-block; content: "※"; margin-right: 2p
 .paging p.allnext { right: 0; }
 
 /* TAB */
-.tab-zone { border-top: 3px solid #000; }
+.tab-zone { border-top: 3px solid #555; }
 .tab-zone ul:after { display: block; clear: both; content: ""; }
 .tab-zone li { float: left; box-sizing: border-box; border-left: 1px solid #d6d3d2; border-bottom: 1px solid #d6d3d2; }
 .tab-zone li a { display: block; color: #565656; font-size: 18px; text-align: center; line-height: 56px; -webkit-transition: 0.2s ease; transition: 0.2s ease; }
-.tab-zone li a:hover, .tab-zone li.current a { background: #000; color: #fff; font-weight: 700; }
+.tab-zone li a:hover, .tab-zone li.current a { background: #555; color: #fff; font-weight: 700; }
 .tab-zone li:last-child { border-right: 1px solid #d6d3d2; }
 .tab-zone li:first-child:nth-last-of-type(10) ~ li:nth-child(5) { border-right: 1px solid #d6d3d2; }
 .tab-zone li:first-child:nth-last-of-type(8) ~ li:nth-child(4) { border-right: 1px solid #d6d3d2; }
@@ -166,7 +198,7 @@ p.txt-important:before { display: inline-block; content: "※"; margin-right: 2p
 /* LAYER */
 #layer { display: table; position: fixed; width: 100%; height: 100%; left: 0; top: 0; background: rgba(0, 0, 0, 0.5); z-index: 100000; }
 #layer .layer-inner { display: table-cell; width: 100%; height: 100%; vertical-align: middle; }
-#layer .layer-inner .layer-container { width: 1080px; margin: 50px auto; position: relative; border: 2px solid #000; background: #fff; }
+#layer .layer-inner .layer-container { width: 1080px; margin: 50px auto; position: relative; border: 2px solid #555; background: #fff; }
 #layer .layer-inner .layer-container.small { width: 480px; }
 #layer .layer-inner .layer-container.large { width: 1566px; }
 #layer .layer-inner .layer-container.medium { width: 790px; }
