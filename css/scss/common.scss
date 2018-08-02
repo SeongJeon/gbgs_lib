@@ -67,9 +67,13 @@
 
 /* SUB LAYOUT */
 #container {
+	max-width:1320px; margin:0 auto;
 }
 
 /* POINT COLOR */
+.point01 {color:#008fc0}
+.point02 {color:#2a5caa}
+.font-bold {font-family:$font3}
 
 /* BUTTON */
 
@@ -247,6 +251,26 @@ p.txt-important {
 	}
 }
 
+
+/* TABLE */
+.tbl-type1 {
+	border-top:2px solid #58b0e3; border-bottom:1px solid #d6d9db;  font-size:16px; color:#2e2e2e; text-align:center;
+	tr > * {
+		height:44px; border-left:1px solid #d6d9db; border-top:1px solid #d6d9db;
+		&:first-child {border-left:0;}
+	}
+	thead {
+		th {background:#ecf8fe; font-family:$font3; }
+		tr:first-child th {border-top:0;}
+	}
+	tfoot {
+		td {font-family:$font3}
+	}
+	tbody {
+		th {background:#ecf8fe; font-family:$font4;}
+	}
+
+}
 
 
 
