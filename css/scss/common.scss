@@ -80,6 +80,14 @@
 /* ICON */
 
 /* TITLE */
+.h3 {
+	font-size:20px; color:#2e2e2e; font-family:$font3; text-align:left;
+	&:before {display:inline-block; position:relative; top:4px; content:""; width:31px; height:21px; margin-right:10px; @include background("common/bul-tit1.png",no-repeat 50% 50%);  }
+}
+.h4 {
+	position:relative; padding-top:16px; font-size:18px; color:#000; font-weight:normal;
+	&:before {display:block; position:absolute; top:0; left:0; width:20px; height:3px; background:#2a5caa; content:"";}
+}
 
 /* TABLE */
 
