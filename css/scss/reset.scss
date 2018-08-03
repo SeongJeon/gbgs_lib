@@ -57,7 +57,7 @@
        url("../fonts/NanumSquareB.ttf") format('truetype');
 }
 
-html {font-family:$font1; color:$color1; -webkit-text-size-adjust:none; font-size:15px;  letter-spacing:-0.25px; -webkit-overflow-scrolling:touch;}
+html {font-family:$font6; color:$color1; -webkit-text-size-adjust:none; font-size:15px;  letter-spacing:-0.25px; -webkit-overflow-scrolling:touch;}
 html body.ios {font-family:$font-ios;}
 html, body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, span, form, fieldset, input, select, label, textarea, table, caption, thead, tfoot, tbody, tr, th, td {margin:0;padding:0;-webkit-text-size-adjust:none;}
 address {font-stretch:normal;}

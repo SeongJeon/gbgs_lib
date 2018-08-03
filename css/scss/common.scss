@@ -17,7 +17,7 @@
 			li {float:left; border-right:1px solid rgba(256,256,256,0.3)}
 			li:first-child {background:#00658c; border-right:0}
 			a {
-				display:block; padding:0 15px; line-height:40px;
+				display:block; padding:0 15px; line-height:40px; font-family:$font1;
 				&:hover {margin:0 -1px; padding:0 16px; background:#4acdef;}
 			}
 		}
@@ -26,7 +26,7 @@
 			&:after {display:block; clear:both; content:""}
 			li {float:left; border-right:1px solid rgba(256,256,256,0.3)}
 			a {
-				display:block; padding:0 20px 0 15px; line-height:40px;
+				display:block; padding:0 20px 0 15px; line-height:40px; font-family:$font1;
 				&:hover {margin:0 -1px; padding:0 21px 0 16px; background:#4acdef;}
 			}
 		}
@@ -43,7 +43,7 @@
 		&:after {display:block; clear:both; content:""}
 		li {float:left;}
 		a {
-			display:block; width:90px; height:90px; font-size:14px; color:$color1; text-align:center;
+			display:block; width:90px; height:90px; font-size:14px; color:$color1; text-align:center;  font-family:$font1;
 			&.btn-sitemap {background:#eeeee2}
 			&.btn-lib {background:#e9f1fa}
 		}
@@ -55,8 +55,8 @@
 			position:absolute; right:0; top:35px;
 			&:after {display:block; clear:both; content:""}
 			& > li {
-				float:left; width:180px;
-				h2 a {font-family:$font3; font-weight:normal;}
+				float:left; width:180px;  text-align:center;
+				h2 a {font-family:$font3; font-weight:normal; font-size:20px;}
 			}
 			.depth {display:none}
 		}
@@ -85,8 +85,8 @@
 		}
 		.menu {
 			li {border-bottom:1px solid #e2e1e1;}
-			a {display:block; padding:0 10px 0 24px; font-size:17px; color:#535353; line-height:53px; font-weight:normal;}
-			a:hover, .current a {margin:-1px -1px 0; padding:0 11px 0 25px; background:#2f6ab9; color:#fff; line-height:54px; font-family:$font3;}
+			a {display:block; padding:0 10px 0 24px; font-size:17px; color:$color1; line-height:53px; font-weight:normal;}
+			a:hover, .current a {margin:-1px -1px 0; padding:0 11px 0 25px; background:#2f6ab9; color:#fff; line-height:54px; font-weight:bold;}
 		}
 		.goto-lib {
 			margin-top:48px; padding:0 18px;
@@ -99,7 +99,7 @@
 				li:first-child {margin-top:11px;}
 				a {
 					display:block; padding:0 20px; border-radius:100px;border:2px solid #d6d5d5; color:$color1; font-size:15px; line-height:36px;
-					&:after {display:inline-block; float:right; content:">"; color:#d6d5d5;}
+					&:after {display:inline-block; float:right; width:5px; height:5px; content:""; transform:rotate(45deg); border-right:1px solid #d6d5d5}
 				}
 			}
 		}
@@ -111,7 +111,7 @@
 		.page-title-zone {
 			position:relative; padding-bottom:20px; border-bottom:1px solid #d8dadb;
 			&:before {display:block; position:absolute; bottom:-1px; left:0; width:250px; height:3px; background:#205272; content:"";}
-			.page-title {font-size:34px; color:#2e2e2e; font-weight:normal; font-family:$font6; letter-spacing:-1px;}
+			.page-title {font-size:34px; color:$color1; font-weight:normal; font-family:$font6; letter-spacing:-1px;}
 		}
 		.breadcrumb-zone {
 			position:absolute; right:0; bottom:14px;
@@ -137,6 +137,7 @@
 /* POINT COLOR */
 .point01 {color:#008fc0}
 .point02 {color:#2a5caa}
+.point03 {color:#fb5521}
 .font-bold {font-family:$font3}
 
 /* BUTTON */
@@ -146,7 +147,7 @@
 
 /* TITLE */
 .h3 {
-	font-size:20px; color:#2e2e2e; font-family:$font3; text-align:left;
+	font-size:20px; color:$color1; font-family:$font3; text-align:left;
 	&:before {display:inline-block; position:relative; top:4px; content:""; width:31px; height:21px; margin-right:10px; @include background("common/bul-tit1.png",no-repeat 50% 50%);  }
 }
 .h4 {
@@ -319,7 +320,7 @@ p.txt-important {
 
 /* TABLE */
 .tbl-type1 {
-	border-top:2px solid #58b0e3; border-bottom:1px solid #d6d9db;  font-size:16px; color:#2e2e2e; text-align:center;
+	border-top:2px solid #58b0e3; border-bottom:1px solid #d6d9db;  font-size:16px; color:$color1; text-align:center;
 	tr > * {
 		height:44px; border-left:1px solid #d6d9db; border-top:1px solid #d6d9db;
 		&:first-child {border-left:0;}

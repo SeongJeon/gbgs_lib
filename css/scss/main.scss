@@ -1,11 +1,9 @@
 @charset "utf-8";
 
 @import 'base';
-@import 'reset';
 
 
 .main {
-	.visual-zone {@include background("images/temp/@img.jpg", no-repeat 50% 50%)}
 
 }
 
