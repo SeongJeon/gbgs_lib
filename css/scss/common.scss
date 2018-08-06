@@ -89,7 +89,8 @@
 		padding:15px 0; border-bottom:1px solid #ccc;
 		.banner-inner {max-width:1320px; margin:0 auto;}
 		.banner-slider {
-			overflow:hidden; padding:0 55px 0 185px;
+			overflow:hidden; position:relative; padding:0 55px 0 185px;
+			li {float:left;}
 			a {display:block; width:220px; hieght:50px; box-sizing:border-box; border:1px solid #eff0f1;}
 			img {width:100%; height:100%}
 		}
@@ -435,6 +436,29 @@ p.txt-important {
 	#header {
 	}
 	#footer {
+		.footer-container {
+			padding:29px 0 0;
+			.footer-lnk {
+				li {
+					float:left;
+					& + li:before {display:inline-block; content:"|"; color:#ccc; margin:0 12px; vertical-align:top;}
+				}
+				li:first-child a {font-weight:bold; color:#ff6f7a;}
+				a {color:#555; font-size:16px; }
+			}
+			.footer-address {
+				margin-top:27px;
+				&:after {display:block; clear:both; content:""}
+				li {float:left; color:#999; font-size:16px; line-height:24px;}
+				li + li {margin-left:15px;}
+			}
+			.copy {color:#999; font-size:16px; line-height:24px;}
+			.footer-select {
+				position:absolute; right:0; top:20px;
+				&:after {display:block; clear:both; content:""}
+				.sel-type1 {float:left; margin-left:5px;}
+			}
+		}
 	}
 	#container {
 	}
