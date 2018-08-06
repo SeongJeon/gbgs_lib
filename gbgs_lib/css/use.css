@@ -8,13 +8,13 @@
 .gallery-info .tab-info .tab {}
 .gallery-info .tab-info .tab > li {}
 .gallery-info .tab-info .tab > li:first-child a {border-top:none;}
-.gallery-info .tab-info .tab > li a {display:block; height:45px; line-height:45px; padding:0px 0 0 12px; border-top:1px solid #d8dadb; box-sizing: border-box; font-size:18px; letter-spacing:-1px}
+.gallery-info .tab-info .tab > li a {display:block; padding:0px 0 0 12px; border-top:1px solid #d8dadb; box-sizing: border-box; font-size:18px;}
 .gallery-info .tab-info .tab > li.on a {border:2px solid #2a5caa;}
 .gallery-info .tab-con {display:-webkit-box; display:box; -webkit-box-orient:vertical; box-orient:vertical; box-pack:center; -webkit-box-flex:1; box-flex:1; width:657px;}
 .gallery-info .tab-con .slider.room {display:none; position:relative; }
 .gallery-info .tab-con .slider.room.on{display:block;}
 .gallery-info .tab-con .slider.room:before {display:block; content:""; width:114px; height:50px; position:absolute; right:0; top:0; background:rgba(0, 0, 0, 0.5); z-index:1;}
-.gallery-info .tab-con .slider.room:after {display:block; content:""; width:400px; height:50px; position:absolute; right:0; top:0; background:rgba(0, 0, 0, 0.5);}
+.gallery-info .tab-con .slider.room:after {display:block; content:""; width:63%; height:50px; position:absolute; right:0; top:0; background:rgba(0, 0, 0, 0.5);}
 .gallery-info .tab-con .slider.room .inner {position:relative;}
 .gallery-info .tab-con .slider.room .img {}
 .gallery-info .tab-con .slider.room .info {}
