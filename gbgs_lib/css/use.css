@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.gallery_info {}
+.gallery_info:after {display:block; content:""; clear:both;}
+.gallery_info .info {float:left;}
+.gallery_info .info .tit {font-size:26px; font-weight:bold;}
+.gallery_info .info .tit .tail {display:block;}
+.gallery_info .info .tab {}
+.gallery_info .info .tab > li {}
+.gallery_info .info .tab > li a {}
+.gallery_info .tab_con {float:left; width:657px;}
+.gallery_info .tab_con .slider.room {display:none;}
+.gallery_info .tab_con .slider.room.on{display:block;}
+
