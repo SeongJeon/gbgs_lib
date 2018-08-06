@@ -14,6 +14,18 @@ var gbgs = {
 	gnbEvent : function(){
 	},
 
+	//footer
+	footerEvent : function(){
+
+		// Go to Selected site
+		$(".footer-select .sel-type1").on("change", function(){
+			if($("option:selected", this).val() == undefined || $("option:selected", this).val() == null || $("option:selected", this).val() == '') return false;
+
+			var v = $("option:selected", this).val();
+			window.open(v);
+		});
+	},
+
 	// TOP BTN
 	topEvent : function(){
 		var btn = $("#footer .btn-top");
@@ -133,7 +145,7 @@ var main_Js = (function(){
 		ltr: true,
 		cssEase: 'linear'
 	});
-	$('.gallery-slider .slider').slick({
+	$('#footer .banner-slider .slide').slick({
 		dots: false,
 		infinite: true,
 		speed: 400,
@@ -142,31 +154,31 @@ var main_Js = (function(){
 		slidesToScroll: 1,
 		cssEase: 'linear',
 		responsive: [
-    {
-      breakpoint: 1280,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false
-      }
-    },
-    {
-      breakpoint: 970,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
+		   {
+		      breakpoint: 1320,
+		      settings: {
+		        slidesToShow: 4,
+		        slidesToScroll: 1,
+		        infinite: true,
+		        dots: false
+		      }
+		   },
+		   {
+		      breakpoint: 970,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1,
+		        infinite: true,
+		        dots: false
+		      }
+		   },
+		   {
+		      breakpoint: 600,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		   }
 		]
 	});
 })();
@@ -229,10 +241,13 @@ $(window).load(function(){
 	$("header").load('/gbgs_lib/html/include/header.html', function(){
 		gbgs.gnbEvent(); // gnb animation js
 	});
-	$("footer").load('/gbgs_lib/html/include/footer.html');
+	$("footer").load('/gbgs_lib/html/include/footer.html', function(){
+		gbgs.footerEvent();
+	});
 	// ------------------------------------------개발시 삭제
 
 	// 개발시 위 코드 삭제 후, 아래 코드 활성화 하시기 바랍니다.
 	// gbgs.gnbEvent(); // gnb animation js
+	// gbgs.footerEvent(); // footer js
 
 })
