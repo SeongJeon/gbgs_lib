@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+	<meta name="format-detection" content="telephone=no">
+	<title>경산시립도서관</title>
+
+	<link rel="stylesheet" href="/gbgs_lib/css/ux.css">
+</head>
+<body>
+	<div id="skipnavi">
+		<a href="#container">본문 바로가기</a>
+		<a href="#gnb">주메뉴 바로가기</a>
+		<a href="#footer">푸터 바로가기</a>
+	</div>
+	<div id="wrap">
+		<header><!-- /gbgs_lib/html/include/header.html --> </header>
+
+		<main>
+			<div id="container" class="use">
+				<div class="tab_info">
+					<div class="tab-zone js-tab">
+	<ul>
+		<li class="current"><a href="#">탭명1</a></li>
+		<li><a href="#">탭명2</a></li>
+	</ul>
+</div>
+
+<div class="tab-contents"> TAB cont1 </div>
+<div class="tab-contents"> TAB cont2 </div>
+					
+				</div>
+
+				
+			</div>
+		</main>
+
+		<footer><!-- /gbgs_lib/html/include/footer.html --> </footer>
+	</div>
+</body>
+</html>
+<script src="/gbgs_lib/js/jquery-1.12.4.min.js"></script>
+<script src="/gbgs_lib/js/slick.min.js"></script>
+<script src="/gbgs_lib/js/common.js"></script>
+<script>
+	$(".tab_info .tab li a").on("click", function(){
+		var index = $(this).parent().index(),
+			slider = $(".tab_info .tab_con .slider")
+			console.log(slider.eq(index))
+		$(".tab_info .tab li").removeClass("on");
+		$(this).parent().addClass("on");
+		slider.removeClass("on")
+		slider.eq(index).addClass("on");
+		return false;
+	});
+	$('.slider.room').slick({
+	  dots: true,
+	  infinite: true,
+	  speed: 300,
+	  slidesToShow: 1,
+	  adaptiveHeight: true
+	});
+	
+</script>
