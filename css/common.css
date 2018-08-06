@@ -271,11 +271,24 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 2px; 
 .tbl-type1 tbody th { background: #ecf8fe; font-family: "Nanum Square R", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 
 @media (max-width: 1279px) { /* COMMON */
+  #footer .footer-container { padding: 20px 1rem 30px; text-align: center; }
+  #footer .footer-container .footer-lnk { display: inline-block; margin-top: 1.8rem; }
+  #footer .footer-container .footer-lnk li:first-child a { color: #000; }
+  #footer .footer-container .footer-lnk a { font-size: 0.9rem; font-size: 2.2vw; }
+  #footer .footer-container .footer-address { margin-top: 1.8rem; }
+  #footer .footer-container .footer-address li { font-size: 2.4vw; line-height: 1.4; }
+  #footer .footer-container .footer-address li + li { margin-left: 2vw; }
+  #footer .footer-container .copy { font-size: 2.4vw; line-height: 1.4; }
+  #footer .footer-container .footer-select { position: static; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+  #footer .footer-container .footer-select .sel-type1 { flex: 1; margin-left: 5px; }
+  #footer .footer-container .footer-select .sel-type1:first-child { margin: 0; }
   .scrollzone { overflow-x: scroll; }
   .scrollzone .scrollinner { width: 200%; }
   /* BUTTON */
   /* TITLE */
   /* TABLE */
+  /* FORM */
+  .sel-type1 select { height: 28px; width: 100%; padding: 0 8px; font-size: 10px; background-size: auto 30%; }
   /* TAB */
   .tab-zone li a { font-size: 16px; }
   /* LAYER */

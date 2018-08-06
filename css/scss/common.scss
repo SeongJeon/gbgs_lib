@@ -437,26 +437,24 @@ p.txt-important {
 	}
 	#footer {
 		.footer-container {
-			padding:29px 0 0;
+			padding:20px 1rem 30px; text-align:center;
 			.footer-lnk {
-				li {
-					float:left;
-					& + li:before {display:inline-block; content:"|"; color:#ccc; margin:0 12px; vertical-align:top;}
-				}
-				li:first-child a {font-weight:bold; color:#ff6f7a;}
-				a {color:#555; font-size:16px; }
+				display: inline-block; margin-top:1.8rem;
+				li:first-child a {color:#000;}
+				a {font-size:0.9rem; font-size:2.2vw; }
 			}
 			.footer-address {
-				margin-top:27px;
-				&:after {display:block; clear:both; content:""}
-				li {float:left; color:#999; font-size:16px; line-height:24px;}
-				li + li {margin-left:15px;}
+				margin-top:1.8rem;
+				li {font-size:2.4vw; line-height:1.4;}
+				li + li {margin-left:2vw;}
 			}
-			.copy {color:#999; font-size:16px; line-height:24px;}
+			.copy {font-size:2.4vw; line-height:1.4;}
 			.footer-select {
-				position:absolute; right:0; top:20px;
-				&:after {display:block; clear:both; content:""}
-				.sel-type1 {float:left; margin-left:5px;}
+				position:static; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
+				.sel-type1 {
+					flex:1; margin-left:5px;
+					&:first-child {margin:0;}
+				}
 			}
 		}
 	}
@@ -474,6 +472,11 @@ p.txt-important {
 	/* TITLE */
 
 	/* TABLE */
+
+	/* FORM */
+	.sel-type1 {
+		select {height:28px; width:100%; padding:0 8px; font-size:10px; background-size:auto 30%;}
+	}
 
 	/* TAB */
 	.tab-zone {
