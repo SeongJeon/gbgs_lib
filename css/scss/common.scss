@@ -89,7 +89,8 @@
 		padding:15px 0; border-bottom:1px solid #ccc;
 		.banner-inner {max-width:1320px; margin:0 auto;}
 		.banner-slider {
-			overflow:hidden; padding:0 55px 0 185px;
+			overflow:hidden; position:relative; padding:0 55px 0 185px;
+			li {float:left;}
 			a {display:block; width:220px; hieght:50px; box-sizing:border-box; border:1px solid #eff0f1;}
 			img {width:100%; height:100%}
 		}
@@ -435,6 +436,27 @@ p.txt-important {
 	#header {
 	}
 	#footer {
+		.footer-container {
+			padding:20px 1rem 30px; text-align:center;
+			.footer-lnk {
+				display: inline-block; margin-top:1.8rem;
+				li:first-child a {color:#000;}
+				a {font-size:0.9rem; font-size:2.2vw; }
+			}
+			.footer-address {
+				margin-top:1.8rem;
+				li {font-size:2.4vw; line-height:1.4;}
+				li + li {margin-left:2vw;}
+			}
+			.copy {font-size:2.4vw; line-height:1.4;}
+			.footer-select {
+				position:static; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
+				.sel-type1 {
+					flex:1; margin-left:5px;
+					&:first-child {margin:0;}
+				}
+			}
+		}
 	}
 	#container {
 	}
@@ -450,6 +472,11 @@ p.txt-important {
 	/* TITLE */
 
 	/* TABLE */
+
+	/* FORM */
+	.sel-type1 {
+		select {height:28px; width:100%; padding:0 8px; font-size:10px; background-size:auto 30%;}
+	}
 
 	/* TAB */
 	.tab-zone {

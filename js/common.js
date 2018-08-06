@@ -16,13 +16,45 @@ var gbgs = {
 
 	//footer
 	footerEvent : function(){
-
 		// Go to Selected site
 		$(".footer-select .sel-type1").on("change", function(){
 			if($("option:selected", this).val() == undefined || $("option:selected", this).val() == null || $("option:selected", this).val() == '') return false;
 
 			var v = $("option:selected", this).val();
 			window.open(v);
+		});
+
+		// Slick
+		$('.footer-banner-zone .slider').slick({
+			autoplay: true,
+			autoplaySpeed: 3000,
+			infinite: true,
+			speed: 400,
+			arrows: true,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			cssEase: 'linear',
+			accessibility: true,
+			prevArrow: $(".footer-banner-zone .btn-prev"),
+			nextArrow: $(".footer-banner-zone .btn-next"),
+			responsive: [
+			   {
+			      breakpoint: 1320,
+			      settings: {
+			        slidesToShow: 3,
+			        slidesToScroll: 1,
+			        infinite: true,
+			        dots: false
+			      }
+			   },
+			   {
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 1
+			      }
+			   }
+			]
 		});
 	},
 
@@ -243,6 +275,8 @@ $(window).load(function(){
 	});
 	$("footer").load('/gbgs_lib/html/include/footer.html', function(){
 		gbgs.footerEvent();
+
+
 	});
 	// ------------------------------------------개발시 삭제
 
