@@ -71,8 +71,11 @@ var gbgs = {
 			}
 		});
 
+	},
+
+	asideEvent : function(){
 		// Top btn
-		var btn = $("#footer #btn-top");
+		var btn = $("#aside #btn-top");
 
 		if($(window).scrollTop() > 30) btn.fadeIn(300);
 		// click
@@ -85,6 +88,7 @@ var gbgs = {
 			if($(window).scrollTop() > 30) btn.fadeIn(300);
 			else btn.fadeOut(300);
 		});
+
 	},
 
 	// TAB SHOW / HIDE
@@ -273,13 +277,16 @@ $(window).load(function(){
 	});
 	$("footer").load('/gbgs_lib/html/include/footer.html', function(){
 		gbgs.footerEvent();
-
-
+	});
+	$("aside").load('/gbgs_lib/html/include/aside.html', function(){
+		gbgs.asideEvent();
 	});
 	// ------------------------------------------개발시 삭제
+
 
 	// 개발시 위 코드 삭제 후, 아래 코드 활성화 하시기 바랍니다.
 	// gbgs.gnbEvent(); // gnb animation js
 	// gbgs.footerEvent(); // footer js
+	// gbgs.asideEvent(); // aside js
 
 })

@@ -132,9 +132,37 @@
 			.sel-type1 {float:left; margin-left:5px;}
 		}
 	}
-	#btn-top {display:none !important}
 }
+#aside {
+	position:absolute; top:720px; right:45px;
+	#btn-top {
+		a {
+			display:block; overflow:hidden; position:relative; width:46px; height:46px; margin-left:auto; border-radius:100px; background:#004059; color:#fff; font-family:$font1; font-size:14px; text-align:center;
+			&:before {display:block; position:relative; top:11px; width:6px; height:6px; margin:0 auto;  border-top:1px solid #fff; border-left:1px solid #fff; content:""; -webkit-transform:rotate(45deg); -ms-transform:rotate(45deg); -moz-transform:rotate(45deg); transform:rotate(45deg);}
+			span {display:block; margin-top:14px; letter-spacing:-1px;}
+		}
+	}
 
+	.quick-menu {
+		li {height:46px; margin-bottom:14px;}
+		li:last-child {margin-bottom:10px;}
+		a {
+			display:block; overflow:hidden; position:relative; top:0; right:0; width:46px; height:46px; margin:0 0 0 auto; box-sizing:border-box; border:1px solid #cbcaca; background:#fff; border-radius:100px; -ms-transition:0.4s ease;-moz-transition:0.4s ease;-webkit-transition:0.4s ease; transition:0.4s ease;
+			&:before {display:block; overflow:hidden; position:absolute; top:0; left:0; content:""; width:44px; height:100%; @include background("icon/icon-quick.png",no-repeat 0 0); border-radius:100px;}
+			&.icon-quick1:before {background-position:0 0}
+			&.icon-quick2:before {background-position:0 -50px}
+			&.icon-quick3:before {background-position:0 -100px}
+			&.icon-quick4:before {background-position:0 -150px}
+		}
+		span {display:none; opacity:0;-ms-transition:0.4s ease;-moz-transition:0.4s ease;-webkit-transition:0.4s ease; transition:0.4s ease;}
+
+
+		a:hover {
+			opacity:1; width:145px;
+			span {display:block; opacity:1;}
+		}
+	}
+}
 /* SUB LAYOUT */
 #container {
 	position:relative; width:100%; margin:0 auto;
@@ -168,7 +196,7 @@
 				li:first-child {margin-top:11px;}
 				a {
 					display:block; padding:0 20px; border-radius:100px;border:2px solid #d6d5d5; color:$color1; font-size:15px; line-height:36px;
-					&:after {display:inline-block; float:right; width:5px; height:5px; content:""; transform:rotate(45deg); border-right:1px solid #d6d5d5}
+					&:after {display:inline-block; float:right; width:5px; height:5px; content:""; -ms-transform:rotate(45deg); -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); transform:rotate(45deg); border-right:1px solid #d6d5d5}
 				}
 			}
 		}
@@ -533,6 +561,8 @@ p.txt-important {
 				}
 			}
 		}
+	}
+	#aside {
 		#btn-top {
 			position:fixed; right:1rem; bottom:2rem; z-index: 10;
 			a {
