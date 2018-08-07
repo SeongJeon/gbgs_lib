@@ -56,27 +56,38 @@ var gbgs = {
 			   }
 			]
 		});
-	},
 
-	// TOP BTN
-	topEvent : function(){
-		var btn = $("#footer .btn-top");
+		// Slick stop btn
+		$('.footer-banner-zone .btn-stop').on('click', function(){
+			var pauseBtn = $(this);
+			if (pauseBtn.hasClass('paused')){
+				$(".footer-banner-zone .slider").slick('slickPause');
+				pauseBtn.removeClass('paused');
+				pauseBtn.html('재생');
+			} else {
+				$(".footer-banner-zone .slider").slick('slickPlay');
+				pauseBtn.addClass('paused');
+				pauseBtn.html('정지');
+			}
+		});
 
-		// default
+		// Top btn
+		var btn = $("#footer #btn-top");
+
 		if($(window).scrollTop() > 30) btn.fadeIn(300);
-
 		// click
-		btn.live("click", function(){
+		btn.on("click", function(){
 			$("html,body").animate({"scrollTop": 0},300);
 			return false;
 		});
-
 		// scroll
 		$(window).scroll(function(){
 			if($(window).scrollTop() > 30) btn.fadeIn(300);
 			else btn.fadeOut(300);
 		});
+
 	},
+
 
 	// TAB SHOW / HIDE
 	tabEvent : function(tabName, hasClassName, contName, liName){ //
