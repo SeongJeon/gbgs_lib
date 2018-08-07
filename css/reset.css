@@ -54,6 +54,10 @@ button { margin: 0; padding: 0; border: none; background: none; cursor: pointer;
 
 em, address { font-style: normal; }
 
+select { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+
+select::-ms-expand { display: none; }
+
 /* COMMON */
 #skipnavi a { display: block; position: absolute; top: 0px; left: -102px; width: 100px; height: 40px; padding: 0; border: 1px solid #dcdcdc; color: #555; font-size: 15px; background: #fff; text-align: center; line-height: 40px; font-weight: 700; z-index: 10000; transition: all 0.3s ease; }
 

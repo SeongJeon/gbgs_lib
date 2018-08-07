@@ -85,12 +85,10 @@ var gbgs = {
 			if($(window).scrollTop() > 30) btn.fadeIn(300);
 			else btn.fadeOut(300);
 		});
-
 	},
 
-
 	// TAB SHOW / HIDE
-	tabEvent : function(tabName, hasClassName, contName, liName){ //
+	tabEvent : function(tabName, hasClassName, contName, liName){
 		if($(tabName).length < 1) return false;
 		liName == undefined ? liName = "li" : liName;
 
@@ -179,7 +177,8 @@ MAIN JAVASCRIPT
 var main_Js = (function(){
 	if($("#container").hasClass("main") == false ) return false;
 
-	$('.main-slider .slider').slick({
+	// main to visual
+	$('.main-visual-zone .slider').slick({
 		autoplay:true,
 		dots: true,
 		infinite: true,
@@ -188,38 +187,26 @@ var main_Js = (function(){
 		ltr: true,
 		cssEase: 'linear'
 	});
-	$('#footer .banner-slider .slide').slick({
+
+	// main quick menu
+	$('.main-quick-zone .quick-slider').slick({
+		autoplay:false,
 		dots: false,
 		infinite: true,
 		speed: 400,
+		autoplaySpeed:4000,
 		ltr: true,
-		slidesToShow: 5,
-		slidesToScroll: 1,
 		cssEase: 'linear',
+		slidesToShow: 8,
+		slidesToScroll: 1,
 		responsive: [
 		   {
 		      breakpoint: 1320,
 		      settings: {
-		        slidesToShow: 4,
+		        slidesToShow: 3,
 		        slidesToScroll: 1,
 		        infinite: true,
 		        dots: false
-		      }
-		   },
-		   {
-		      breakpoint: 970,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 1,
-		        infinite: true,
-		        dots: false
-		      }
-		   },
-		   {
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
 		      }
 		   }
 		]

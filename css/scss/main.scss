@@ -4,6 +4,153 @@
 
 
 .main {
+	/* 상단 비주얼 영역 */
+	.main-visual-zone {
+		position:relative;
+		.slick-slide {
+			height:559px;
+			img {height:100%;}
+		}
+		.slick-arrow {display:none !important}
+		.slick-dots {
+			position:absolute; top:65px; right:50%; margin-right:-660px; z-index:1;
+			li {display:inline-block; margin-left:15px; }
+			button {width:15px; height:15px; border:3px solid rgba(21,20,21,0.5); text-indent:-9999em; -ms-transition:0.3s ease; -webkit-transition:0.3s ease; -moz-transition:0.3s ease; transition:0.3s ease;}
+			.slick-active {
+				button {border-color:#57ac66; background:#57ac66;}
+			}
+		}
+		.txt-img {position:absolute; top:52px; left:0; width:100%; text-align:center;}
+	}
+
+	/* 검색 영역 */
+	.main-search-zone {
+		position:absolute; left:50%; top:280px;
+		width:720px; padding:18px 20px; margin-left:-360px; background:#00a3b4; border-radius:4px; box-sizing:border-box;
+
+		.tit {font-size:20px; font-family:$font3; color:#fff;}
+		.btn-move {position:absolute; top:16px; right:20px;}
+		.form-search {
+			margin-top:18px; display: -webkit-box; display: -webkit-flex; display:flex;
+			.sel-type2 {width:172px;}
+			.inp-type1 {flex:1; margin-left:8px;}
+		}
+	}
+
+	/* 작은 도서관 영역 */
+	.main-small-lib-zone {
+		background:#eef2f1; padding-bottom:50px;
+		ul{
+			position:relative; max-width:1320px; margin:-66px auto 0; box-shadow:0 5px 10px rgba(0,0,0,0.2); border-radius:8px; z-index:1; background:#fff;
+			&:after {display:block; clear:both; content:""}
+			li {
+				position:relative; width:25%; float:left;
+				&:before {display:block; position:absolute; left:0; top:30px; width:1px; height:114px; content:""; background:#d6d9db;}
+				&:first-child:before {display:none;}
+				a {display:block; position:relative; padding:30px 25px 27px; box-sizing:border-box; transition:0.5s ease;}
+				a:before {display:block; position:absolute; left:0; top:-23px; width:100%; height:230px; content:''; opacity:0; transition:0.5s ease; border-radius:5px; box-shadow:0 5px 10px rgba(0,0,0,0.2);}
+				a:after {display:block; position:absolute; right:45px; top:50%; width:50px; height:50px; margin-top:-25px; content:''; opacity:0; @include background("main/img-round.png",no-repeat 50% 50%);
+					-ms-transition:1s ease; -webkit-transition:1s ease; -moz-transition:1s ease; transition:1s ease;
+				}
+			}
+		}
+
+		.lib-name {
+			position:relative; padding-top:7px; font-family:$font5; font-size:24px; -ms-transition:1s ease; -webkit-transition:1s ease; -moz-transition:1s ease; transition:1s ease; //transition-property:color;
+			.small {display:block; margin-top:6px; font-size:14px; color:#afafb0; letter-spacing:-0.7px; }
+			&:before {display:block; position:absolute; left:0; top:-4px; height:65px; content:""; opacity:1}
+		}
+		.lib-noti-day {
+			margin-top:19px; padding-bottom:2px; border-width:3px; border-radius:100px; border-style:solid; font-size:16px; text-align:center; line-height:37px;
+			.days {color:#444;}
+		}
+
+		.gs-lib {
+			.lib-name {padding-left:105px;color:#00b26b;}
+			.lib-name:before {width:106px; @include background("main/icon-gslib.png",no-repeat 50% 0)}
+			.lib-noti-day {border-color:#00b26b; color:#00b26b}
+			a:before {@include background("main/img-gslib.png",no-repeat 50% 50%); background-size:100% 100%;}
+		}
+		.js-lib {
+			.lib-name { padding-left:115px; color:#00a3b4;}
+			.lib-name:before {width:106px; @include background("main/icon-jslib.png",no-repeat 50% 0)}
+			.lib-noti-day {border-color:#00a3b4;color:#00a3b4}
+			a:before {@include background("main/img-jslib.png",no-repeat 50% 50%); background-size:100% 100%;}
+		}
+		.sc-lib {
+			.lib-name {padding-left:115px;color:#2a5caa;}
+			.lib-name:before {width:116px; @include background("main/icon-sclib.png",no-repeat 50% 0)}
+			.lib-noti-day {border-color:#2a5caa;color:#2a5caa}
+			a:before {@include background("main/img-sclib.png",no-repeat 50% 50%); background-size:100% 100%;}
+		}
+		.ec-lib {
+			.lib-name {padding-left:100px;color:#004059;}
+			.lib-name:before {width:84px; @include background("main/icon-eclib.png",no-repeat 50% 0)}
+			.lib-noti-day {border-color:#004059;color:#004059;}
+			a:before {@include background("main/img-eclib.png",no-repeat 50% 50%); background-size:100% 100%;}
+		}
+
+		a:hover {
+			&:before {opacity:1; z-index: 1;}
+			&:after {opacity:1; z-index: 1;}
+			.lib-name {
+				top:28px; padding-left:12px; color:#fff; z-index:1;
+				.small {}
+				&:before {opacity:0}
+			}
+		}
+	}
+
+	/* 퀵메뉴 영역 */
+	.main-quick-zone {
+		padding:27px 0 97px;
+		@include background("main/bg-quick.jpg", repeat 0 0);
+
+		.quick-slider {
+			max-width:1320px; margin:0 auto;
+			.slick-slide a {
+				display:block; text-align:center; font-size:16px; color:$color1; font-family:$font1;
+
+				.icon {
+					display:block; position:relative; width:112px; height:112px; margin:0 auto; border-radius:100px; margin-bottom:14px; content:""; background:#fff; border:1px solid rgba(71,113,135,0.2); box-sizing:border-box;
+					-ms-transition:0.5s ease; -moz-transition:0.5s ease; -webkit-transition:0.5s ease;transition:0.5s ease;
+					&:before {display:block; overflow:hidden; position:absolute; top:0; left:0; width:100%; height:100%; border-radius:100px; content:""; -ms-transition:0.3s ease; -moz-transition:0.3s ease; -webkit-transition:0.3s ease;transition:0.3s ease;}
+					&:after {display:block; overflow:hidden; position:absolute; top:0; left:0; width:100%; height:100%; border-radius:100px; content:""; -ms-transition:0.3s ease; -moz-transition:0.3s ease; -webkit-transition:0.3s ease;transition:0.3s ease; background-position:0 112px !important}
+				}
+				.go {
+					display:block; position:absolute; right:0; bottom:0; width:34px; height:34px; border-radius:100px; background:#30809f; text-align:center; font-family:$font3; color:#fff; font-size:9px; line-height:34px;
+					-ms-transition:0.5s ease; -moz-transition:0.5s ease; -webkit-transition:0.5s ease;transition:0.5s ease;
+					&:after {display:inline-block; content:""; width:4px; height:6px; margin-left:2px; @include background("main/icon-arrow.png",no-repeat 50% 50%);}
+				}
+				&:hover {
+					font-family:$font3; color:#ff6f7a;
+					.icon {background:#30809f;}
+					.icon:before {background-position:0 -112px !important}
+					.icon:after {background-position:0 50% !important}
+					.go {background:#ff6f7a;}
+
+				}
+
+				&.ico-quick1 .icon:before {@include background("main/icon-quick1.png",no-repeat 50% 50%); background-size:100% auto;}
+				&.ico-quick2 .icon:before {@include background("main/icon-quick2.png",no-repeat 50% 50%); background-size:100% auto;}
+				&.ico-quick3 .icon:before {@include background("main/icon-quick3.png",no-repeat 50% 50%); background-size:100% auto;}
+				&.ico-quick4 .icon:before {@include background("main/icon-quick4.png",no-repeat 50% 50%); background-size:100% auto;}
+				&.ico-quick5 .icon:before {@include background("main/icon-quick5.png",no-repeat 50% 50%); background-size:100% auto;}
+				&.ico-quick6 .icon:before {@include background("main/icon-quick6.png",no-repeat 50% 50%); background-size:100% auto;}
+				&.ico-quick7 .icon:before {@include background("main/icon-quick7.png",no-repeat 50% 50%); background-size:100% auto;}
+				&.ico-quick8 .icon:before {@include background("main/icon-quick8.png",no-repeat 50% 50%); background-size:100% auto;}
+
+				&.ico-quick1 .icon:after {@include background("main/icon-quick1--on.png",no-repeat 50% 50%); background-size:100% auto;}
+				&.ico-quick2 .icon:after {@include background("main/icon-quick2--on.png",no-repeat 50% 50%); background-size:100% auto;}
+				&.ico-quick3 .icon:after {@include background("main/icon-quick3--on.png",no-repeat 50% 50%); background-size:100% auto;}
+				&.ico-quick4 .icon:after {@include background("main/icon-quick4--on.png",no-repeat 50% 50%); background-size:100% auto;}
+				&.ico-quick5 .icon:after {@include background("main/icon-quick5--on.png",no-repeat 50% 50%); background-size:100% auto;}
+				&.ico-quick6 .icon:after {@include background("main/icon-quick6--on.png",no-repeat 50% 50%); background-size:100% auto;}
+				&.ico-quick7 .icon:after {@include background("main/icon-quick7--on.png",no-repeat 50% 50%); background-size:100% auto;}
+				&.ico-quick8 .icon:after {@include background("main/icon-quick8--on.png",no-repeat 50% 50%); background-size:100% auto;}
+			}
+		}
+	}
 
 }
 
@@ -13,7 +160,7 @@
 
 
 
-@media (max-width:1279px) {}
+@media (max-width:1320px) {}
 @media (max-width:600px) {}
 @media (max-width:360px) {}
 @media (max-width:321px) {}

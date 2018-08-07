@@ -132,13 +132,13 @@
 			.sel-type1 {float:left; margin-left:5px;}
 		}
 	}
-	#btn-top {display:none}
+	#btn-top {display:none !important}
 }
 
 /* SUB LAYOUT */
 #container {
 	position:relative; width:100%; margin:0 auto;
-	&.main {max-width:1320px; }
+	// &.main {max-width:1320px; }
 	.top-visual-zone {
 		height:200px; background:#e0e0e0; text-align:center; @include background("common/bg-topvisual.jpg", no-repeat 50% 0); background-size:cover;
 		p {height:100%; @include background("common/img-topvisual-txt.png",no-repeat 50% 50%); text-indent:-999em;}
@@ -211,6 +211,15 @@
 
 /* BUTTON */
 .btn-print {display: block; width:29px; height:29px; border:1px solid #cbc6c5; @include background("button/btn-print.png",no-repeat 50% 50%); text-indent:-9999em;}
+.btn-search {
+	display:inline-block; width:99px; font-family:$font1; color:#fff; font-size:18px; background:#2a5caa; text-align:center;
+	&:before {display:inline-block; content:""; position:relative; top:-1px; width:22px; height:24px; margin-right:6px; @include background("icon/icon-search.png",no-repeat 50% 50%); background-size:auto 100%; vertical-align:top;}
+}
+
+.btn-type1 {
+	display:inline-block; min-width:140px; height:35px; padding:0 15px; color:#fff; background:#eca414; line-height:35px; font-family:$font3; font-size:18px; border-radius:100px; box-sizing:border-box; text-align:center;
+	&.color01 {background:#eca414; color:#fff;}
+}
 
 /* ICON */
 
@@ -224,20 +233,24 @@
 	&:before {display:block; position:absolute; top:0; left:0; width:20px; height:3px; background:#2a5caa; content:"";}
 }
 
-/* TABLE */
 
 
 /* FORM */
 .sel-type1 {
 	select {height:42px; width:187px; padding:0 10px; border:1px solid #ccc; color:#999999;font-size:15px; @include background("common/ipt-sel1.png",no-repeat 94% 50%);}
 }
-// .inp-type1 {
-// 	&::-webkit-input-placeholder {color:#c9c9c9; }
-// 	&::-moz-placeholder {color:#c9c9c9; }
-// 	&:-ms-input-placeholder {color:#c9c9c9; }
-// 	&:-moz-placeholder {color:#c9c9c9; }
-// 	&.w100per {width:100%;}
-// }
+.sel-type2 {
+	background:#fff;
+	select {height:44px; width:100%; padding:0 18px; border:0; color:$color1; font-size:16px; font-family:$font1; @include background("common/ipt-sel2.png",no-repeat 100% 50%);}
+}
+
+.inp-type1 {
+	height:44px; width:100%; padding:0 18px;  color:$color1;box-sizing:border-box;
+	&::-webkit-input-placeholder {color:rgba(106,106,106,0.7); }
+	&::-moz-placeholder {color:rgba(106,106,106,0.7); }
+	&:-ms-input-placeholder {color:rgba(106,106,106,0.7); }
+	&:-moz-placeholder {color:rgba(106,106,106,0.7); }
+}
 
 // .radio-type1 {
 // 	position: relative;
