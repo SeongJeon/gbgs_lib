@@ -280,8 +280,11 @@
   .mobile .main .main-quick-zone .quick-slider .slick-slide a .icon:after { -ms-transition: inherit; -moz-transition: inherit; -webkit-transition: inherit; transition: inherit; }
   .mobile .main .main-quick-zone .quick-slider .slick-slide a .go { -ms-transition: inherit; -moz-transition: inherit; -webkit-transition: inherit; transition: inherit; } }
 @media (max-width: 1000px) { .main { /* 작은 도서관 영역 */ }
+  .main .main-small-lib-zone ul { padding: 0 1rem; }
   .main .main-small-lib-zone ul li { width: 50%; }
   .main .main-small-lib-zone ul li:nth-child(1), .main .main-small-lib-zone ul li:nth-child(2) { border-bottom: 1px solid #ccc; }
-  .main .main-small-lib-zone ul li:nth-child(3):before { display: none; } }
+  .main .main-small-lib-zone ul li:nth-child(3):before { display: none; }
+  .main .main-small-lib-zone ul li:nth-child(odd) a { padding-left: 0; }
+  .main .main-small-lib-zone ul li:nth-child(even) a { padding-right: 0; } }
 @media (max-width: 600px) { .main { /* 퀵메뉴 영역 */ }
   .main .main-quick-zone { background-size: 10% auto; } }

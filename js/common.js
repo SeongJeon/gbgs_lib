@@ -341,12 +341,12 @@ FIXED PLUG-IN FUNCTION
 // TAB FUNCTION
 var plugin_tab = (function(){
 	// TAB SHOW / HIDE
-	var tabName = '.js-tab', hasClassName = '.current', contName = '.tab-contents', liName = 'li', curr = 0;
+	var tabName = '.js-tab', hasClassName = 'current', contName = '.tab-contents', liName = 'li', curr = 0;
 
 	if($(tabName).length < 1) return false;
 
 	// default
-	$(contName).eq($(tabName).find(hasClassName).index()).show().siblings(contName).hide();
+	$(contName).eq($(tabName).find("."+hasClassName).index()).show().siblings(contName).hide();
 
 	// click
 	$(tabName).find(liName).on("click", function(){

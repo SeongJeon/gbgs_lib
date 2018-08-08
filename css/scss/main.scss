@@ -583,11 +583,17 @@
 	.main {
 		/* 작은 도서관 영역 */
 		.main-small-lib-zone {
-			ul li {
-				width:50%;
-				&:nth-child(1),
-				&:nth-child(2) {border-bottom:1px solid #ccc;}
-				&:nth-child(3):before {display:none}
+
+			ul {
+				padding:0 1rem;
+				li {
+					width:50%;
+					&:nth-child(1),
+					&:nth-child(2) {border-bottom:1px solid #ccc;}
+					&:nth-child(3):before {display:none}
+					&:nth-child(odd) a {padding-left:0;}
+					&:nth-child(even) a {padding-right:0;}
+				}
 			}
 		}
 	}
