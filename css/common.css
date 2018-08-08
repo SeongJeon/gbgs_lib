@@ -145,7 +145,7 @@ select::-ms-expand { display: none; }
 #footer .footer-container .footer-select:after { display: block; clear: both; content: ""; }
 #footer .footer-container .footer-select .sel-type1 { float: left; margin-left: 5px; }
 
-#aside { position: absolute; top: 720px; right: 45px; }
+#aside { position: absolute; top: 455px; right: 45px; z-index: 10; }
 #aside #btn-top a { display: block; overflow: hidden; position: relative; width: 46px; height: 46px; margin-left: auto; border-radius: 100px; background: #004059; color: #fff; font-family: "NanumGothic-Regular", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 14px; text-align: center; }
 #aside #btn-top a:before { display: block; position: relative; top: 11px; width: 6px; height: 6px; margin: 0 auto; border-top: 1px solid #fff; border-left: 1px solid #fff; content: ""; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); -moz-transform: rotate(45deg); transform: rotate(45deg); }
 #aside #btn-top a span { display: block; margin-top: 14px; letter-spacing: -1px; }
@@ -153,13 +153,21 @@ select::-ms-expand { display: none; }
 #aside .quick-menu li:last-child { margin-bottom: 10px; }
 #aside .quick-menu a { display: block; overflow: hidden; position: relative; top: 0; right: 0; width: 46px; height: 46px; margin: 0 0 0 auto; box-sizing: border-box; border: 1px solid #cbcaca; background: #fff; border-radius: 100px; -ms-transition: 0.4s ease; -moz-transition: 0.4s ease; -webkit-transition: 0.4s ease; transition: 0.4s ease; }
 #aside .quick-menu a:before { display: block; overflow: hidden; position: absolute; top: 0; left: 0; content: ""; width: 44px; height: 100%; background: url("../images/icon/icon-quick.png") no-repeat 0 0; border-radius: 100px; }
-#aside .quick-menu a.icon-quick1:before { background-position: 0 0; }
-#aside .quick-menu a.icon-quick2:before { background-position: 0 -50px; }
-#aside .quick-menu a.icon-quick3:before { background-position: 0 -100px; }
-#aside .quick-menu a.icon-quick4:before { background-position: 0 -150px; }
-#aside .quick-menu span { display: none; opacity: 0; -ms-transition: 0.4s ease; -moz-transition: 0.4s ease; -webkit-transition: 0.4s ease; transition: 0.4s ease; }
 #aside .quick-menu a:hover { opacity: 1; width: 145px; }
 #aside .quick-menu a:hover span { display: block; opacity: 1; }
+#aside .quick-menu a.icon-quick1:before { background-position: 0 0; }
+#aside .quick-menu a.icon-quick1:hover { background: #abd5c9; border-color: #abd5c9; }
+#aside .quick-menu a.icon-quick1:hover:before { background-position: 100% 0; }
+#aside .quick-menu a.icon-quick2:before { background-position: 0 -50px; }
+#aside .quick-menu a.icon-quick2:hover { background: #00a896; border-color: #00a896; }
+#aside .quick-menu a.icon-quick2:hover:before { background-position: 100% -50px; }
+#aside .quick-menu a.icon-quick3:before { background-position: 0 -100px; }
+#aside .quick-menu a.icon-quick3:hover { background: #028090; border-color: #028090; }
+#aside .quick-menu a.icon-quick3:hover:before { background-position: 100% -100px; }
+#aside .quick-menu a.icon-quick4:before { background-position: 0 -150px; }
+#aside .quick-menu a.icon-quick4:hover { background: #2a5caa; border-color: #2a5caa; }
+#aside .quick-menu a.icon-quick4:hover:before { background-position: 100% -150px; }
+#aside .quick-menu span { display: none; opacity: 0; -ms-transition: 0.4s ease; -moz-transition: 0.4s ease; -webkit-transition: 0.4s ease; transition: 0.4s ease; line-height: 42px; padding: 0 0 2px 45px; color: #fff; }
 
 /* SUB LAYOUT */
 #container { position: relative; width: 100%; margin: 0 auto; }
@@ -181,7 +189,7 @@ select::-ms-expand { display: none; }
 #container #lnb .goto-lib .lnk a { display: block; padding: 0 20px; border-radius: 100px; border: 2px solid #d6d5d5; color: #222; font-size: 15px; line-height: 36px; }
 #container #lnb .goto-lib .lnk a:after { display: inline-block; float: right; width: 5px; height: 5px; content: ""; -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); transform: rotate(45deg); border-right: 1px solid #d6d5d5; }
 #container #contents { min-height: 1000px; padding: 65px 0 215px 330px; }
-#container #contents .page-title-zone { position: relative; padding-bottom: 20px; border-bottom: 1px solid #d8dadb; }
+#container #contents .page-title-zone { position: relative; padding-bottom: 20px; margin-bottom: 55px; border-bottom: 1px solid #d8dadb; }
 #container #contents .page-title-zone:before { display: block; position: absolute; bottom: -1px; left: 0; width: 250px; height: 3px; background: #205272; content: ""; }
 #container #contents .page-title-zone .page-title { font-size: 34px; color: #222; font-weight: normal; font-family: "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; letter-spacing: -1px; }
 #container #contents .breadcrumb-zone { position: absolute; right: 0; bottom: 14px; }
@@ -234,13 +242,21 @@ select::-ms-expand { display: none; }
 .inp-type1:-moz-placeholder { color: rgba(106, 106, 106, 0.7); }
 
 /* LIST */
-p.txt-dotted { position: relative; padding-left: 16px; font-size: 15px; line-height: 30px; color: #535353; }
-p.txt-dotted:before { display: block; position: absolute; content: ""; left: 0; top: 13px; width: 5px; height: 5px; background: #7d7d7d; border-radius: 100px; }
+p.txt-dotted { position: relative; padding-left: 14px; font-size: 15px; line-height: 30px; color: #555; }
+p.txt-dotted:before { display: block; position: absolute; content: "·"; left: 0; top: 0; color: #555; font-family: "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
 
-.txt-dotted > li { position: relative; padding-left: 16px; font-size: 15px; line-height: 30px; color: #535353; }
-.txt-dotted > li:before { display: block; position: absolute; content: ""; left: 0; top: 13px; width: 5px; height: 5px; background: #7d7d7d; border-radius: 100px; }
+.txt-dotted > li { position: relative; padding-left: 14px; font-size: 15px; line-height: 30px; color: #555; }
+.txt-dotted > li:before { display: block; position: absolute; content: "·"; left: 0; top: 0; color: #555; font-family: "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
 .txt-dotted.color1 > li:before { background: #222; }
 .txt-dotted.color2 > li:before { background: #444444; }
+
+p.txt-dotted2 { position: relative; padding-left: 13px; font-size: 14px; line-height: 20px; color: #444444; text-align: left; }
+p.txt-dotted2:before { display: block; position: absolute; content: ""; left: 0; top: 8px; width: 5px; height: 5px; background: #8aa9be; border-radius: 100px; }
+
+.txt-dotted2 > li { position: relative; padding-left: 13px; font-size: 14px; line-height: 20px; color: #444444; text-align: left; }
+.txt-dotted2 > li:before { display: block; position: absolute; content: ""; left: 0; top: 8px; width: 5px; height: 5px; background: #8aa9be; border-radius: 100px; }
+.txt-dotted2.color1 > li:before { background: #222; }
+.txt-dotted2.color2 > li:before { background: #444444; }
 
 p.txt-hyphen { position: relative; padding-left: 11px; line-height: 30px; }
 p.txt-hyphen:before { display: block; position: absolute; left: 0; top: 0; content: "-"; }
@@ -347,10 +363,11 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 2px; 
   #footer .footer-container .footer-select { position: static; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
   #footer .footer-container .footer-select .sel-type1 { flex: 1; margin-left: 5px; }
   #footer .footer-container .footer-select .sel-type1:first-child { margin: 0; }
-  #aside #btn-top { position: fixed; right: 1rem; bottom: 2rem; z-index: 10; }
-  #aside #btn-top a { display: block; overflow: hidden; position: relative; width: 4.7rem; height: 4.7rem; border-radius: 100px; background: #004059; color: #fff; font-family: "NanumGothic-Regular", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 1.5rem; text-align: center; }
-  #aside #btn-top a:before { display: block; position: relative; top: 1.2rem; width: 0.8rem; height: 0.8rem; margin: 0 auto; border-top: 1px solid #fff; border-left: 1px solid #fff; content: ""; transform: rotate(45deg); }
-  #aside #btn-top a span { display: block; margin-top: 1.2rem; letter-spacing: -1px; }
+  #aside { position: fixed !important; right: 1rem; top: inherit !important; bottom: 2rem; z-index: 10; }
+  #aside #btn-top a { width: 4.7rem; height: 4.7rem; font-size: 1.5rem; }
+  #aside #btn-top a:before { top: 1.2rem; width: 0.8rem; height: 0.8rem; }
+  #aside #btn-top a span { margin-top: 1.2rem; }
+  #aside .quick-menu { display: none; }
   #container .top-visual-zone { height: 8.7rem; background: url("../images/common/bg-m-topvisual.jpg") no-repeat 50% 0; background-size: cover; }
   #container .top-visual-zone p { background-size: auto 70%; }
   #container #lnb { display: none; }
@@ -379,12 +396,13 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 2px; 
 @media (max-width: 768px) { /* COMMON */
   #footer .footer-container { padding: 20px 2.4% 30px; }
   #footer .footer-container .footer-lnk { margin-top: 3vw; }
-  #footer .footer-container .footer-lnk a { font-size: 0.9rem; font-size: 2.2vw; }
-  #footer .footer-container .footer-lnk li + li:before { font-size: 1vw; margin: 0 6px; }
-  #footer .footer-container .footer-address { margin-top: 3vw; }
-  #footer .footer-container .footer-address li { font-size: 2vw; line-height: 1.4; letter-spacing: -1px; }
-  #footer .footer-container .footer-address li + li { margin-left: 2vw; }
-  #footer .footer-container .copy { font-size: 2.4vw; line-height: 1.4; }
+  #footer .footer-container .footer-lnk a { font-size: 0.8rem; font-size: 2.2vw; }
+  #footer .footer-container .footer-lnk li + li:before { font-size: 0.8rem; vertical-align: 0px; margin: 0 6px; }
+  #footer .footer-container .footer-address { display: block; margin-top: 3vw; }
+  #footer .footer-container .footer-address li { float: none; display: inline-block; font-size: 0.8rem; line-height: 1.4; letter-spacing: -0.2px; margin-right: 0.8rem; }
+  #footer .footer-container .footer-address li + li { margin-left: 0; }
+  #footer .footer-container .copy { font-size: 0.8rem; line-height: 1.4; }
+  #container #contents .breadcrumb-zone .breadcrumb li:first-child a { width: 1.3rem; height: 1.3rem; background-size: auto 100%; }
   /* BUTTON */
   /* TITLE */
   /* ICON */
