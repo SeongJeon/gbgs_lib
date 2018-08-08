@@ -186,8 +186,8 @@
   .main .main-small-lib-zone ul li a:after { display: none; }
   .main .main-small-lib-zone .lib-name { padding-top: 7px; font-size: 1.2rem; }
   .main .main-small-lib-zone .lib-name .small { margin-top: 0.3rem; font-size: 0.7rem; }
-  .main .main-small-lib-zone .lib-name:before { left: 0.4rem; }
-  .main .main-small-lib-zone .lib-noti-day { margin-top: 0.6rem; padding-bottom: 0; font-size: 0.8rem; line-height: 2.1rem; }
+  .main .main-small-lib-zone .lib-name:before { left: 0.4rem; height: 3.4rem; }
+  .main .main-small-lib-zone .lib-noti-day { margin-top: 0.6rem; border-width: 1px; padding-bottom: 0; font-size: 0.8rem; line-height: 2rem; }
   .main .main-small-lib-zone .gs-lib .lib-name { padding-left: 5.3rem !important; color: #00b26b !important; }
   .main .main-small-lib-zone .gs-lib .lib-name:before { width: 4.1rem; background-size: 100% auto; }
   .main .main-small-lib-zone .gs-lib .lib-noti-day { border-color: #00b26b; color: #00b26b; }
@@ -286,5 +286,8 @@
   .main .main-small-lib-zone ul li:nth-child(3):before { display: none; }
   .main .main-small-lib-zone ul li:nth-child(odd) a { padding-left: 0; }
   .main .main-small-lib-zone ul li:nth-child(even) a { padding-right: 0; } }
-@media (max-width: 600px) { .main { /* 퀵메뉴 영역 */ }
+@media (max-width: 600px) { .main { /* 작은 도서관 영역 */ /* 퀵메뉴 영역 */ }
+  .main .main-small-lib-zone .lib-name { padding-top: 4px; }
+  .main .main-small-lib-zone .lib-name:before { top: -1px; }
+  .main .main-small-lib-zone .lib-name .small { margin-top: 0.1rem; }
   .main .main-quick-zone { background-size: 10% auto; } }

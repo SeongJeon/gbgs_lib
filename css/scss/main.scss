@@ -375,9 +375,9 @@
 			.lib-name {
 				padding-top:7px; font-size:1.2rem;
 				.small {margin-top:0.3rem; font-size:0.7rem;}
-				&:before {left:0.4rem;}
+				&:before {left:0.4rem; height:3.4rem}
 			}
-			.lib-noti-day {margin-top:0.6rem; padding-bottom:0; font-size:0.8rem;  line-height:2.1rem; }
+			.lib-noti-day {margin-top:0.6rem; border-width:1px; padding-bottom:0; font-size:0.8rem;  line-height:2rem; }
 
 			.gs-lib {
 				.lib-name {padding-left:5.3rem !important;color:#00b26b !important;}
@@ -600,6 +600,15 @@
 }
 @media (max-width:600px) {
 	.main {
+		/* 작은 도서관 영역 */
+		.main-small-lib-zone {
+			.lib-name{
+				padding-top:4px;
+				&:before {top:-1px}
+				.small {margin-top:0.1rem}
+			}
+		}
+
 		/* 퀵메뉴 영역 */
 		.main-quick-zone {
 			background-size:10% auto;
