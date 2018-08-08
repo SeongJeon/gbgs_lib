@@ -41,14 +41,19 @@
 .use .top-banner .inner .img {}
 .use .top-banner .inner .txt-bul {margin:0 0 0 33px; padding:0 0 0 40px; border-left:1px solid #bcdae7;}
 .use .top-banner .inner .txt-bul > li {font-weight:bold;}
+.use .top-banner.book .inner .img {margin-top:-12px;}
+
 .use .txt-important:before {top:0;}
 .use .tbl-type1 {margin-top:24px;}
-.use .tbl-type1 .txt-bul {padding:15px 0 20px 22px;}
+.use .tbl-type1 ul.txt-bul {padding:15px 0 20px 22px;}
+.use .tbl-type1 p.txt-bul {margin-left:22px;}
 
 /*bullet*/
 .use .txt-bul {text-align:left;}
-.use .txt-bul > li {position:relative; padding-left:14px; font-size:15px; line-height:26px;}
-.use .txt-bul > li:before {display:block; content:""; position:absolute; left:0; top:10px; width:5px; height:5px; border-radius:2px; background:#4089c1;}
+.use .txt-bul > li,
+.use p.txt-bul {position:relative; padding-left:14px; font-size:15px; line-height:26px;}
+.use .txt-bul > li:before,
+.use p.txt-bul:before {display:block; content:""; position:absolute; left:0; top:10px; width:5px; height:5px; border-radius:2px; background:#4089c1;}
 .use .bg-txt-list {margin-top:10px; padding:10px 20px 9px; background:#ecf8fe; font-size:16px; line-height:26px; color:#383838;}
 .use .bg-txt-list:before {content:"-"; margin-right:5px; color:#2a5caa;}
 
@@ -56,4 +61,13 @@
 .use .list-notes ul {margin-top:20px;}
 .use .list-notes ul > li {font-size:16px; line-height:40px;}
 .use .list-notes ul > li .num {display:inline-block; margin-right:16px; color:#2a5caa; font-style: italic;}
+
+.use .donation-process {margin:27px 0 0 30px; border-left:1px solid #58b0e3;}
+.use .donation-process ol { }
+.use .donation-process ol > li {position:relative; display:table; min-height:60px; margin-top:20px; padding-left:45px; line-height:24px;}
+.use .donation-process ol > li:first-child {margin-top:0;}
+.use .donation-process ol > li > * {display:table-cell; vertical-align:middle;}
+.use .donation-process ol > li:after {display:block; content:""; clear:both;}
+.use .donation-process ol > li .num {position:absolute; left:-30px; width:46px; height:46px; background:#30809f; font-size:21px; color:#fff; font-weight:bold; border-radius:46px; text-align:center; line-height:46px; border:7px solid #c9e3ef;}
+.use .donation-process ol > li .txt {}
 
