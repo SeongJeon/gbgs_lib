@@ -123,6 +123,7 @@
 }
 
 .introduce .content-history em {
+  margin-right: 30px;
   font-weight: bold;
   font-style: italic;
 }
