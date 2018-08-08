@@ -344,12 +344,6 @@ p.txt-dotted {
 .txt-dotted {
 	& > li {position:relative; padding-left:14px; font-size:15px; line-height:30px; color:#555}
 	& > li:before {display:block; position:absolute; content:"·"; left:0; top:0; color:#555;  font-family:$font6; font-weight:bold;}
-	&.color1 {
-		& > li:before {background:$color1;}
-	}
-	&.color2 {
-		& > li:before {background:#444444;}
-	}
 }
 p.txt-dotted2 {
 	position:relative; padding-left:13px; font-size:14px; line-height:20px; color:#444444; text-align:left;
@@ -358,21 +352,16 @@ p.txt-dotted2 {
 .txt-dotted2 {
 	& > li {position:relative; padding-left:13px; font-size:14px; line-height:20px; color:#444444; text-align:left;}
 	& > li:before {display:block; position:absolute; content:""; left:0; top:8px; width:5px; height:5px; background:#8aa9be; border-radius:100px;}
-	&.color1 {
-		& > li:before {background:$color1;}
-	}
-	&.color2 {
-		& > li:before {background:#444444;}
-	}
 }
-p.txt-hyphen {
-	position:relative; padding-left:11px; line-height:30px;
-	&:before {display:block; position:absolute; left:0; top:0; content:"-"};
-}
-.txt-hyphen {
-	& > li {position:relative; padding-left:11px; line-height:30px;}
-	& > li:before {display:block; position:absolute; left:0; top:0; content:"-"};
-}
+
+// p.txt-hyphen {
+// 	position:relative; padding-left:11px; line-height:30px;
+// 	&:before {display:block; position:absolute; left:0; top:0; content:"-"};
+// }
+// .txt-hyphen {
+// 	& > li {position:relative; padding-left:11px; line-height:30px;}
+// 	& > li:before {display:block; position:absolute; left:0; top:0; content:"-"};
+// }
 p.txt-important {
 	position:relative; padding-left:20px; line-height:20px; font-size:15px;
 	&:before {display:block; position:absolute; left:0; top:2px; content: "※"; margin-right:2px;}
@@ -522,7 +511,7 @@ p.txt-important {
 }
 
 
-@media (max-width:1279px) {
+@media (max-width:1319px) {
 
 	/* COMMON */
 	#header {
@@ -638,6 +627,15 @@ p.txt-important {
 
 
 	/* BUTTON */
+	.btn-search {
+		height:40px; font-size:0.7rem; line-height:40px;
+		&:before {top:0; vertical-align:middle;}
+	}
+
+	.btn-type1 {
+		min-width:6.2rem; height:1.5rem; padding:0 0.8rem; line-height:1.5rem;  font-size:0.8rem;;
+		&.color01 {background:#eca414; color:#fff;}
+	}
 
 	/* TITLE */
 
@@ -647,10 +645,33 @@ p.txt-important {
 	.sel-type1 {
 		select {width:100%}
 	}
+	.sel-type2 {
+		select {height:40px; width:100%; padding:0 0.7rem; font-size:0.7rem; @include background("common/ipt-sel2.png",no-repeat 100% 50%); background-size: auto 100%;}
+	}
+
+	.inp-type1 {
+		height:40px; width:100%; padding:0 0.7rem; font-size:0.7rem;
+	}
 
 	/* TAB */
 	.tab-zone {
 		li a {font-size:16px;}
+	}
+
+	/* LIST */
+	p.txt-dotted {
+		padding-left:0.7rem; font-size:0.7rem; line-height:1.5rem;
+	}
+	.txt-dotted {
+		& > li {padding-left:0.7rem; font-size:0.7rem; line-height:1.5rem;}
+	}
+	p.txt-dotted2 {
+		padding-left:0.7rem; font-size:0.7rem; line-height:1rem;
+		&:before {top:0.4rem; width:0.3rem; height:0.3rem; }
+	}
+	.txt-dotted2 {
+		& > li {padding-left:0.7rem; font-size:0.7rem; line-height:1rem; letter-spacing:-1px}
+		& > li:before {top:0.4rem; width:0.2rem; height:0.2rem;}
 	}
 
 
