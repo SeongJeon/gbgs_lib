@@ -19,27 +19,27 @@
 .gallery-info .tab-con .slider.room .inner {position:relative;}
 .gallery-info .tab-con .slider.room .img {}
 .gallery-info .tab-con .slider.room .info {}
-.gallery-info .tab-con .slider.room .info .tit {position:absolute; left:334px; top:0; font-size:15px; color:#fff; z-index:10;}
+.gallery-info .tab-con .slider.room .info .tit {position:absolute; left:334px; top:0; color:#fff; z-index:10;}
 .gallery-info .tab-con .slider.room .info .txt {margin:30px 0 0; font-size:16px; text-align:center; color:#010101;}
 .gallery-info .tab-con .slider.room .info .txt span {}
 .gallery-info .tab-con .slider.room .slick-arrow {position:absolute; width:30px; height:35px; text-indent:-9999px; z-index:100;}
 .gallery-info .tab-con .slider.room .slick-prev {right:75px; top:6px; background:url(../images/use/slick-arrow.png) no-repeat 8px 5px;}
 .gallery-info .tab-con .slider.room .slick-next {right:8px; top:6px; background:url(../images/use/slick-arrow.png) no-repeat -60px 5px;}
 .gallery-info .tab-con .slider.room .custom-paging {position:absolute; right:46px; top:13px; z-index:2;}
-.gallery-info .tab-con .slider.room .custom-paging > li {display:none; font-size:15px; color:#fff;}
+.gallery-info .tab-con .slider.room .custom-paging > li {display:none; color:#fff;}
 .gallery-info .tab-con .slider.room .custom-paging > li.slick-active {display:inline-block;}
 
 .use .h3_wrap {position:relative; }
 .use .h3 {margin:50px 0 24px;}
-.use .h4 {margin:45px 0 0;}
+.use .h4 {margin:45px 0 10px;}
 .use .h3_wrap .txt-important {position:absolute; right:0; top:18px; font-size:16px; color:#ff002a;}
 .use .top-banner {position:relative; display:-webkit-box; display:box; min-height:153px; margin:54px 0 0; background:#f1fafe; border-top:3px solid #daeff9; box-sizing:border-box;}
 .use .top-banner:before {position:absolute; left:0; top:-3px; display:block; content:""; width:136px; height:3px; background:#4089c1;}
 .use .top-banner:after {position:absolute; left:0; top:0; display:block; content:""; width:3px; height:49px; background:#4089c1;}
-.use .top-banner .inner {display:-webkit-box; display:box; -webkit-box-pack:center; box-pack:center; width:100%; padding:25px 0;}
-.use .top-banner .inner > * {display:-webkit-box; display:box; -webkit-box-orient:vertical; box-orient:vertical; -webkit-box-pack:center; box-pack:center;}
-.use .top-banner .inner .img {}
-.use .top-banner .inner .txt-bul {margin:0 0 0 33px; padding:0 0 0 40px; border-left:1px solid #bcdae7;}
+.use .top-banner .inner {display:table; margin:0 auto; padding:25px 20px;}
+.use .top-banner .inner > * {display:table-cell; vertical-align:middle;}
+.use .top-banner .inner .img {padding-right:35px; }
+.use .top-banner .inner .txt-bul {padding:0 0 0 40px; border-left:1px solid #bcdae7;}
 .use .top-banner .inner .txt-bul > li {font-weight:bold;}
 .use .top-banner.book .inner .img {margin-top:-12px;}
 
@@ -51,11 +51,19 @@
 /*bullet*/
 .use .txt-bul {text-align:left;}
 .use .txt-bul > li,
-.use p.txt-bul {position:relative; padding-left:14px; font-size:15px; line-height:26px;}
+.use p.txt-bul {position:relative; padding-left:14px;line-height:26px;}
 .use .txt-bul > li:before,
 .use p.txt-bul:before {display:block; content:""; position:absolute; left:0; top:10px; width:5px; height:5px; border-radius:2px; background:#4089c1;}
 .use .bg-txt-list {margin-top:10px; padding:10px 20px 9px; background:#ecf8fe; font-size:16px; line-height:26px; color:#383838;}
 .use .bg-txt-list:before {content:"-"; margin-right:5px; color:#2a5caa;}
+.use .list-dash {text-align: left; }
+.use .list-dash > li {position: relative; padding-left: 10px; }
+.use .list-dash > li:after {position: absolute; top: 0; left: 0; content: "-"; }
+.use .list-num {}
+.use .list-num > li {margin-top:4px;text-indent:-16px; padding-left:16px;}
+.use .bg-box-list {margin:19px 0 13px; padding:14px 15px 12px; text-indent:0; background:#f1fafe;}
+.use .bg-box-list ul {}
+.use .bg-box-list ul > li {padding-left:23px; text-indent:-23px; line-height:26px; color:#010101;}
 
 .use .list-notes {padding:0 0 30px; background:url(../images/use/bg-list-notes.png) no-repeat right top;}
 .use .list-notes ul {margin-top:20px;}
@@ -69,5 +77,43 @@
 .use .donation-process ol > li > * {display:table-cell; vertical-align:middle;}
 .use .donation-process ol > li:after {display:block; content:""; clear:both;}
 .use .donation-process ol > li .num {position:absolute; left:-30px; width:46px; height:46px; background:#30809f; font-size:21px; color:#fff; font-weight:bold; border-radius:46px; text-align:center; line-height:46px; border:7px solid #c9e3ef;}
-.use .donation-process ol > li .txt {}
+
+.use .service-area {position:relative; margin-top:30px;}
+.use .service-area:before {display:block; content:""; height:55px; background:url(../images/use/service-area-t.png) no-repeat; background-size:cover;}
+.use .service-area:after {display:block; content:""; height:55px; background:url(../images/use/service-area-b.png) no-repeat; background-size:cover;}
+.use .service-area .inner  {background:url(../images/use/service-area-m.png) repeat-y; background-size:contain;}
+.use .service-area .tit {font-size:26px; text-align:center; color:#000; line-height:1; font-weight:normal;}
+.use .service-area .tit .tail {display:block; margin-top:12px; font-size:14px; color:#8aa9be; letter-spacing:6px;}
+.use .service-area .list {margin-top:50px; text-align:center;}
+.use .service-area .list ul {display:inline-block; text-align:left; }
+.use .service-area .list ul > li {display:table; margin-top:12px; font-size:16px; color:#010101; line-height:26px; letter-spacing:-1px; font-weight:bold;}
+.use .service-area .list ul > li:first-child {margin-top:0;}
+.use .service-area .list ul > li > * {display:table-cell;}
+.use .service-area .list ul > li .num {padding-right:15px; font-size:20px; color:#8aa9be;}
+
+
+
+@media (max-width: 1319px) {
+	.use .top-banner .inner .img {text-align:center;}
+	.use .service-area:before {height:4.5rem; background-size:cover;}
+	.use .service-area:after {height:4.5rem; background-size:cover;}
+	.use .service-area .tit {font-size:2.3rem;}
+	.use .service-area .tit .tail {font-size:1rem;}
+	.use .service-area .list ul > li,
+	.use .service-area .list ul > li .num {font-size:1rem;}
+}
+@media (max-width: 1024px) {
+	.use .service-area:before {background:url(../images/use/service-area-t.png) no-repeat left bottom; background-size:contain;}
+	.use .service-area:after {background-size:contain;}
+}
+@media (max-width: 768px) {
+	.use .service-area {margin-top:0;}
+	.use .service-area .list {margin-top:3rem; padding:0 5rem;}
+	.use .service-area:before {background:url(../images/use/service-area-t.png) no-repeat left bottom; background-size:contain;}
+	.use .service-area:after {background-size:contain;}
+}
+@media (max-width: 360px) {
+
+	.use .service-area .list ul > li {font-size:1rem;}
+}
 
