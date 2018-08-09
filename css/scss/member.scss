@@ -1,0 +1,49 @@
+@charset "utf-8";
+.member {
+  .top-banner {
+    position: relative;
+    display: -webkit-box;
+    display: box;
+    padding: 25px 30px;
+    background: #f1fafe;
+    border-top: 3px solid #daeff9;
+    box-sizing: border-box;
+    line-height: 26px;
+    &:before {
+      position: absolute;
+      top: -3px;
+      left: 0;
+      display: block;
+      width: 136px;
+      height: 3px;
+      background: #4089c1;
+      content: "";
+    }
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 3px;
+      height: 49px;
+      background: #4089c1;
+      content: "";
+    }
+  }
+  .h3 {
+    margin: 40px 0 22px;
+  }
+  .list-dash {
+    text-align: left;
+    li {
+      position: relative;
+      padding-left: 10px;
+      &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "-";
+      }
+    }
+  }
+}
