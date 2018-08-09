@@ -5,11 +5,13 @@
   .content-zone {
     position: relative;
   }
+
   .tit-sub {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: normal;
   }
+
   .img-txt {
     margin-bottom: 44px;
   }
@@ -57,8 +59,7 @@
       }
     }
   }
-
-  .content-history {
+  .history {
     position: relative;
     li {
       overflow: hidden;

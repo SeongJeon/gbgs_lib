@@ -1,129 +1,45 @@
-.introduce .content-zone {
-  position: relative;
-}
+.introduce .content-zone { position: relative; }
 
-.introduce .tit-sub {
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-weight: normal;
-}
+.introduce .tit-sub { margin-bottom: 10px; font-size: 20px; font-weight: normal; }
 
-.introduce .img-txt {
-  margin-bottom: 44px;
-}
+.introduce .img-txt { margin-bottom: 44px; }
 
-.introduce .box-txt {
-  width: 560px;
-}
+.introduce .box-txt { width: 560px; }
 
-.introduce .box-txt p {
-  margin-bottom: 30px;
-}
+.introduce .box-txt p { margin-bottom: 30px; }
 
-.introduce .box-txt span {
-  color: #fb5521;
-}
+.introduce .box-txt span { color: #fb5521; }
 
-.introduce .box-txt em {
-  color: #fb5521;
-  font-weight: bold;
-}
+.introduce .box-txt em { color: #fb5521; font-weight: bold; }
 
-.introduce .box-img {
-  position: absolute;
-  top: 45px;
-  right: 0;
-}
+.introduce .box-img { position: absolute; top: 45px; right: 0; }
 
-.introduce .tab-zone {
-  margin-bottom: 50px;
-}
+.introduce .tab-zone { margin-bottom: 50px; }
 
-.introduce .h3 {
-  margin-bottom: 30px;
-}
+.introduce .h3 { margin-bottom: 30px; }
 
-.introduce .tbl-type1 {
-  font-size: 15px;
-}
+.introduce .tbl-type1 { font-size: 15px; }
 
-.introduce .tbl-type1 td {
-  padding: 12px 10px;
-  word-break: break-all;
-}
+.introduce .tbl-type1 td { padding: 12px 10px; word-break: break-all; }
 
-.introduce .list-dash {
-  text-align: left;
-}
+.introduce .list-dash { text-align: left; }
 
-.introduce .list-dash li {
-  position: relative;
-  padding-left: 10px;
-}
+.introduce .list-dash li { position: relative; padding-left: 10px; }
 
-.introduce .list-dash li:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "-";
-}
+.introduce .list-dash li:after { position: absolute; top: 0; left: 0; content: "-"; }
 
-.introduce .content-history {
-  position: relative;
-}
+.introduce .history { position: relative; }
 
-.introduce .content-history li {
-  overflow: hidden;
-  margin-top: 54px;
-}
+.introduce .history li { overflow: hidden; margin-top: 54px; }
 
-.introduce .content-history li:first-child {
-  margin: 0;
-}
+.introduce .history li:first-child { margin: 0; }
 
-.introduce .content-history:after {
-  position: absolute;
-  top: 18px;
-  left: 104px;
-  width: 1px;
-  height: 93%;
-  border-left: 1px solid #d8dadb;
-  content: "";
-}
+.introduce .history:after { position: absolute; top: 18px; left: 104px; width: 1px; height: 93%; border-left: 1px solid #d8dadb; content: ""; }
 
-.introduce .content-history dt {
-  position: relative;
-  float: left;
-  padding-right: 37px;
-  font-size: 24px;
-  font-weight: bold;
-  font-style: italic;
-}
+.introduce .history dt { position: relative; float: left; padding-right: 37px; font-size: 24px; font-weight: bold; font-style: italic; }
 
-.introduce .content-history dt:after {
-  display: block;
-  position: absolute;
-  top: 15px;
-  right: 0;
-  width: 8px;
-  height: 8px;
-  background: #257d92;
-  border-radius: 50%;
-  z-index: 10;
-  content: " ";
-}
+.introduce .history dt:after { display: block; position: absolute; top: 15px; right: 0; width: 8px; height: 8px; background: #257d92; border-radius: 50%; z-index: 10; content: " "; }
 
-.introduce .content-history dd {
-  float: left;
-  margin-left: 54px;
-  padding: 9px 0 0 29px;
-  text-indent: -54px;
-  font-size: 16px;
-  font-style: italic;
-}
+.introduce .history dd { float: left; margin-left: 54px; padding: 9px 0 0 29px; text-indent: -54px; font-size: 16px; font-style: italic; }
 
-.introduce .content-history em {
-  margin-right: 30px;
-  font-weight: bold;
-  font-style: italic;
-}
+.introduce .history em { margin-right: 30px; font-weight: bold; font-style: italic; }
