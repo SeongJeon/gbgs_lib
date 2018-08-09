@@ -67,25 +67,25 @@
 					<ul>
 						<li class="gs-lib">
 							<a href="#">
-								<h2 class="lib-name">경산시립도서관 <span class="small">GYEONGSAN CITY LIBRARY</span></h2>
+								<h2 class="lib-name">경산시립도서관 <span class="small">GYEONGSAN CITY <br>LIBRARY</span></h2>
 								<div class="lib-noti-day">이달의 휴관일 : <span class="days">2일, 15일, 24일</span></div>
 							</a>
 						</li>
 						<li class="js-lib">
 							<a href="#">
-								<h2 class="lib-name">장산도서관 <span class="small">JANGSAN CITY LIBRARY</span></h2>
+								<h2 class="lib-name">장산도서관 <span class="small">JANGSAN CITY <br>LIBRARY</span></h2>
 								<div class="lib-noti-day">이달의 휴관일 : <span class="days">2일, 15일, 24일</span></div>
 							</a>
 						</li>
 						<li class="sc-lib">
 							<a href="#">
-								<h2 class="lib-name">작은도서관 <span class="small">SAMLL CITY LIBRARY</span></h2>
+								<h2 class="lib-name">작은도서관 <span class="small">SAMLL CITY <br>LIBRARY</span></h2>
 								<div class="lib-noti-day">이달의 휴관일 : <span class="days">2일, 15일, 24일</span></div>
 							</a>
 						</li>
 						<li class="ec-lib">
 							<a href="#">
-								<h2 class="lib-name">전자도서관 <span class="small">ELECTRONIC CITY LIBRARY</span></h2>
+								<h2 class="lib-name">전자도서관 <span class="small">ELECTRONIC CITY <br>LIBRARY</span></h2>
 								<div class="lib-noti-day">이달의 휴관일 : <span class="days">2일, 15일, 24일</span></div>
 							</a>
 						</li>
@@ -411,6 +411,32 @@
 		<aside> <!-- /gbgs_lib/html/include/aside.html --> </aside>
 
 		<footer><!-- /gbgs_lib/html/include/footer.html --> </footer>
+
+		<!-- 처음 방문하셨나요? 레이어팝업  -->
+		<article>
+			<div id="layer" class="layer--firstvisit open"><!-- 레이어 오픈시 open 클래스 추가 -->
+				<div class="layer-inner">
+					<div class="layer-container">
+						<div class="layer-header">
+							<h2 class="layer-title"><img src="/gbgs_lib/images/common/img-firstlayer-tit.png" alt="처음 방문하셨나요?"></h2>
+							<p class="desc">경산의 대표도서관! 경산시립도서관에 오신것을 환영합니다. <br>핵심 바로가기를 이곳에서 클릭하세요!</p>
+						</div>
+						<div class="layer-content">
+							<ul class="lst-firstvisit">
+								<li><a href="#" class="icon-visit1"><span>도서관 이용시간</span></a></li>
+								<li><a href="#" class="icon-visit2"><span>봉사활동신청</span></a></li>
+								<li><a href="#" class="icon-visit3"><span>대출&middot;연장&middot;예약&middot;반납</span></a></li>
+								<li><a href="#" class="icon-visit4"><span>인사말</span></a></li>
+								<li><a href="#" class="icon-visit5"><span>자료실안내</span></a></li>
+								<li><a href="#" class="icon-visit6"><span>설문조사</span></a></li>
+							</ul>
+						</div>
+						<p class="close"><button type="button" onclick="gbgs.layerCloseEvent(this)"><span>처음 방문하셨나요 레이어 팝업 닫기</span></button></p>
+					</div>
+				</div>
+			</div>
+		</article>
+		<!-- //처음 방문하셨나요? 레이어팝업  -->
 	</div>
 </body>
 </html>

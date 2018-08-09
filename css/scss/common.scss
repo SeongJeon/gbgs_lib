@@ -424,31 +424,63 @@ p.txt-important {
 
 /* LAYER */
 #layer {
-	display:table; position: fixed; width:100%; height:100%; left:0; top:0;
-	background:rgba(0,0,0,0.5); z-index: 100000;
+	display:none; position:fixed; min-width:320px; width:100%; height:100%; left:0; top:0; background:rgba(0,0,0,0.6); z-index: 100000;
+	&.open {display:table}
 	.layer-inner {
 		display: table-cell; width:100%; height:100%;vertical-align: middle;
 		.layer-container {
-			width:1080px; margin:50px auto; position: relative; border:2px solid $color1; background: #fff;
-			&.small {width:480px;}
-			&.large {width:1566px;}
-			&.medium {width:790px;}
-			&.medium2 {width:945px;}
+			position: relative; width:1320px; margin:50px auto; background: #fff;
+
+			// layer header zone
 			.layer-header {
-				.layer-title {padding:0 25px; margin:-2px -2px 0; font-size:20px; color:#fff; font-weight:700; line-height: 65px;}
-				@include background("common/bg-layer.jpg",repeat-x 0 50%);
+				.layer-title {text-align:center;}
+				.desc {font-size:16px; color:#fff; font-family:$font4; line-height:24px; text-align:center;}
 			}
-			.close {position:absolute; right:20px; top:12px;
+			// layer clse btn
+			.close {position:absolute; right:0; top:0;
 				button {
-					position: relative; overflow: hidden; width:41px; height:41px; border-radius: 100px; background: #14668f;
+					position: relative; overflow: hidden; width:48px; height:48px; background: rgba(0,0,0,0.4);
 					span {display: inline-block; text-indent:-999em;}
 
-					&:before {display: block; position: absolute; left:10px; top:20px; content: ""; width:20px; height:1px; background: #fff; -webkit-transform:rotate(45deg);transform:rotate(45deg)}
-					&:after {display: block; position: absolute; left:10px; top:20px; content: ""; width:20px; height:1px; background: #fff; -webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
+					&:before {display: block; position: absolute; left:12px; top:23px; content: ""; width:27px; height:1px; background: #fff; -webkit-transform:rotate(45deg);transform:rotate(45deg)}
+					&:after {display: block; position: absolute; left:12px; top:23px; content: ""; width:27px; height:1px; background: #fff; -webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
+				}
+			}
+			// layer content
+			.layer-content {
+
+			}
+		}
+	}
+	// 처음방문 레이어
+	&.layer--firstvisit {
+		.layer-container {width:660px;}
+		.layer-header {
+			height:180px; @include background("common/bg-firstlayer.jpg", no-repeat 0 0);
+			.layer-title {padding:48px 0 12px;}
+		}
+		.layer-content {
+			padding:42px 32px 50px;
+			.lst-firstvisit {
+				&:after {display:block; clear:both; content:""}
+				li {
+					float:left; width:33.3%; text-align:center;
+					&:nth-child(4) {clear:both;}
+					&:nth-child(3) ~ li {margin-top:44px;}
+				}
+				a {
+					display:inline-block; margin:0 auto; font-family:$font4; font-size:16px; color:#353535;
+					span {display:block; margin-top:14px;}
+					&:before {display:block; content:""; width:123px; height:124px; margin:0 auto; }
+					&.icon-visit1:before {@include background("icon/icon-firstvisit1.png",no-repeat 0 0);}
+					&.icon-visit2:before {@include background("icon/icon-firstvisit2.png",no-repeat 0 0);}
+					&.icon-visit3:before {@include background("icon/icon-firstvisit3.png",no-repeat 0 0);}
+					&.icon-visit4:before {@include background("icon/icon-firstvisit4.png",no-repeat 0 0);}
+					&.icon-visit5:before {@include background("icon/icon-firstvisit5.png",no-repeat 0 0);}
+					&.icon-visit6:before {@include background("icon/icon-firstvisit6.png",no-repeat 0 0);}
 				}
 			}
 		}
-
 	}
 }
 
@@ -676,12 +708,9 @@ p.txt-important {
 
 
 
-	/* LAYER */
-	#layer .layer-inner .layer-container {width:95%;
-		&.large {width: 95%}
-		&.medium {width: 95%}
-		&.medium2 {width: 95%}
-	}
+
+
+	.mobile #layer.layer--firstvisit {display:none !important}
 }
 @media (max-width:768px) {
 	/* COMMON */
@@ -713,23 +742,19 @@ p.txt-important {
 
 
 	/* BUTTON */
-	// .btn-zone {
-	// 	&.flex, .flex {display:table; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex; width:100%;
-	// 		& > * {display: table-cell; flex:1; text-align:center;}
-	// 		& > *:first-child:nth-last-of-type(2),
-	// 		& > *:first-child:nth-last-of-type(2)~* {width:50%; }
-	// 		& > *:first-child:nth-last-of-type(3),
-	// 		& > *:first-child:nth-last-of-type(3)~* {width:33.3%; }
-	// 		& > *:first-child:nth-last-of-type(4),
-	// 		& > *:first-child:nth-last-of-type(4)~* {width:25%; }
-	// 	}
-	// }
+	.btn-search {
+		width:4.4rem; height:2rem; font-size:0.8rem; line-height:2rem;
+		&:before {width:1rem; height:1.1rem; margin-right:0.3rem;}
+	}
+
 
 
 	/* TITLE */
 	/* ICON */
 
 	/* TABLE */
+
+
 	/* FORM */
 	// .check-type1 {
 	// 	label {padding-left:25px;font-size:11px;}
@@ -738,6 +763,13 @@ p.txt-important {
 	// }
 	.sel-type1 {
 		select {height:28px; width:100%; padding:0 8px; font-size:10px; background-size:auto 30%; letter-spacing:-1px}
+	}
+	.sel-type2 {
+		select {height:2rem; padding:0 0.8rem; font-size:0.8rem; background-size:auto 100%;}
+	}
+
+	.inp-type1 {
+		height:2rem; width:100%; padding:0 0.8rem;  font-size:0.8rem;
 	}
 
 	/* PAGING */
@@ -789,27 +821,37 @@ p.txt-important {
 
 
 	/* LAYER */
+	/* LAYER */
 	#layer {
 		.layer-inner {
 			.layer-container {
-				margin:20px auto;
-				&.small {width: 95%}
-				&.large {width: 95%}
-				&.medium {width: 95%}
+				width:95%;
 				.layer-header {
-					.layer-title {padding-left:10px; font-size:12px;line-height: 40px;}
-					@include background("common/bg-layer.jpg",repeat-x 0 50%);
+					.desc {font-size:0.9rem; line-height:1.3rem;}
 				}
 				.close {
-					right:10px; top:5px;
 					button {
-						width:25px; height:25px;
-						&:before {left:5px; top:12px; width:16px;}
-						&:after {left:5px; top:12px; width:16px; }
+						width:2.5rem; height:2.5rem;
+						&:before {left:0.5rem; top:1.2rem; width:1.5rem}
+						&:after {left:0.5rem; top:1.2rem;  width:1.5rem}
 					}
 				}
 			}
+		}
 
+		// 처음방문 레이어팝업
+		&.layer--firstvisit {
+			.layer-header  {
+				height:9.3rem; background-size:cover;
+				.layer-title {padding-top:2.3rem;}
+			}
+			.layer-content {
+				padding:2rem 1rem 2.5rem;
+				.lst-firstvisit a	{
+					font-size:0.9rem; letter-spacing:-1px;
+					&:before {width:6.3rem; height:6.3rem; background-size:auto 100% !important;}
+				}
+			}
 		}
 	}
 }

@@ -42,7 +42,7 @@
 
 	/* 작은 도서관 영역 */
 	.main-small-lib-zone {
-		background:#eef2f1; padding-bottom:50px;
+		background:#eef2f1; padding:0 0 50px;
 		ul{
 			position:relative; max-width:1320px; margin:-66px auto 0; box-shadow:0 5px 10px rgba(0,0,0,0.2); border-radius:8px; z-index:1; background:#fff;
 			&:after {display:block; clear:both; content:""}
@@ -62,6 +62,7 @@
 			position:relative; padding-top:7px; font-family:$font5; font-size:24px;  z-index:1;-ms-transition:1s ease; -webkit-transition:1s ease; -moz-transition:1s ease; transition:1s ease; //transition-property:color;
 			.small {display:block; margin-top:6px; font-size:14px; color:#afafb0; letter-spacing:-0.7px; }
 			&:before {display:block; position:absolute; left:0; top:-4px; height:65px; content:""; opacity:1}
+			br {display:none}
 		}
 		.lib-noti-day {
 			margin-top:19px; padding-bottom:2px; border-width:3px; border-radius:100px; border-style:solid; font-size:16px; text-align:center; line-height:37px;
@@ -158,7 +159,7 @@
 	.main-notice-zone {
 		max-width:1320px; margin:-65px auto 0;
 		.notice-inner {
-			overflow:hidden; position:relative; width:980px; height:65px; border:1px solid #ccc; box-sizing:border-box; background:#fff;
+			position:relative; width:980px; height:65px; border:1px solid #ccc; box-sizing:border-box; background:#fff;
 			.tit {
 				position:absolute; left:0; top:0; width:180px; padding:1px 0 1px 20px; margin:-1px 0 -1px -1px; line-height:63px; font-size:20px; font-family:$font3; @include background("main/bg-notice.jpg",no-repeat 50% 50%); background-size:100% 100%; color:#fff; box-sizing:border-box;
 				&:before {display:inline-block; content:""; width:37px; height:63px; margin-right:12px; @include background("main/icon-notice.png",no-repeat 50% 50%); vertical-align:top;}
@@ -359,7 +360,7 @@
 
 		/* 작은 도서관 영역 */
 		.main-small-lib-zone {
-			padding-bottom:2.5rem;
+			padding:0 1rem 2.5rem; margin:0 -1rem;
 			ul{
 				margin:-4.4rem auto 0; border-radius:4px;
 				li {
@@ -374,14 +375,14 @@
 
 			.lib-name {
 				padding-top:7px; font-size:1.2rem;
-				.small {margin-top:0.3rem; font-size:0.7rem;}
+				.small {margin-top:0.3rem; font-size:0.7rem; }
 				&:before {left:0.4rem; height:3.4rem}
 			}
 			.lib-noti-day {margin-top:0.6rem; border-width:1px; padding-bottom:0; font-size:0.8rem;  line-height:2rem; }
 
 			.gs-lib {
 				.lib-name {padding-left:5.3rem !important;color:#00b26b !important;}
-				.lib-name:before {width:4.1rem; background-size:100% auto;}
+				.lib-name:before {width:3.6rem; background-size:100% auto;}
 				.lib-noti-day {border-color:#00b26b; color:#00b26b}
 			}
 			.js-lib {
@@ -391,7 +392,7 @@
 			}
 			.sc-lib {
 				.lib-name {padding-left:6rem !important;color:#2a5caa !important;}
-				.lib-name:before {width:4rem; background-size:100% auto;}
+				.lib-name:before {width:3.6rem; background-size:100% auto;}
 				.lib-noti-day {border-color:#2a5caa;color:#2a5caa}
 			}
 			.ec-lib {
@@ -436,15 +437,16 @@
 		.main-notice-zone {
 			margin:-3.5rem auto 0;
 			.notice-inner {
-				width:100%; height:2.8rem;
+				width:100%; height:2.6rem; box-sizing:content-box;
 				.tit {
-					width:7rem; padding:1px 0 1px 0.9rem; line-height:2.6rem; font-size:0.9rem;
+					width:7.2rem; padding:1px 0 1px 0.9rem; line-height:2.6rem; font-size:0.9rem;
 					&:before {width:1.6rem; height:2.6rem; margin-right:0.5rem; background-size:100% auto;}
 				}
 				.notice-slider {
-					padding:0 2.8rem 0 7rem;
+					padding:0 2.8rem 0 7.2rem;
 					a {padding:0 1rem 0 0.6rem; line-height:2.6rem; font-size:0.8rem; }
 					.date {font-size:0.7rem;}
+					.cont {position:relative; top:-1px;}
 				}
 				.notice-indicator {display:none; }
 				.btn-more {
@@ -514,7 +516,7 @@
 			}
 			.banner-indicator {
 				height:2.5rem;
-				.tit {font-size:0.9rem; line-height:2.5rem;}
+				.tit {font-size:0.9rem; line-height:2.5rem; padding-left:0.9rem}
 				.count {
 					margin-right:0.4rem; font-size:0.8rem; line-height:2.5rem;
 					em {font-size:0.9rem;}
@@ -600,6 +602,7 @@
 }
 @media (max-width:600px) {
 	.main {
+		background-size:12% auto;
 		/* 작은 도서관 영역 */
 		.main-small-lib-zone {
 			.lib-name{
@@ -615,5 +618,36 @@
 		}
 	}
 }
-@media (max-width:360px) {}
-@media (max-width:321px) {}
+@media (max-width:450px) {
+	.main {
+		/* 작은 도서관 영역 */
+		.main-small-lib-zone {
+			.lib-name {
+				br {display:inherit}
+				&:before {background-position: 50% 50% !important; height: 4.3rem !important;}
+			}
+		}
+	}
+}
+@media (max-width:360px) {
+	.main {
+		/* 작은 도서관 영역 */
+		.main-small-lib-zone {
+			.lib-noti-day {letter-spacing:-1px}
+		}
+	}
+}
+@media (max-width:321px) {
+	.main {
+		/* 이달의 새책 */
+		.main-book-zone {
+			.book-inner {
+				.new-books {
+					.txt-dotted {
+						.writer {display:block; float:none; color:#999;}
+					}
+				}
+			}
+		}
+	}
+}
