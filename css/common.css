@@ -73,6 +73,7 @@ select::-ms-expand { display: none; }
 @media (max-width: 430px) { html { font-size: 11px; } }
 @media (max-width: 375px) { html { font-size: 10px; } }
 /* COMMON */
+#header { position: absolute; top: 0; left: 0; width: 100%; background: url("/gbgs_lib/images/common/bg-gnb1.png") no-repeat 0 100%, url("/gbgs_lib/images/common/bg-gnb2.png") no-repeat 100% 130px, #dde5ed; z-index: 10; }
 #header:after { display: block; clear: both; content: ""; }
 #header .utile-zone { background: #30809f; color: #fff; font-size: 13px; }
 #header .utile-zone .inner { overflow: hidden; max-width: 1320px; margin: 0 auto; }
@@ -95,7 +96,7 @@ select::-ms-expand { display: none; }
 #header .utile-zone .join-group .btn-twitter:hover:before { background: url("../images/icon/icon-twitter--on.png") no-repeat 50% 13px; }
 #header .utile-zone .join-group .btn-login:hover:before { background: url("../images/icon/icon-login--on.png") no-repeat 50% 10px; }
 #header .utile-zone .join-group .btn-join:hover:before { background: url("../images/icon/icon-join--on.png") no-repeat 50% 11px; }
-#header .header-zone { position: relative; height: 90px; }
+#header .header-zone { position: relative; height: 90px; background: #fff; }
 #header .logo { position: absolute; left: 0; top: 0; margin: 15px 0 0 74px; }
 #header .logo a { display: block; }
 #header .lib-group { position: absolute; right: 0; top: 0; }
@@ -106,14 +107,26 @@ select::-ms-expand { display: none; }
 #header .lib-group a.btn-lib:before { display: block; content: ""; height: 28px; background: url("../images/icon/icon-lib.png") no-repeat 50% 0; margin: 15px 0 8px; }
 #header .lib-group a.btn-sitemap { overflow: hidden; background: #eeeee2; }
 #header .lib-group a.btn-sitemap:before { display: block; content: ""; height: 28px; background: url("../images/icon/icon-sitemap.png") no-repeat 50% 0; margin: 24px 0 13px; }
+#header .lib-group a.btn-menu { display: none; overflow: hidden; background: #eeeee2; }
+#header .lib-group a.btn-menu:before { display: block; content: ""; height: 28px; background: url("../images/icon/icon-sitemap.png") no-repeat 50% 0; margin: 24px 0 13px; }
 #header #gnb { position: relative; max-width: 1320px; margin: 0 auto; }
 #header #gnb .menu { padding: 33px 0 0; text-align: right; }
 #header #gnb .menu:after { display: block; clear: both; content: ""; }
-#header #gnb .menu > li { display: inline-block; width: 180px; text-align: center; }
-#header #gnb .menu > li h2 { line-height: 1; }
-#header #gnb .menu > li a { font-family: "NanumGothic-Bold", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: normal; font-size: 20px; color: #000; }
-#header #gnb .menu > li a:hover { color: #2a5caa; }
-#header #gnb .menu .depth { display: none; }
+#header #gnb .menu > li { position: relative; display: inline-block; width: 180px; text-align: center; margin-left: -5px; }
+#header #gnb .menu > li li:first-child { margin-left: 0; }
+#header #gnb .menu > li h2 { line-height: 1; padding-bottom: 29px; }
+#header #gnb .menu > li h2 a { font-family: "NanumGothic-Bold", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: normal; font-size: 20px; color: #000; }
+#header #gnb .menu > li h2 a:hover, #header #gnb .menu > li h2 a.current { color: #2a5caa; }
+#header #gnb .menu .depth { display: none; position: absolute; left: 0; top: 100%; z-index: 10; width: 100%; border-top: 4px solid #fff; }
+#header #gnb .menu .depth h3 a { font-size: 16px; color: 000; font-family: "NanumGothic-Regular", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: normal; }
+#header #gnb .menu .depth h3 a:hover, #header #gnb .menu .depth h3 a.current { font-family: "NanumGothic-Bold", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; border-bottom: 1px solid #2a5caa; color: #2a5caa; }
+#header #gnb .menu .depth ul { border-left: 1px solid #fff; height: 350px; width: 100%; padding: 25px 20px 0; background: #dde5ed; box-sizing: border-box; }
+#header #gnb .menu .depth ul li + li { margin-top: 10px; }
+#header #gnb .menu .depth ul a { font-size: 15px; }
+#header #gnb .menu li.on h2 a { color: #2a5caa; }
+#header #gnb .menu li.on .depth { border-top: 4px solid #2a5caa; }
+#header #gnb .menu li.on .depth ul { background: #eff9fe; }
+#header #m-gnb { display: none; }
 
 #footer { padding-bottom: 85px; border-top: 2px solid #595959; }
 #footer .footer-banner-zone { padding: 15px 0; border-bottom: 1px solid #ccc; }
@@ -124,8 +137,8 @@ select::-ms-expand { display: none; }
 #footer .footer-banner-zone .banner-tit-zone .btn-prev { width: 10px; height: 17px; background: url("../images/button/btn-footer-prev.png") no-repeat 50% 50%; background-size: auto 100%; text-indent: -9999em; }
 #footer .footer-banner-zone .banner-tit-zone .btn-next { width: 10px; height: 17px; background: url("../images/button/btn-footer-next.png") no-repeat 50% 50%; background-size: auto 100%; text-indent: -9999em; }
 #footer .footer-banner-zone .banner-tit-zone .btn-stop { width: 10px; height: 17px; margin: 0 9px; background: url("../images/button/btn-footer-stop.png") no-repeat 50% 50%; background-size: auto 100%; text-indent: -9999em; }
-#footer .footer-banner-zone .banner-slider { overflow: hidden; position: relative; padding: 0 15.3% 0 14%; }
-#footer .footer-banner-zone .banner-slider .slick-slide { float: left; padding-right: 17px; }
+#footer .footer-banner-zone .banner-slider { overflow: hidden; position: relative; padding: 0 5% 0 14%; }
+#footer .footer-banner-zone .banner-slider .slick-slide { float: left; padding-right: 10px; }
 #footer .footer-banner-zone .banner-slider a { display: block; width: 100%; height: 50px; box-sizing: border-box; border: 1px solid #eff0f1; }
 #footer .footer-banner-zone .banner-slider img { width: 100%; height: 100%; }
 #footer .footer-banner-zone .btn-banner-more { position: absolute; top: 50%; right: 0; margin-top: -11px; }
@@ -170,7 +183,7 @@ select::-ms-expand { display: none; }
 #aside .quick-menu span { display: none; opacity: 0; -ms-transition: 0.4s ease; -moz-transition: 0.4s ease; -webkit-transition: 0.4s ease; transition: 0.4s ease; line-height: 42px; padding: 0 0 2px 45px; color: #fff; }
 
 /* SUB LAYOUT */
-#container { position: relative; width: 100%; margin: 0 auto; }
+#container { position: relative; width: 100%; margin: 130px auto 0; }
 #container .top-visual-zone { height: 200px; background: #e0e0e0; text-align: center; background: url("../images/common/bg-topvisual.jpg") no-repeat 50% 0; background-size: cover; }
 #container .top-visual-zone p { height: 100%; background: url("../images/common/img-topvisual-txt.png") no-repeat 50% 50%; text-indent: -999em; }
 #container .container-inner { position: relative; max-width: 1320px; margin: 0 auto; }
@@ -332,22 +345,57 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 2px; 
 .tbl-type1 tbody th { background: #ecf8fe; font-family: "Nanum Square R", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 
 @media (max-width: 1680px) { #header #gnb .menu { padding: 33px 180px 0 0; }
-  #header #gnb .menu > li { width: 11%; } }
-@media (max-width: 1319px) { /* COMMON */
+  #header #gnb .menu > li { width: 12%; }
+  #header #gnb .menu .depth ul { padding-left: 15px; padding-right: 15px; }
+  #header #gnb .menu .depth ul a { font-size: 13px; } }
+@media (max-width: 1319px) { /* HEADER */
+  #header { position: static; }
   #header .utile-zone { display: none; }
   #header .header-zone { height: auto; border-top: 6px solid #30809f; }
-  #header .logo { position: static; margin: 15px 0; text-align: center; }
+  #header .logo { position: static; padding: 15px 0; margin: 0; text-align: center; }
   #header .logo a { display: inline-block; height: 40px; }
   #header .logo img { height: 100%; width: auto; }
   #header .lib-group { position: static; }
   #header .lib-group li { float: none; }
-  #header .lib-group a { display: block; position: absolute; top: 50%; width: 48px; height: 48px; margin-top: -18px; }
+  #header .lib-group a { display: block; position: absolute; top: 50%; width: 48px; height: 48px; margin-top: -24px; }
   #header .lib-group a span { display: inline-block; position: absolute; left: 0; top: 0; overflow: hidden; width: 1px; height: 1px; text-indent: -999em; }
   #header .lib-group a.btn-lib { left: 0; }
   #header .lib-group a.btn-lib:before { height: 48px; margin: 0; background-position: 50% 50%; background-size: auto 50%; }
-  #header .lib-group a.btn-sitemap { right: 0; }
-  #header .lib-group a.btn-sitemap:before { height: 48px; margin: 0; background-position: 50% 50%; background-size: auto 30%; }
+  #header .lib-group a.btn-sitemap { display: none; }
+  #header .lib-group a.btn-menu { right: 0; display: block; }
+  #header .lib-group a.btn-menu:before { height: 48px; margin: 0; background-position: 50% 50%; background-size: auto 30%; }
   #header #gnb { display: none; }
+  #header #m-gnb { display: none; position: fixed; right: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1000; opacity: 0; }
+  #header #m-gnb .inner { position: relative; width: 72%; height: 100%; margin-left: auto; max-width: 400px; background: #fff; }
+  #header #m-gnb .inner .gnb-tit { padding: 0 1.5rem; line-height: 5.2rem; font-size: 1.7rem; font-family: "Nanum Square B", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; background: #30809f; }
+  #header #m-gnb .inner .btn-close { position: absolute; top: 0; right: 0; }
+  #header #m-gnb .inner .btn-close a { display: block; position: relative; height: 5.2rem; width: 5.2rem; text-indent: -9999em; background: rgba(0, 0, 0, 0.5); }
+  #header #m-gnb .inner .btn-close a:before { display: block; content: ""; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: url("../images/button/btn-close.png") no-repeat 50% 50%; background-size: auto 40%; }
+  #header #m-gnb .gnb { overflow-y: scroll; height: calc(100% - 5.2rem); padding: 0 1rem; }
+  #header #m-gnb .gnb .signup-group { padding: 1.5rem 0.7rem 1.2rem; border-bottom: 1px solid #004059; }
+  #header #m-gnb .gnb .signup-group ul { display: -webkit-box; display: -webkit-flex; display: flex; }
+  #header #m-gnb .gnb .signup-group ul li { flex: 1; }
+  #header #m-gnb .gnb .signup-group ul li + li { margin-left: 0.7rem; }
+  #header #m-gnb .gnb .signup-group ul a { display: block; width: 100%; line-height: 2.9rem; text-align: center; border-width: 1px; border-style: solid; font-family: "NanumGothic-Regular", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #555; font-size: 1rem; }
+  #header #m-gnb .gnb .signup-group ul a:before { display: inline-block; height: 2.9rem; content: ""; vertical-align: top; }
+  #header #m-gnb .gnb .signup-group ul a.icon-login { border-color: #89c5b3; }
+  #header #m-gnb .gnb .signup-group ul a.icon-login:before { width: 0.9rem; margin-right: 0.6rem; background: url("../images/icon/icon-m-login.png") no-repeat 50% 50%; background-size: 100% auto; }
+  #header #m-gnb .gnb .signup-group ul a.icon-join { border-color: #30809f; }
+  #header #m-gnb .gnb .signup-group ul a.icon-join:before { width: 1.4rem; margin-right: 0.5rem; background: url("../images/icon/icon-m-join.png") no-repeat 50% 50%; background-size: 100% auto; }
+  #header #m-gnb .gnb .signup-group ul a.icon-mypage { border-color: #89c5b3; }
+  #header #m-gnb .gnb .signup-group ul a.icon-mypage:before { width: 1.4rem; margin-right: 0.5rem; background: url("../images/icon/icon-m-mypage.png") no-repeat 50% 50%; background-size: 100% auto; }
+  #header #m-gnb .gnb .signup-group ul a.icon-logout { border-color: #30809f; }
+  #header #m-gnb .gnb .signup-group ul a.icon-logout:before { width: 0.9rem; margin-right: 0.5rem; background: url("../images/icon/icon-m-logout.png") no-repeat 50% 50%; background-size: 100% auto; }
+  #header #m-gnb .gnb .menu { padding: 3rem 0.6rem; }
+  #header #m-gnb .gnb .menu > li { position: relative; margin-top: 2.3rem; padding-top: 2.3rem; }
+  #header #m-gnb .gnb .menu > li:before { display: block; position: absolute; top: 0; left: 0; width: 2.8rem; height: 0.2rem; content: ""; background: #30809f; }
+  #header #m-gnb .gnb .menu > li:first-child { margin-top: 0; padding-top: 0; }
+  #header #m-gnb .gnb .menu > li:first-child:before { display: none; }
+  #header #m-gnb .gnb .menu > li h2 a { font-size: 1.4rem; font-family: "Nanum Square B", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #000; }
+  #header #m-gnb .gnb .menu .depth ul:after { display: block; clear: both; content: ""; }
+  #header #m-gnb .gnb .menu .depth ul li { float: left; width: 50%; margin-top: 1.5rem; }
+  #header #m-gnb .gnb .menu .depth ul h3 a { font-family: "Nanum Square R", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #3a3a3a; font-size: 1.15rem; }
+  /* FOOTER */
   #footer { padding-bottom: 2.5rem; }
   #footer .footer-banner-zone { padding: 0.5rem 0; }
   #footer .footer-banner-zone .banner-tit-zone { padding-left: 1rem; line-height: 2.5rem; }
@@ -367,11 +415,14 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 2px; 
   #footer .footer-container .footer-select { position: static; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
   #footer .footer-container .footer-select .sel-type1 { flex: 1; margin-left: 5px; }
   #footer .footer-container .footer-select .sel-type1:first-child { margin: 0; }
+  /* ASIDE */
   #aside { position: fixed !important; right: 1rem; top: inherit !important; bottom: 2rem; z-index: 10; }
   #aside #btn-top a { width: 4.7rem; height: 4.7rem; font-size: 1.5rem; }
   #aside #btn-top a:before { top: 1.2rem; width: 0.8rem; height: 0.8rem; }
   #aside #btn-top a span { margin-top: 1.2rem; }
   #aside .quick-menu { display: none; }
+  /* CONTAINER */
+  #container { margin: 0 auto; }
   #container .top-visual-zone { height: 8.7rem; background: url("../images/common/bg-m-topvisual.jpg") no-repeat 50% 0; background-size: cover; }
   #container .top-visual-zone p { background-size: auto 70%; }
   #container #lnb { display: none; }

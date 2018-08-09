@@ -6,6 +6,8 @@
 
 /* COMMON */
 #header {
+	position:absolute; top:0; left:0; width:100%;
+	background:url('/gbgs_lib/images/common/bg-gnb1.png') no-repeat 0 100%, url('/gbgs_lib/images/common/bg-gnb2.png') no-repeat 100% 130px, #dde5ed; z-index: 10;
 	&:after {display:block; clear:both; content:""}
 	// UTILE
 	.utile-zone {
@@ -41,7 +43,7 @@
 			.btn-join:hover:before {@include background("icon/icon-join--on.png",no-repeat 50% 11px);}
 		}
 	}
-	.header-zone {position:relative; height:90px; }
+	.header-zone {position:relative; height:90px; background:#fff;}
 	// LOGO
 	.logo {
 		position:absolute; left:0; top:0;
@@ -61,7 +63,10 @@
 			&.btn-sitemap {
 				overflow:hidden; background:#eeeee2;
 				&:before {display:block; content:""; height:28px; @include background("icon/icon-sitemap.png",no-repeat 50% 0); margin:24px 0 13px;}
-
+			}
+			&.btn-menu {
+				display:none; overflow:hidden; background:#eeeee2;
+				&:before {display:block; content:""; height:28px; @include background("icon/icon-sitemap.png",no-repeat 50% 0); margin:24px 0 13px;}
 			}
 		}
 	}
@@ -69,20 +74,45 @@
 	#gnb {
 		position:relative; max-width:1320px; margin:0 auto;
 		.menu {
-			// position:absolute; right:0; top:33px;
 			padding:33px 0 0; text-align:right;
 			&:after {display:block; clear:both; content:""}
 			& > li {
-				display:inline-block; width:180px; text-align:center;
-				h2  {line-height:1}
-				a {
-					font-family:$font3; font-weight:normal; font-size:20px; color:#000;
-					&:hover {color:#2a5caa;}
+				position:relative; display:inline-block; width:180px; text-align:center; margin-left:-5px;
+				li:first-child {margin-left:0;}
+				h2  {
+					line-height:1; padding-bottom:29px;
+					a {
+						font-family:$font3; font-weight:normal; font-size:20px; color:#000;
+						&:hover, &.current {color:#2a5caa;}
+					}
 				}
 			}
-			.depth {display:none}
+			.depth {
+				display:none;
+				position:absolute; left:0; top:100%; z-index:10; width:100%; border-top:4px solid #fff;
+				h3 {
+					a {font-size:16px; color:000; font-family:$font1; font-weight:normal;}
+					a:hover, a.current {font-family:$font3; border-bottom:1px solid #2a5caa; color:#2a5caa;}
+				}
+				ul {
+					border-left:1px solid #fff;
+					height: 350px; width:100%; padding:25px 20px 0; background:#dde5ed; box-sizing:border-box;
+					li + li {margin-top:10px; }
+					a {font-size:15px;}
+				}
+			}
+			// case : over
+			li.on {
+				h2 a {color:#2a5caa;}
+				.depth{
+					border-top:4px solid #2a5caa;
+					ul {background:#eff9fe;}
+				}
+			}
 		}
 	}
+	// mobile GNB
+	#m-gnb {display:none}
 }
 #footer {
 	padding-bottom:85px; border-top:2px solid #595959;
@@ -98,8 +128,8 @@
 			.btn-stop {width:10px; height:17px; margin:0 9px; @include background("button/btn-footer-stop.png", no-repeat 50% 50%); background-size:auto 100%; text-indent:-9999em}
 		}
 		.banner-slider {
-			overflow:hidden; position:relative; padding:0 15.3% 0 14%;
-			.slick-slide {float:left; padding-right:17px}
+			overflow:hidden; position:relative; padding:0 5% 0 14%;
+			.slick-slide {float:left; padding-right:10px}
 			a {display:block; width:100%; height:50px; box-sizing:border-box; border:1px solid #eff0f1;}
 			img {width:100%; height:100%}
 		}
@@ -181,7 +211,7 @@
 }
 /* SUB LAYOUT */
 #container {
-	position:relative; width:100%; margin:0 auto;
+	position:relative; width:100%; margin:130px auto 0;
 	// &.main {max-width:1320px; }
 	.top-visual-zone {
 		height:200px; background:#e0e0e0; text-align:center; @include background("common/bg-topvisual.jpg", no-repeat 50% 0); background-size:cover;
@@ -538,21 +568,25 @@ p.txt-important {
 @media (max-width:1680px) {
 	#header #gnb .menu{
 		padding:33px 180px 0 0;
-		& > li {width:11%}
+		& > li {width:12%}
+		.depth ul{
+			padding-left:15px; padding-right:15px;
+			a {font-size:13px;}
+		}
 	}
 }
 
 
 @media (max-width:1319px) {
-
-	/* COMMON */
+	/* HEADER */
 	#header {
+		position:static;
 		// UTILE
 		.utile-zone {display:none; }
 		// LOGO
 		.header-zone {height:auto; border-top:6px solid #30809f; }
 		.logo {
-			position:static; margin:15px 0; text-align:center;
+			position:static; padding:15px 0; margin:0; text-align:center;
 			a {display:inline-block; height:40px;}
 			img {height:100%; width:auto;}
 		}
@@ -560,22 +594,88 @@ p.txt-important {
 			position:static;
 			li {float:none;}
 			a {
-				display:block; position:absolute; top:50%; width:48px; height:48px; margin-top:-18px;
+				display:block; position:absolute; top:50%; width:48px; height:48px; margin-top:-24px;
 				span {display:inline-block; position:absolute; left:0; top:0; overflow:hidden; width:1px; height:1px; text-indent:-999em;}
 				&.btn-lib {
 					left:0;
 					&:before {height:48px;margin:0; background-position:50% 50%; background-size:auto 50%}
 				}
-				&.btn-sitemap {
-					right:0;
+				&.btn-sitemap {display:none }
+				&.btn-menu {
+					right:0; display:block;
 					&:before {height:48px;margin:0; background-position:50% 50%; background-size:auto 30%}
-
 				}
 			}
 		}
 		// GNB
 		#gnb {display:none; }
+		// mobile GNB
+		#m-gnb {
+			display:none; position:fixed; right:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.5);  z-index: 1000; opacity:0;
+			.inner {
+				position: relative; width:72%; height:100%; margin-left:auto; max-width:400px; background:#fff;
+				.gnb-tit {padding:0 1.5rem; line-height:5.2rem; font-size:1.7rem; font-family:$font5; color:#fff; background:#30809f;}
+				.btn-close {
+					position:absolute; top:0; right:0;
+					a {display:block; position:relative; height:5.2rem; width:5.2rem; text-indent:-9999em; background:rgba(0,0,0,0.5);
+						&:before {display:block; content:""; width:100%; height:100%; position:absolute; top:0; left:0; @include background("button/btn-close.png",no-repeat 50% 50%); background-size:auto 40%;}
+					}
+				}
+			}
+			.gnb {
+				overflow-y:scroll; height:calc(100% - 5.2rem); padding:0 1rem;
+				.signup-group {
+					padding:1.5rem 0.7rem 1.2rem; border-bottom:1px solid #004059;
+					ul {
+						display: -webkit-box; display: -webkit-flex; display:flex;
+						li {
+							flex:1;
+							&+li {margin-left:0.7rem;}
+						}
+						a {
+							display:block; width:100%; line-height:2.9rem; text-align:center;
+							border-width:1px; border-style:solid; font-family:$font1; color:#555; font-size:1rem;
+							&:before {display:inline-block; height:2.9rem; content:""; vertical-align:top;}
+							&.icon-login {
+								border-color:#89c5b3;
+								&:before {width:0.9rem; margin-right:0.6rem; @include background("icon/icon-m-login.png",no-repeat 50% 50%); background-size:100% auto;}
+							}
+							&.icon-join {
+								border-color:#30809f;
+								&:before {width:1.4rem; margin-right:0.5rem; @include background("icon/icon-m-join.png",no-repeat 50% 50%); background-size:100% auto;}
+							}
+							&.icon-mypage {
+								border-color:#89c5b3;
+								&:before {width:1.4rem; margin-right:0.5rem; @include background("icon/icon-m-mypage.png",no-repeat 50% 50%); background-size:100% auto;}
+							}
+							&.icon-logout {
+								border-color:#30809f;
+								&:before {width:0.9rem; margin-right:0.5rem; @include background("icon/icon-m-logout.png",no-repeat 50% 50%); background-size:100% auto;}
+							}
+						}
+					}
+				}
+				.menu {
+					padding:3rem 0.6rem;
+					& > li {
+						position:relative; margin-top:2.3rem; padding-top:2.3rem;
+						&:before {display:block; position:absolute; top:0; left:0; width:2.8rem; height:0.2rem; content:""; background:#30809f;}
+						&:first-child {margin-top:0; padding-top:0;}
+						&:first-child:before {display:none}
+						h2 a {font-size:1.4rem; font-family:$font5; color:#000;}
+					}
+					.depth {
+						ul{
+							&:after {display:block; clear:both; content:""}
+							li {float:left; width:50%; margin-top:1.5rem;}
+							h3 a {font-family:$font4; color:#3a3a3a; font-size:1.15rem;}
+						}
+					}
+				}
+			}
+		}
 	}
+	/* FOOTER */
 	#footer {
 		padding-bottom:2.5rem;
 		.footer-banner-zone {
@@ -615,6 +715,7 @@ p.txt-important {
 			}
 		}
 	}
+	/* ASIDE */
 	#aside {
 		position:fixed !important; right:1rem; top:inherit !important; bottom:2rem; z-index: 10;
 		#btn-top {
@@ -626,7 +727,9 @@ p.txt-important {
 		}
 		.quick-menu {display:none}
 	}
+	/* CONTAINER */
 	#container {
+		margin:0 auto;
 		.top-visual-zone {
 			height:8.7rem; @include background("common/bg-m-topvisual.jpg", no-repeat 50% 0); background-size:cover;
 			p {background-size:auto 70%;}
@@ -651,6 +754,8 @@ p.txt-important {
 			}
 		}
 	}
+
+
 
 	.scrollzone {overflow-x:scroll;
 		.scrollinner {width:200%;}

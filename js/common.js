@@ -12,6 +12,52 @@ OPTION PLUG-IN FUNCTION
 var gbgs = {
 	// GNB
 	gnbEvent : function(){
+		moEvent();
+		pcEvent();
+
+		// pc gnb
+		function pcEvent(){
+			var header=$("#header"), gnb = $("#gnb"), gnbbtn = gnb.find("h2 a"), depth = gnb.find(".depth"),
+			spd = 200, _temp = false;
+
+			gnbbtn.on("mouseenter", function(){
+				$(this).closest("li").addClass("on").siblings().removeClass("on");
+				if(_temp == true) return false;
+				header.stop().css({"padding-bottom": "350px"},spd);
+				depth.stop().show();
+				_temp = true;
+			});
+
+			gnb.on("mouseleave", function(){
+				depth.hide(0, function(){
+					gnbbtn.closest("li").removeClass("on");
+				});
+				header.css({"padding-bottom": "0"});
+				_temp = false;
+			});
+		}
+
+		// mobile gnb
+		function moEvent(){
+			var openbtn = $(".btn-menu"), gnb = $("#m-gnb"), closebtn = gnb.find(".btn-close"), spd=300;
+
+			// open btn
+			openbtn.on("click", function(){
+				$("html, body").css({"overflow": "hidden"});
+				gnb.show(0, function(){
+					gnb.animate({"opacity": 1}, spd);
+					gnb.find("a").focus();
+				});
+			})
+			// close btn
+			closebtn.on("click", function(){
+				gnb.hide(0, function(){
+					gnb.css({"opacity": 0});
+					openbtn.focus();
+					$("html, body").css({"overflow": "inherit"});
+				})
+			})
+		}
 	},
 
 	//footer
@@ -31,7 +77,7 @@ var gbgs = {
 			infinite: true,
 			speed: 400,
 			arrows: true,
-			slidesToShow: 4,
+			slidesToShow: 5,
 			slidesToScroll: 1,
 			cssEase: 'linear',
 			accessibility: true,
