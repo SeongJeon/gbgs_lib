@@ -33,10 +33,18 @@
 								<h2>도서관 소개 <span class="small">Introduce Library</span></h2>
 							</div>
 							<ul class="menu">
-								<li class="current"><h3> <a href="#">메뉴1</a> </h3></li>
+								<li><h3> <a href="#">메뉴1</a> </h3></li>
 								<li><h3> <a href="#">메뉴2 <span class="hidden">현재 선택 메뉴</span></a> </h3></li>
 								<li><h3> <a href="#">메뉴3</a> </h3></li>
-								<li><h3> <a href="#">메뉴4</a> </h3></li>
+								<li class="more on"><!-- 소메뉴있을 시 more 클래스 추가 / 초기 열어두고 싶을땐 on 클래스 추가 -->
+									<h3> <a href="#">메뉴4</a> </h3>
+									<div class="depth">
+										<ul>
+											<li class="current"><h4><a href="#">소메뉴1</a></h4></li><!-- 현재메뉴 표현시 current 클래스 추가 -->
+											<li><h4><a href="#">소메뉴2</a></h4></li>
+										</ul>
+									</div>
+								</li>
 							</ul>
 						</nav>
 						<div class="goto-lib">
@@ -65,15 +73,6 @@
 						</div><!-- //page-title-zone -->
 
 						<div class="content-zone">
-							<div class="tab-zone js-tab">
-								<ul>
-									<li class="current"><a href="#">탭명1</a></li>
-									<li><a href="#">탭명2</a></li>
-								</ul>
-							</div>
-
-							<div class="tab-contents"> TAB cont1 </div>
-							<div class="tab-contents"> TAB cont2 </div>
 							<!-- 서브페이지 내용 작성 : 해당 주석 지우고 작성바랍니다. -->
 						</div><!-- //content-zone -->
 					</div><!-- //contents -->

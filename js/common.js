@@ -171,6 +171,7 @@ var gbgs = {
 		// Top button click
 		btn.on("click", function(){
 			$("html,body").animate({"scrollTop": 0},300);
+			$("#header .outlnk-group .btn-home").focus();
 			return false;
 		});
 	},
@@ -406,7 +407,7 @@ var plugin_tab = (function(){
 	});
 })();
 
-// ACCORDION
+// ACCORDION FUNCTION
 $(document).on("click", ".js-acco .btn-question", function(){
   var parentBox=$(this).closest("li"),
   qName = $(this), openClass = "open", aName = ".answer", spd=300;
@@ -420,7 +421,7 @@ $(document).on("click", ".js-acco .btn-question", function(){
 	return false;
 })
 
-// GALLERY TAB
+// GALLERY TAB FUNCTION
 var gallery_tab = function(){
 	$(".gallery-info .tab li a").on("click", function(){
 		var index = $(this).parent().index(),
@@ -444,6 +445,29 @@ var gallery_tab = function(){
 		}
 	});
 }();
+
+// LNB FUNCTION
+var plugin_lnb = (function(){
+	if($("#lnb .more").length < 1) return false;
+
+	//default
+	$("#lnb .more.on").find(".depth").show();
+
+	// click
+	var snb = $("#lnb .more h3 a"), spd = 200;
+
+	snb.on("click", function(){
+		var _this = $(this).closest("li");
+		if(_this.hasClass("on")) {
+			_this.removeClass("on").find(".depth").stop().slideUp(spd);
+		} else{
+			_this.addClass("on").find(".depth").stop().slideDown(spd);
+			_this.siblings(".more").removeClass("on").find(".depth").stop().slideUp(spd);
+		}
+
+		return false;
+	})
+})();
 
 /* -----------------------------------------------------------------
 DOCUMENT READY
