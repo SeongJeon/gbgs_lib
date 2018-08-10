@@ -4,7 +4,7 @@
 
 .introduce .img-txt { margin-bottom: 44px; }
 
-.introduce .box-txt { width: 560px; }
+.introduce .box-txt { width: 30vw; }
 
 .introduce .box-txt p { margin-bottom: 30px; }
 
@@ -17,8 +17,6 @@
 .introduce .tab-zone { margin-bottom: 50px; }
 
 .introduce .h3 { margin-bottom: 30px; }
-
-.introduce .tbl-type1 { font-size: 15px; }
 
 .introduce .tbl-type1 td { padding: 12px 10px; word-break: break-all; }
 
@@ -43,3 +41,13 @@
 .introduce .history dd { float: left; margin-left: 54px; padding: 9px 0 0 29px; text-indent: -54px; font-size: 16px; font-style: italic; }
 
 .introduce .history em { margin-right: 30px; font-weight: bold; font-style: italic; }
+
+@media (max-width: 780px) { .introduce .tit-sub { font-size: 12px !important; }
+  .introduce .img-txt img { width: 297px; }
+  .introduce .tbl-type1 td { padding: 6px 5px; } }
+
+@media (max-width: 1319px) { .introduce .tit-sub { font-size: 15px; text-align: center; }
+  .introduce .img-txt { margin-bottom: 22px; text-align: center; }
+  .introduce .box-txt { width: 90vw; margin: 0 auto; text-align: center; }
+  .introduce .box-txt p { margin-bottom: 15px; }
+  .introduce .box-img { position: static; top: 0; text-align: center; } }
