@@ -894,8 +894,6 @@ p.txt-important {
 		}
 	}
 
-
-
 	.scrollzone {overflow-x:scroll;
 		.scrollinner {width:200%;}
 	}
@@ -907,15 +905,33 @@ p.txt-important {
 		height:40px; font-size:0.7rem; line-height:40px;
 		&:before {top:0; vertical-align:middle;}
 	}
-
 	.btn-type1 {
 		min-width:6.2rem; height:1.5rem; padding:0 0.8rem; line-height:1.5rem;  font-size:0.8rem;;
 		&.color01 {background:#eca414; color:#fff;}
 	}
+	.btn-type2 {
+		min-width:inherit; padding:0 1rem 3px; line-height:2.5rem; font-size:0.8rem;
+		&.green {line-height:2.5rem;}
+
+		&.write {
+			line-height:2.5rem;
+			&:before {vertical-align:-5px; width:1.1rem; height:1rem; margin-right:7px; background-size:auto 100%;}
+		}
+	}
+
+
 
 	/* TITLE */
+	.h3 {
+		font-size:1.4rem;
+		&:before {width:2rem; height:1.3rem; margin-right:0.5rem; background-size:auto 100%;}
+	}
+	.h4 {
+		padding-top:0.8rem; font-size:1.2rem;
+		&:before {width:1.5rem; height:2px;}
+	}
 
-	/* TABLE */
+
 
 	/* FORM */
 	.sel-type1 {
@@ -924,15 +940,35 @@ p.txt-important {
 	.sel-type2 {
 		select {height:40px; width:100%; padding:0 0.7rem; font-size:0.7rem; @include background("common/ipt-sel2.png",no-repeat 100% 50%); background-size: auto 100%;}
 	}
+	.sel-type4 {
+		select {height:2.5rem; padding:0 1.5rem 0 1rem; font-size:0.8rem; background-size:auto 100%;}
+	}
 
 	.inp-type1 {
 		height:40px; width:100%; padding:0 0.7rem; font-size:0.7rem;
 	}
+	.inp-type3 {
+		height:2.5rem; padding:0 1rem; font-size:0.8rem;
+	}
+
+
 
 	/* TAB */
 	.tab-zone {
 		li a {font-size:16px;}
 	}
+	/* SUBPAGE SEARCH ZONE */
+	.ui--searchzone {
+		position:relative; padding:1rem 1rem;
+		.form {
+			padding-right:50px; width:70%;
+			.sel-type4 {float:left; width:20%;}
+			.inp-type3 {padding-right:5rem; margin-left:2%; width:75%}
+			.btn-type2 {float:none; position:absolute; right:0; top:0; font-family:$font1; padding-bottom:0; line-height:2.5rem; width:5rem;}
+		}
+	}
+
+
 
 	/* LIST */
 	p.txt-dotted {
@@ -990,21 +1026,43 @@ p.txt-important {
 		width:4.4rem; height:2rem; font-size:0.8rem; line-height:2rem;
 		&:before {width:1rem; height:1.1rem; margin-right:0.3rem;}
 	}
+	.btn-type2 {
+		&.write {
+			line-height:2.5rem;
+			&:before {position:relative; top:-1px; width:1.1rem; height:1rem; margin-right:7px; background-size:auto 100%; vertical-align:middle; }
+		}
+	}
 
 
 
-	/* TITLE */
+
+
 	/* ICON */
 
+
 	/* TABLE */
+	.tbl-type1 { // 데이터형
+		font-size:0.9rem;
+		tr > * {height:4rem; }
+	}
+	.tbl-type2 {// 목록 형
+		font-size:0.9rem;
+		tr > * {height:3.5rem; }
+		.pc {display:none}
+	}
+	.tbl-type3 {// 폼 형
+		font-size:0.9rem;
+		tr > * {height:4rem; padding:0.3rem 0.7rem; }
+		th {
+			width:20%;
+			span {margin-left:0.9rem}
+			.important + span {margin-left:0.3rem}
+		}
+	}
+
 
 
 	/* FORM */
-	// .check-type1 {
-	// 	label {padding-left:25px;font-size:11px;}
-	// 	label:before {width:18px; height:18px; background-size:auto 100%;}
-	// 	input:checked + label:before {width:18px; height:18px; background-size:auto 100%;}
-	// }
 	.sel-type1 {
 		select {height:28px; width:100%; padding:0 8px; font-size:10px; background-size:auto 30%; letter-spacing:-1px}
 	}
@@ -1016,44 +1074,54 @@ p.txt-important {
 		height:2rem; width:100%; padding:0 0.8rem;  font-size:0.8rem;
 	}
 
+
+
 	/* PAGING */
-	// .paging {
-	// 	margin-top:20px;
-	// 	& > div  {display:inline-block; position:relative; padding:0 65px;}
-	// 	ol {
-	// 		li {
-	// 			a {width:25px; height:25px; line-height:25px; font-size:10px;}
-	// 		}
-	// 	}
-	// 	p {
-	// 		a {display:inline-block; position:relative; overflow:hidden; width:25px; height:25px;border:1px solid #cecece; line-height:25px; background:#eff0f1; color:#868686; font-size:10px;}
-	// 		a span {display:block; position:absolute; top:-1px; left:-1px; text-indent:-999em; }
-	// 		&.prev a:before {display:block;  content:"<"; }
-	// 		&.allprev a:before {display:block;  content:"<<"; }
-	// 		&.next a:before {display:block;  content:">"; }
-	// 		&.allnext a:before {display:block;  content:">>"; }
-	// 		&.prev {left:0;}
-	// 		&.allprev {left:30px;}
-	// 		&.next {right:30px}
-	// 		&.allnext {right:0}
-	// 	}
-	// }
-	/* LIST */
-	// .txt-dotted {
-	// 	& > li {padding-left:10px; font-size:12px; line-height:18px;}
-	// 	& > li:before {top:7px; width:3px; height:3px;}
-	// }
-	// p.txt-dotted {
-	// 	padding-left:10px; font-size:12px; line-height:18px;
-	// 	&:before {top:7px; width:3px; height:3px;}
-	// }
-	// .txt-hyphen {
-	// 	& > li {font-size:12px; line-height:18px;}
-	// }
-	// .txt-important {font-size:11px;}
-
-
-
+	.ui-paging {
+		margin-top:2.5rem;
+		& > div  {padding:0 6rem;}
+		ol {
+			li {float:left;
+				& + li {margin-left:1.2rem;}
+				a {font-size:0.8rem; line-height:2rem;}
+			}
+		}
+		p {
+			a {
+				width:2rem; height:2rem;
+				&:before {top:0.6rem;}
+			}
+			&.prev {
+				left:2rem;
+				a:before {left:0.7rem; border-right:5px solid #30809f; border-top:4px solid transparent; border-bottom:4px solid transparent;}
+			}
+			&.next{
+				right:2rem;
+				a:before {right:0.7rem; border-left:5px solid #30809f; border-top:4px solid transparent; border-bottom:4px solid transparent;}
+			}
+			&.allprev  {
+				left:0;
+				a:before {left:0.4rem; border-right:5px solid #30809f; border-top:4px solid transparent; border-bottom:4px solid transparent;}
+				a:after {display:block;  content:""; position:absolute; top:0.6rem; width:0; height:0; left:1rem; border-right:5px solid #30809f; border-top:4px solid transparent; border-bottom:4px solid transparent;}
+			}
+			&.allnext {
+				right:0;
+				a:before {right:0.4rem; border-left:5px solid #30809f; border-top:4px solid transparent; border-bottom:4px solid transparent;}
+				a:after {display:block;  content:""; position:absolute; top:0.6rem; width:0; height:0; right:1rem; border-left:5px solid #30809f; border-top:4px solid transparent; border-bottom:4px solid transparent;}
+			}
+		}
+	}
+	/* SUBPAGE SEARCH ZONE */
+	.ui--searchzone {
+		padding:1rem 0.5rem; text-align:left;
+		.form {
+			display:block; width:100%; box-sizing:border-box; padding-right:2.5rem;
+			.sel-type4 {float:left; width:30%;}
+			.inp-type3 {margin-left:2%; width:68%}
+			.btn-type2 {float:none; position:absolute; right:0; top:0; font-family:$font1; padding-bottom:0;}
+		}
+		.btn-type2.write {margin:0.5rem 0 0;}
+	}
 	/* TAB */
 	.tab-zone {
 		border-top-width:2px;
@@ -1064,7 +1132,8 @@ p.txt-important {
 	}
 
 
-	/* LAYER */
+
+
 	/* LAYER */
 	#layer {
 		.layer-inner {

@@ -534,14 +534,29 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 2px; 
   .btn-search:before { top: 0; vertical-align: middle; }
   .btn-type1 { min-width: 6.2rem; height: 1.5rem; padding: 0 0.8rem; line-height: 1.5rem; font-size: 0.8rem; }
   .btn-type1.color01 { background: #eca414; color: #fff; }
+  .btn-type2 { min-width: inherit; padding: 0 1rem 3px; line-height: 2.5rem; font-size: 0.8rem; }
+  .btn-type2.green { line-height: 2.5rem; }
+  .btn-type2.write { line-height: 2.5rem; }
+  .btn-type2.write:before { vertical-align: -5px; width: 1.1rem; height: 1rem; margin-right: 7px; background-size: auto 100%; }
   /* TITLE */
-  /* TABLE */
+  .h3 { font-size: 1.4rem; }
+  .h3:before { width: 2rem; height: 1.3rem; margin-right: 0.5rem; background-size: auto 100%; }
+  .h4 { padding-top: 0.8rem; font-size: 1.2rem; }
+  .h4:before { width: 1.5rem; height: 2px; }
   /* FORM */
   .sel-type1 select { width: 100%; }
   .sel-type2 select { height: 40px; width: 100%; padding: 0 0.7rem; font-size: 0.7rem; background: url("../images/common/ipt-sel2.png") no-repeat 100% 50%; background-size: auto 100%; }
+  .sel-type4 select { height: 2.5rem; padding: 0 1.5rem 0 1rem; font-size: 0.8rem; background-size: auto 100%; }
   .inp-type1 { height: 40px; width: 100%; padding: 0 0.7rem; font-size: 0.7rem; }
+  .inp-type3 { height: 2.5rem; padding: 0 1rem; font-size: 0.8rem; }
   /* TAB */
   .tab-zone li a { font-size: 16px; }
+  /* SUBPAGE SEARCH ZONE */
+  .ui--searchzone { position: relative; padding: 1rem 1rem; }
+  .ui--searchzone .form { padding-right: 50px; width: 70%; }
+  .ui--searchzone .form .sel-type4 { float: left; width: 20%; }
+  .ui--searchzone .form .inp-type3 { padding-right: 5rem; margin-left: 2%; width: 75%; }
+  .ui--searchzone .form .btn-type2 { float: none; position: absolute; right: 0; top: 0; font-family: "NanumGothic-Regular", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; padding-bottom: 0; line-height: 2.5rem; width: 5rem; }
   /* LIST */
   p.txt-dotted { padding-left: 0.7rem; font-size: 0.7rem; line-height: 1.5rem; }
   .txt-dotted > li { padding-left: 0.7rem; font-size: 0.7rem; line-height: 1.5rem; }
@@ -563,20 +578,53 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 2px; 
   /* BUTTON */
   .btn-search { width: 4.4rem; height: 2rem; font-size: 0.8rem; line-height: 2rem; }
   .btn-search:before { width: 1rem; height: 1.1rem; margin-right: 0.3rem; }
-  /* TITLE */
+  .btn-type2.write { line-height: 2.5rem; }
+  .btn-type2.write:before { position: relative; top: -1px; width: 1.1rem; height: 1rem; margin-right: 7px; background-size: auto 100%; vertical-align: middle; }
   /* ICON */
   /* TABLE */
+  .tbl-type1 { font-size: 0.9rem; }
+  .tbl-type1 tr > * { height: 4rem; }
+  .tbl-type2 { font-size: 0.9rem; }
+  .tbl-type2 tr > * { height: 3.5rem; }
+  .tbl-type2 .pc { display: none; }
+  .tbl-type3 { font-size: 0.9rem; }
+  .tbl-type3 tr > * { height: 4rem; padding: 0.3rem 0.7rem; }
+  .tbl-type3 th { width: 20%; }
+  .tbl-type3 th span { margin-left: 0.9rem; }
+  .tbl-type3 th .important + span { margin-left: 0.3rem; }
   /* FORM */
   .sel-type1 select { height: 28px; width: 100%; padding: 0 8px; font-size: 10px; background-size: auto 30%; letter-spacing: -1px; }
   .sel-type2 select { height: 2rem; padding: 0 0.8rem; font-size: 0.8rem; background-size: auto 100%; }
   .inp-type1 { height: 2rem; width: 100%; padding: 0 0.8rem; font-size: 0.8rem; }
   /* PAGING */
-  /* LIST */
+  .ui-paging { margin-top: 2.5rem; }
+  .ui-paging > div { padding: 0 6rem; }
+  .ui-paging ol li { float: left; }
+  .ui-paging ol li + li { margin-left: 1.2rem; }
+  .ui-paging ol li a { font-size: 0.8rem; line-height: 2rem; }
+  .ui-paging p a { width: 2rem; height: 2rem; }
+  .ui-paging p a:before { top: 0.6rem; }
+  .ui-paging p.prev { left: 2rem; }
+  .ui-paging p.prev a:before { left: 0.7rem; border-right: 5px solid #30809f; border-top: 4px solid transparent; border-bottom: 4px solid transparent; }
+  .ui-paging p.next { right: 2rem; }
+  .ui-paging p.next a:before { right: 0.7rem; border-left: 5px solid #30809f; border-top: 4px solid transparent; border-bottom: 4px solid transparent; }
+  .ui-paging p.allprev { left: 0; }
+  .ui-paging p.allprev a:before { left: 0.4rem; border-right: 5px solid #30809f; border-top: 4px solid transparent; border-bottom: 4px solid transparent; }
+  .ui-paging p.allprev a:after { display: block; content: ""; position: absolute; top: 0.6rem; width: 0; height: 0; left: 1rem; border-right: 5px solid #30809f; border-top: 4px solid transparent; border-bottom: 4px solid transparent; }
+  .ui-paging p.allnext { right: 0; }
+  .ui-paging p.allnext a:before { right: 0.4rem; border-left: 5px solid #30809f; border-top: 4px solid transparent; border-bottom: 4px solid transparent; }
+  .ui-paging p.allnext a:after { display: block; content: ""; position: absolute; top: 0.6rem; width: 0; height: 0; right: 1rem; border-left: 5px solid #30809f; border-top: 4px solid transparent; border-bottom: 4px solid transparent; }
+  /* SUBPAGE SEARCH ZONE */
+  .ui--searchzone { padding: 1rem 0.5rem; text-align: left; }
+  .ui--searchzone .form { display: block; width: 100%; box-sizing: border-box; padding-right: 2.5rem; }
+  .ui--searchzone .form .sel-type4 { float: left; width: 30%; }
+  .ui--searchzone .form .inp-type3 { margin-left: 2%; width: 68%; }
+  .ui--searchzone .form .btn-type2 { float: none; position: absolute; right: 0; top: 0; font-family: "NanumGothic-Regular", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; padding-bottom: 0; }
+  .ui--searchzone .btn-type2.write { margin: 0.5rem 0 0; }
   /* TAB */
   .tab-zone { border-top-width: 2px; }
   .tab-zone li { display: table; height: 50px; }
   .tab-zone li a { display: table-cell; vertical-align: middle; font-size: 11px; line-height: 1.4; word-break: keep-all; }
-  /* LAYER */
   /* LAYER */
   #layer .layer-inner .layer-container { width: 95%; }
   #layer .layer-inner .layer-container .layer-header .desc { font-size: 0.9rem; line-height: 1.3rem; }
