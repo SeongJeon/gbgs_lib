@@ -519,7 +519,7 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 2px; 
   #container .top-visual-zone { height: 8.7rem; background: url("../images/common/bg-m-topvisual.jpg") no-repeat 50% 0; background-size: cover; }
   #container .top-visual-zone p { background-size: auto 70%; }
   #container #lnb { display: none; }
-  #container #contents { padding: 1.9rem 2.4vw 0; max-height: inherit; }
+  #container #contents { padding: 1.9rem 2.4vw 4rem; min-height: inherit; }
   #container #contents .page-title-zone { padding-bottom: 1.5rem; margin-bottom: 1.7rem; text-align: center; }
   #container #contents .page-title-zone:before { bottom: -1px; left: 50%; width: 21.2rem; height: 2px; margin-left: -10.6rem; }
   #container #contents .page-title-zone .page-title { font-size: 2.3rem; font-family: "NanumGothic-Bold", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
@@ -647,6 +647,6 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 2px; 
   #footer .footer-container .footer-address li + li { margin-left: 0.9rem; }
   #footer .footer-container .copy { font-size: 0.9rem; }
   /* CONTAINER */
-  #container #contents { padding: 1.9rem 1rem 0; } }
+  #container #contents { padding: 1.9rem 1rem 3rem; } }
 @media print { #lnb, #header, #footer, .top-visual-zone, .breadcrumb-zone { display: none; }
   #container #contents { padding: 0; } }

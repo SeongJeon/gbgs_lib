@@ -394,13 +394,14 @@ var plugin_tab = (function(){
 
 	// default
 	$(contName).eq($(tabName).find("."+hasClassName).index()).show().siblings(contName).hide();
+	$(tabName).find("."+hasClassName).append("<span class='hidden'>현재 선택 탭</span>");
 
 	// click
 	$(tabName).find(liName).on("click", function(){
 		if($(this).hasClass(hasClassName)) return false;
 
 		curr = $(this).index();
-		$(this).addClass(hasClassName).siblings().removeClass(hasClassName);
+		$(this).addClass(hasClassName).append("<span class='hidden'>현재 선택 탭</span>").siblings().removeClass(hasClassName).find(".hidden").remove();
 		$(contName).eq(curr).show().siblings(contName).hide();
 
 		return false;
