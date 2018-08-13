@@ -1124,10 +1124,9 @@ p.txt-important {
 	}
 	/* TAB */
 	.tab-zone {
-		border-top-width:2px;
 		li {
-			display: table; height:50px;
-			a {display:table-cell; vertical-align:middle; font-size:11px; line-height:1.4; word-break:keep-all;}
+			display: table; height:3.8rem;
+			a {display:table-cell; vertical-align:middle; font-size:0.9rem; line-height:1.4; word-break:keep-all;}
 		}
 	}
 

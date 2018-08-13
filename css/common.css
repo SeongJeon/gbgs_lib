@@ -622,9 +622,8 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 2px; 
   .ui--searchzone .form .btn-type2 { float: none; position: absolute; right: 0; top: 0; font-family: "NanumGothic-Regular", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; padding-bottom: 0; }
   .ui--searchzone .btn-type2.write { margin: 0.5rem 0 0; }
   /* TAB */
-  .tab-zone { border-top-width: 2px; }
-  .tab-zone li { display: table; height: 50px; }
-  .tab-zone li a { display: table-cell; vertical-align: middle; font-size: 11px; line-height: 1.4; word-break: keep-all; }
+  .tab-zone li { display: table; height: 3.8rem; }
+  .tab-zone li a { display: table-cell; vertical-align: middle; font-size: 0.9rem; line-height: 1.4; word-break: keep-all; }
   /* LAYER */
   #layer .layer-inner .layer-container { width: 95%; }
   #layer .layer-inner .layer-container .layer-header .desc { font-size: 0.9rem; line-height: 1.3rem; }
