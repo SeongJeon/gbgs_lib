@@ -93,18 +93,74 @@
 .use .service-area .list ul > li > * {display:table-cell;}
 .use .service-area .list ul > li .num {padding-right:15px; font-size:20px; color:#8aa9be;}
 
-
+/*수련아 옮길부분이야*/
+.introduce .map-area { text-align: center; }
+.introduce .map-area .img-txt { margin-bottom: 25px; }
+.introduce .map-area p { font-size: 20px; line-height: 30px; margin-bottom: 35px; }
+.introduce .map-area .map { width: 100%; height: 538px; }
+.introduce .transport {}
+.introduce .transport > li {display:-webkit-box; display:box; margin-top:11px; padding:17px 35px 17px 0; border:1px solid #d6d5d5;}
+.introduce .transport > li:first-child {margin-top:0;}
+.introduce .transport > li > * {display:-webkit-box; display:box; -webkit-box-orient:vertical; box-orient:vertical; -webkit-box-pack:center; box-pack:center; -webkit-box-flex:1; box-flex:1;}
+.introduce .transport > li .img {min-width:191px; max-width:191px; text-align:center;}
+.introduce .transport > li .img img {width:79px; height:auto;}
+.introduce .transport > li .img .txt {display:block;}
+.introduce .transport > li .info {position:relative; min-height:117px; padding-left:25px;}
+.introduce .transport > li .info:before {position:absolute; left:0; top:0; display:block; content:""; width:1px; height:100%; background:#d6d5d5;}
+.introduce .transport > li .info .fpi-info {font-size:18px;}
+.introduce .transport > li .info .path-traffic {position:relative; margin-top:4px; padding-left:10px; font-size:16px; }
+.introduce .transport > li .info .path-traffic:before {position:absolute; left:0; top:-2px; content:'-';}
 
 @media (max-width: 1319px) {
+	.gallery-info {display:block; height:auto; margin-bottom:2rem; padding:2rem 1rem; border:none;background: url(/gbgs_lib/images/use/bg-gallery-info.png) repeat;}
+	.gallery-info .tab-info {display:block; width:100%; padding:0; box-sizing:border-box;}
+	.gallery-info .tab-info .tit {display:none;}
+	.gallery-info .tab-info .tab {overflow:hidden; border-top:1px solid #d6d5d5; border-left:1px solid #d6d5d5;}
+	.gallery-info .tab-info .tab > li {float:left; width:33.33%;}
+	.gallery-info .tab-info .tab > li a {background:#fff; border:none; border-right:1px solid #d6d5d5; border-bottom:1px solid #d6d5d5; font-size:0.9rem;}
+	.gallery-info .tab-info .tab > li:nth-child(3n+1) {clear:both;}
+	.gallery-info .tab-info .tab > li.on a {padding-top:8px;}
+	.gallery-info .tab-con .tab-contents .tit {width:100%; text-align:center;}
+	.gallery-info .tab-con {display:block; width:auto; margin-top:2rem;}
+	.gallery-info .tab-con .slider.room:before {display:none;}
+	.gallery-info .tab-con .slider.room .info .txt {margin:0; padding:1rem 0; background:#fff; font-size:0.9rem; border-bottom:1px solid #d8dadb;}
+	.gallery-info .tab-con .slider.room .slick-prev,
+	.gallery-info .tab-con .slider.room .custom-paging,
+	.gallery-info .tab-con .slider.room .slick-next {display:none !important;}
+	
+	.use .top-banner {margin-top:2.5rem;}
+	.use .h3 {margin:2rem 0 0.5rem;}
+	.use .h4 {margin:2rem 0 0.5rem;}
+	.use .tbl-type1,
+	.use .list-notes ul {margin-top:1rem;}
 	.use .top-banner .inner .img {text-align:center;}
 	.use .service-area:before {height:4.5rem; background-size:cover;}
 	.use .service-area:after {height:4.5rem; background-size:cover;}
 	.use .service-area .tit {font-size:2.3rem;}
 	.use .service-area .tit .tail {font-size:1rem;}
 	.use .service-area .list ul > li,
-	.use .service-area .list ul > li .num {font-size:1rem;}
-	.gallery-info .tab-con .tab-contents .tit {width:100%; padding-left:1rem;}
-	.use .h3_wrap .txt-important {top:0; font-size:1.4rem;}
+	.use .service-area .list ul > li .num {font-size:1rem; line-height:1.4;}
+	.use .h3_wrap .txt-important {top:0; font-size:1rem;}
+	.use .bg-txt-list {font-size:1rem;}
+	.use .donation-process {margin-bottom:2.5rem;}
+	.use .top-banner .inner .txt-bul > li,
+	.use .donation-process ol > li > *,
+	.use .bg-box-list ul > li {line-height:1.4;}
+
+
+	/*수련아 옮길 부분이야*/
+	.introduce .map-area p {margin-bottom:1rem; font-size:1.4rem; line-height:1.6;}
+	.introduce .transport > li .img {min-width:10rem; max-width:10rem;}
+	.introduce .transport > li .info .fpi-info  {font-size:1.3rem;}
+	.introduce .transport > li .info .path-traffic {font-size:1rem;}
+	.introduce .transport > li .info {padding-left:1rem;}
+	.introduce .transport > li .img img {width:5rem;}
+
+}
+@media (max-width: 1273px) {
+	.use{}
+	.use .service-area:before {background-position:left bottom; background-size:contain;}
+	.use .service-area:after {background-position:left top; background-size:contain;}
 }
 @media (max-width: 1024px) {
 	.use .service-area:before {background:url(../images/use/service-area-t.png) no-repeat left bottom; background-size:contain;}
@@ -112,7 +168,7 @@
 	.use .top-banner .inner .txt-bul {padding-left:1rem;}
 	.use .top-banner .inner .img {padding-right:1rem;}
 	p.txt-important {font-size:0.9rem;}
-	.use .list-notes ul > li {font-size:1rem;}
+	.use .list-notes ul > li {font-size:1rem; line-height:1.4;}
 	.use .list-notes {    background-position: right bottom; padding-bottom: 150px; background-size: 15rem auto; margin-bottom: 2rem;} 
 	}
 @media (max-width: 768px) {
@@ -120,11 +176,7 @@
 	.use .service-area .list {margin-top:3rem; padding:0 5rem;}
 	.use .service-area:before {background:url(../images/use/service-area-t.png) no-repeat left bottom; background-size:contain;}
 	.use .service-area:after {background-size:contain;}
-	.gallery-info {display:block; height:auto;}
-	.gallery-info .tab-info {display:block; width:100%; padding-bottom:20px;box-sizing:border-box;}
-	.gallery-info .tab-con {display:block; width:auto;}
-	.gallery-info .tab-info .tab > li a {font-size:0.9rem;}
-	.gallery-info .tab-con .slider.room .info .txt {margin:1rem 0; font-size:0.9rem;}
+	
 }
 @media (max-width: 360px) {
 	.use .service-area .list ul > li {font-size:1rem;}
