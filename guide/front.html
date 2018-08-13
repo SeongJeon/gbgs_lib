@@ -12,7 +12,7 @@
 		<div class="count">
 			<p class="total">총 :
 				<a href="#"></a> 페이지 </p>
-			<!-- <p class="complete">완료 : <a href="#"></a> 페이지 (<em></em>%)</p> -->
+				<p class="complete">완료 : <a href="#"></a> 페이지 (<em></em>%)</p>
 			<!-- <p class="progress">진행 중 : <a href="#"></a> 페이지 (<em></em>%)</p> -->
 		</div>
 	</div>
@@ -1140,7 +1140,27 @@
 				<!-- 2depth -->
 				<td>희망도서신청내역</td>
 				<!-- 3depth -->
+				<td>목록</td>
+				<!-- 1depth -->
+				<td>mylib/</td>
+				<!-- 경로 -->
+				<td>
+					<a href="#" target="_blank">.html</a>
+				</td>
+				<!-- 파일명 -->
 				<td></td>
+				<!-- 완료 날짜 -->
+				<td>0</td>
+				<!-- 작업 전 0 / 작업 중 1 / 완료 2  -->
+				<td></td>
+				<!-- 비고  -->
+			</tr>
+			<tr>
+				<td></td>
+				<!-- 2depth -->
+				<td></td>
+				<!-- 3depth -->
+				<td>상세</td>
 				<!-- 1depth -->
 				<td>mylib/</td>
 				<!-- 경로 -->
@@ -1185,9 +1205,12 @@
 
 <script>
 	// default
-	var txt;
+	var txt, c=0, per;
+	// complete
 	$("table tbody tr").each(function () {
 		$(this).addClass("before");
+
+		if($(this).find("td:nth-child(7)").text() == "2") c++;
 
 		txt = parseInt($(this).find("td:nth-child(7)").text());
 		switch (txt) {
@@ -1197,7 +1220,12 @@
 		}
 
 		$("a", this).attr("href", "/gbgs_lib/html/" + $("td:nth-child(4)", this).text() + $("a", this).text());
+
+
 	})
+
+	per = Math.ceil(c*(100/$("table tbody tr").length)) ;
+	$('.count .complete a').text(c).next("em").text(per);
 
 	$("table a").on("click", function () {
 		$(this).closest("tr").addClass("visited");
