@@ -18,6 +18,7 @@
 .gallery-info .tab-con .slider.room:before {display:block; content:""; width:114px; height:50px; position:absolute; right:0; top:0; background:rgba(0, 0, 0, 0.5); z-index:1;}
 .gallery-info .tab-con .slider.room .inner {position:relative;}
 .gallery-info .tab-con .slider.room .img {}
+.gallery-info .tab-con .slider.room .img img {width:100%;}
 .gallery-info .tab-con .slider.room .info {}
 .gallery-info .tab-con .slider.room .info .tit {position:absolute; left:334px; top:0; color:#fff; z-index:10;}
 .gallery-info .tab-con .slider.room .info .txt {margin:30px 0 0; font-size:16px; text-align:center; color:#010101;}
@@ -26,7 +27,7 @@
 .gallery-info .tab-con .slider.room .slick-prev {right:75px; top:6px; background:url(../images/use/slick-arrow.png) no-repeat 8px 5px;}
 .gallery-info .tab-con .slider.room .slick-next {right:8px; top:6px; background:url(../images/use/slick-arrow.png) no-repeat -60px 5px;}
 .gallery-info .tab-con .slider.room .custom-paging {position:absolute; right:46px; top:13px; z-index:2;}
-.gallery-info .tab-con .slider.room .custom-paging > li {display:none; color:#fff;}
+.gallery-info .tab-con .slider.room .custom-paging > li {display:none; color:#fff; font-size:15px;}
 .gallery-info .tab-con .slider.room .custom-paging > li.slick-active {display:inline-block;}
 
 .use .h3_wrap {position:relative; }
@@ -42,6 +43,7 @@
 .use .top-banner .inner .txt-bul {padding:0 0 0 40px; border-left:1px solid #bcdae7;}
 .use .top-banner .inner .txt-bul > li {font-weight:bold;}
 .use .top-banner.book .inner .img {margin-top:-12px;}
+.use .top-banner.service-charter {min-height:auto;}
 
 .use .txt-important:before {top:0;}
 .use .tbl-type1 {margin-top:24px;}
@@ -101,19 +103,31 @@
 	.use .service-area .tit .tail {font-size:1rem;}
 	.use .service-area .list ul > li,
 	.use .service-area .list ul > li .num {font-size:1rem;}
+	.gallery-info .tab-con .tab-contents .tit {width:100%; padding-left:1rem;}
+	.use .h3_wrap .txt-important {top:0; font-size:1.4rem;}
 }
 @media (max-width: 1024px) {
 	.use .service-area:before {background:url(../images/use/service-area-t.png) no-repeat left bottom; background-size:contain;}
 	.use .service-area:after {background-size:contain;}
-}
+	.use .top-banner .inner .txt-bul {padding-left:1rem;}
+	.use .top-banner .inner .img {padding-right:1rem;}
+	p.txt-important {font-size:0.9rem;}
+	.use .list-notes ul > li {font-size:1rem;}
+	.use .list-notes {    background-position: right bottom; padding-bottom: 150px; background-size: 15rem auto; margin-bottom: 2rem;} 
+	}
 @media (max-width: 768px) {
 	.use .service-area {margin-top:0;}
 	.use .service-area .list {margin-top:3rem; padding:0 5rem;}
 	.use .service-area:before {background:url(../images/use/service-area-t.png) no-repeat left bottom; background-size:contain;}
 	.use .service-area:after {background-size:contain;}
+	.gallery-info {display:block; height:auto;}
+	.gallery-info .tab-info {display:block; width:100%; padding-bottom:20px;box-sizing:border-box;}
+	.gallery-info .tab-con {display:block; width:auto;}
+	.gallery-info .tab-info .tab > li a {font-size:0.9rem;}
+	.gallery-info .tab-con .slider.room .info .txt {margin:1rem 0; font-size:0.9rem;}
 }
 @media (max-width: 360px) {
-
 	.use .service-area .list ul > li {font-size:1rem;}
+	.use .top-banner .inner .txt-bul {}
 }
 
