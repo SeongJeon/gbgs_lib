@@ -142,7 +142,7 @@
 	.use .service-area .list ul > li .num {font-size:1rem; line-height:1.4;}
 	.use .h3_wrap .txt-important {top:0; font-size:1rem;}
 	.use .bg-txt-list {font-size:1rem;}
-	.use .donation-process {margin-bottom:2.5rem;}
+	.use .donation-process {margin-top:1.5rem; margin-bottom:2.5rem;}
 	.use .top-banner .inner .txt-bul > li,
 	.use .donation-process ol > li > *,
 	.use .bg-box-list ul > li {line-height:1.4;}
