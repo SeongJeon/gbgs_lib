@@ -185,9 +185,8 @@ var gbgs = {
 
 		// default
 		$(contName).eq($(tabName).find("."+hasClassName).index()).show().siblings(contName).hide();
-
 		// click
-		$(tabName).find(liName).live("click", function(){
+		$(tabName).find(liName).on("click", function(){
 			if($(this).hasClass(hasClassName)) return false;
 
 			curr = $(this).index();
