@@ -42,7 +42,7 @@
 
 .smalllib .map-area p { font-size: 20px; line-height: 30px; margin-bottom: 35px; }
 
-.smalllib .map-area .map { width: 100%; height: 538px; }
+.smalllib .map-area .map { width: 100%; height: 538px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 @media (max-width: 768px) { .smalllib .h3 { margin-bottom: 15px; }
   .smalllib .history dt { margin-right: 15px; font-size: 15px; }
