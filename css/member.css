@@ -8,7 +8,7 @@
 
 .member .list-dash { text-align: left; }
 
-.member .list-dash li { position: relative; padding-left: 10px; }
+.member .list-dash li { position: relative; padding-left: 10px; word-break: keep-all; }
 
 .member .list-dash li:after { position: absolute; top: 0; left: 0; content: "-"; }
 

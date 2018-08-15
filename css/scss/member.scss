@@ -38,6 +38,7 @@
     li {
       position: relative;
       padding-left: 10px;
+      word-break: keep-all;
       &:after {
         position: absolute;
         top: 0;
