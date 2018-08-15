@@ -32,7 +32,7 @@
   .h3 {
     margin: 50px 0 30px;
   }
-  h4 {
+  .h4 {
     margin: 32px 0 18px;
   }
   .tbl-type1 {
@@ -133,29 +133,6 @@
   }
 }
 
-@media (max-width: 780px) {
-  .introduce {
-    .tit-sub {
-      font-size: 12px !important;
-    }
-    .img-txt {
-      img {
-        width: 297px;
-      }
-      &.history {
-        img {
-          width: 116px;
-        }
-      }
-    }
-    .tbl-type1 {
-      td {
-        padding: 6px 5px;
-      }
-    }
-  }
-}
-
 @media (max-width: 1319px) {
   .introduce {
     .tit-sub {
@@ -165,6 +142,9 @@
     .img-txt {
       margin-bottom: 22px;
       text-align: center;
+      &.history {
+        margin-bottom: 22px;
+      }
     }
     .box-txt {
       width: 90vw;
@@ -178,6 +158,66 @@
       position: static;
       top: 0;
       text-align: center;
+    }
+    .history {
+      width: 400px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .introduce {
+    .h3 {
+      margin: 25px 0 15px;
+    }
+    .h4 {
+      margin: 16px 0 10px;
+    }
+    .tit-sub {
+      font-size: 12px !important;
+    }
+    .img-txt {
+      img {
+        width: 297px;
+      }
+      &.history {
+        img {
+          width: 116px;
+        }
+      }
+    }
+    .box-img {
+      width: 60vw;
+      margin: 0 auto;
+    }
+    .tbl-type1 {
+      td {
+        padding: 6px 5px;
+      }
+    }
+    .history {
+      width: 280px;
+      margin: 0 auto;
+      li {
+        .year {
+          padding: 0 30px 30px 0;
+          span {
+            font-size: 15px;
+          }
+        }
+        &:nth-child(3n-2) {
+          .year {
+            padding-bottom: 40px;
+          }
+        }
+        &:nth-child(4n) {
+          .detail p {
+            margin-top: -5px;
+            line-height: 15px;
+          }
+        }
+      }
     }
   }
 }
