@@ -1,6 +1,67 @@
 @charset "utf-8";
 .mylib {
-  .form {
+  .ui--searchzone {
     margin-bottom: 45px;
+  }
+  .tbl-type2 {
+    .link {
+      &:hover {
+        a {
+          color: #333;
+          text-decoration: underline;
+        }
+      }
+    }
+    .state {
+      span {
+        display: inline-block;
+        min-width: 100px;
+        height: 40px;
+        padding: 8px 0 14px;
+        text-align: center;
+        color: #fff;
+        box-sizing: border-box;
+      }
+      &.ok {
+        span {
+          background: #f98c0b;
+        }
+      }
+      &.not {
+        span {
+          background: #5b5c5c;
+        }
+      }
+    }
+  }
+
+  .tab-zone {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mylib {
+    .ui--searchzone {
+      margin-bottom: 23px;
+    }
+    .tbl-type2 {
+      .mobile01 {
+        width: 20% !important;
+      }
+      .mobile02 {
+        width: 16% !important;
+      }
+      .mobile03 {
+        width: 24% !important;
+      }
+      .state {
+        span {
+          min-width: 50px;
+          height: 20px;
+          padding: 3px 0 7px;
+        }
+      }
+    }
   }
 }
