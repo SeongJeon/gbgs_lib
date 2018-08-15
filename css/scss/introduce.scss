@@ -37,6 +37,7 @@
   }
   .tbl-type1 {
     td {
+      min-height: auto;
       padding: 12px 10px;
       word-break: break-all;
     }
@@ -55,56 +56,79 @@
     }
   }
   .history {
-    position: relative;
     li {
-      overflow: hidden;
-      margin-top: 54px;
-      &:first-child {
-        margin: 0;
-      }
-    }
-    &:after {
-      position: absolute;
-      top: 18px;
-      left: 104px;
-      width: 1px;
-      height: 93%;
-      border-left: 1px solid #d8dadb;
-      content: "";
-    }
-
-    dt {
-      position: relative;
-      float: left;
-      padding-right: 37px;
-      font-size: 24px;
-      font-weight: bold;
       font-style: italic;
-      &:after {
+      &:after,
+      .detail:after {
         display: block;
-        position: absolute;
-        top: 15px;
-        right: 0;
-        width: 8px;
-        height: 8px;
-        background: #257d92;
-        border-radius: 50%;
-        z-index: 10;
-        content: " ";
+        clear: both;
+        content: "";
       }
-    }
-    dd {
-      float: left;
-      margin-left: 54px;
-      padding: 9px 0 0 29px;
-      text-indent: -54px;
-      font-size: 16px;
-      font-style: italic;
-    }
-    em {
-      margin-right: 30px;
-      font-weight: bold;
-      font-style: italic;
+      > div {
+        float: left;
+      }
+      .year {
+        position: relative;
+        padding: 0 30px 45px 0;
+        border-right: 1px solid #d8dadb;
+        span {
+          display: block;
+          margin-top: -10px;
+          font-size: 24px;
+          font-weight: bold;
+          &:after {
+            position: absolute;
+            top: 0;
+            right: -4px;
+            width: 7px;
+            height: 7px;
+            background: #257d92;
+            border-radius: 50%;
+            content: "";
+          }
+        }
+      }
+      .detail-wrap {
+        margin: -8px 0 0 30px;
+        .detail {
+          > * {
+            float: left;
+          }
+          em {
+            display: block;
+            margin-right: 30px;
+            font-weight: bold;
+            font-style: italic;
+          }
+        }
+      }
+      &:first-child {
+        .year {
+          margin-top: 20px;
+        }
+        .detail-wrap {
+          margin-top: 13px;
+        }
+        .detail:nth-of-type(1) {
+          margin-bottom: 10px;
+        }
+      }
+      &:last-child {
+        .year {
+          border-right: 0 none;
+        }
+      }
+      &:nth-child(3n-2) {
+        .year {
+          padding-bottom: 80px;
+        }
+      }
+      &:nth-child(4n) {
+        .detail p {
+          margin-top: -5px;
+          line-height: 30px;
+        }
+      }
     }
   }
 }
