@@ -110,6 +110,46 @@
 .introduce .transport > li .info .fpi-info {font-size:18px;}
 .introduce .transport > li .info .path-traffic {position:relative; margin-top:4px; padding-left:10px; font-size:16px; }
 .introduce .transport > li .info .path-traffic:before {position:absolute; left:0; top:-2px; content:'-';}
+.introduce .status-info {margin-bottom:35px;}
+.introduce .status-info ul {}
+.introduce .status-info ul:after {display:block; content:""; clear:both;}
+.introduce .status-info ul > li {float:left; width:50%;}
+.introduce .status-info ul > li:after {display:block; content:""; clear:both;}
+.introduce .status-info ul > li dl {float:left;}
+.introduce .status-info ul > li dl {}
+.introduce .status-info ul > li dl dt {float:left; position:relative; width:98px; height:40px; line-height:40px; margin:4px 0 0 50px; color:#fff; text-align:center;}
+.introduce .status-info ul > li dl dt:before {position:absolute; left:-50px; top:-4px; display:block; content:""; width:50px; height:50px;}
+.introduce .status-info ul > li dl dd {float:left; margin:14px 0 0 15px;}
+.introduce .status-info ul > li.local-situation dt {background:#008fc0;}
+.introduce .status-info ul > li.building dt {background:#1a55ac;}
+.introduce .status-info ul > li.local-situation dt:before {background:url(../images/introduce/status-info01.png) no-repeat;}
+.introduce .status-info ul > li.building dt:before {background:url(../images/introduce/status-info02.png) no-repeat;}
+
+.introduce .facility-slider {position:relative; margin:30px 0 0 ;}
+.introduce .facility-slider .slider { }
+.introduce .facility-slider .slick-initialized .slick-slide {position:relative; }
+.introduce .facility-slider .slider .mo {}
+.introduce .facility-slider .slider .txt {position:absolute; left:0; bottom:0; width:100%; height:70px; line-height:70px; background: rgba(0, 0, 0, 0.5); font-size:18px; color:#fff; background:#; text-align:center;}
+.introduce .facility-slider .slider .txt em {font-weight:bold;}
+.introduce .facility-slider .slick-dots {position:absolute; left:0; bottom:86px; width:100%; font-size:0; text-align:center;}
+.introduce .facility-slider .slick-dots > li {display:inline-block; overflow: hidden; width:12px; height:12px; margin-left:6px; background:#b2d6cc; transition: 0.3s ease; border-radius:12px; text-indent:-9999em;}
+.introduce .facility-slider .slick-dots > li:first-child {margin-left:0;}
+.introduce .facility-slider .slick-dots > li.slick-active {width:37px; background:#fff;}
+.introduce .facility-slider .slick-arrow {position:absolute; width:18px; height:35px; text-indent:-9999px; z-index:10;}
+.introduce .facility-slider .slick-prev {left:30px; bottom:18px; background: url(../images/button/btn-facility-prev.png) no-repeat;}
+.introduce .facility-slider .slick-next {right:30px; bottom:18px; background: url(../images/button/btn-facility-next.png) no-repeat;}
+.introduce .layout-floor_wrap {display:table; width:100%; border-top:2px solid #58b0e3;}
+.introduce .layout-floor {display:table-cell; width:40%; }
+.introduce .layout-floor ul {}
+.introduce .layout-floor ul > li {}
+.introduce .layout-floor ul > li a {display:table; width:100%;}
+.introduce .layout-floor ul > li a > * {display:table-cell; border-right:1px solid #d6d9db; border-bottom:1px solid #d6d9db;}
+.introduce .layout-floor ul > li a .floor {width:20%; vertical-align:middle; font-size:24px; color:#010101;}
+.introduce .layout-floor ul > li a .info-list {width:80%;}
+.introduce .layout-floor ul > li a .info-list > li {font-size:14px; line-height:26px; color:#2e2e2e;}
+.introduce .tab-contents {display:table-cell; width:60%; border-bottom:1px solid #d6d9db;}
+
+/* //수련아 옮길부분이야*/
 
 @media (max-width: 1319px) {
 	.gallery-info {display:block; height:auto; margin-bottom:2rem; padding:2rem 1rem; border:none;background: url(/gbgs_lib/images/use/bg-gallery-info.png) repeat;}
@@ -155,6 +195,10 @@
 	.introduce .transport > li .info .path-traffic {font-size:1rem;}
 	.introduce .transport > li .info {padding-left:1rem;}
 	.introduce .transport > li .img img {width:5rem;}
+	.introduce .status-info ul > li {float:none; width:100%;}
+	.introduce .status-info ul > li.building dl {margin-top:1rem;}
+
+	/* //수련아 옮길부분이야*/
 
 }
 @media (max-width: 1273px) {
@@ -176,6 +220,10 @@
 	.use .service-area .list {margin-top:3rem; padding:0 5rem;}
 	.use .service-area:before {background:url(../images/use/service-area-t.png) no-repeat left bottom; background-size:contain;}
 	.use .service-area:after {background-size:contain;}
+
+	/*수련아 옮길 부분이야 */
+	.introduce .status-info ul > li dl dt {width:50px;}
+	/*// 수련아 옮길 부분이야 */
 	
 }
 @media (max-width: 360px) {
