@@ -18,7 +18,7 @@
 
 .introduce h4 { margin: 32px 0 18px; }
 
-.introduce .tbl-type1 td { min-height: auto; padding: 12px 10px; word-break: break-all; }
+.introduce .tbl-type1 td { height: auto; padding: 12px 10px; word-break: break-all; }
 
 .introduce .list-dash { text-align: left; }
 
