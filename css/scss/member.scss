@@ -56,26 +56,29 @@
       a {
         overflow: hidden;
         display: block;
-        padding: 12px;
+        padding: 9px 12px 5px 12px;
         border: 1px solid #e2e1e1;
         background: url(/gbgs_lib/images/member/btn-arrow-off.jpg) right 8px
           no-repeat;
         &:hover {
           padding: 11px;
           border: 2px solid #30809f;
-          background: url(/gbgs_lib/images/member/btn-arrow-on.jpg) right 8px
+          background: url(/gbgs_lib/images/member/btn-arrow-on.jpg) right 9px
             no-repeat;
         }
         .banner-img {
           display: block;
           float: left;
           margin-right: 20px;
+          img {
+            border: 1px solid #e2e1e1;
+          }
         }
         .banner-txt {
           float: left;
-          padding-top: 8px;
+          padding-top: 4px;
           p {
-            margin-bottom: 3px;
+            margin-bottom: 2px;
             font-weight: bold;
             font-size: 18px;
           }

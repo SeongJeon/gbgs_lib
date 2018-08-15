@@ -16,15 +16,17 @@
 
 .member .banner-inner li:first-child { margin-top: 0; }
 
-.member .banner-inner li a { overflow: hidden; display: block; padding: 12px; border: 1px solid #e2e1e1; background: url(/gbgs_lib/images/member/btn-arrow-off.jpg) right 8px no-repeat; }
+.member .banner-inner li a { overflow: hidden; display: block; padding: 9px 12px 5px 12px; border: 1px solid #e2e1e1; background: url(/gbgs_lib/images/member/btn-arrow-off.jpg) right 8px no-repeat; }
 
-.member .banner-inner li a:hover { padding: 11px; border: 2px solid #30809f; background: url(/gbgs_lib/images/member/btn-arrow-on.jpg) right 8px no-repeat; }
+.member .banner-inner li a:hover { padding: 11px; border: 2px solid #30809f; background: url(/gbgs_lib/images/member/btn-arrow-on.jpg) right 9px no-repeat; }
 
 .member .banner-inner li a .banner-img { display: block; float: left; margin-right: 20px; }
 
-.member .banner-inner li a .banner-txt { float: left; padding-top: 8px; }
+.member .banner-inner li a .banner-img img { border: 1px solid #e2e1e1; }
 
-.member .banner-inner li a .banner-txt p { margin-bottom: 3px; font-weight: bold; font-size: 18px; }
+.member .banner-inner li a .banner-txt { float: left; padding-top: 4px; }
+
+.member .banner-inner li a .banner-txt p { margin-bottom: 2px; font-weight: bold; font-size: 18px; }
 
 @media (max-width: 768px) { .member .top-banner { padding: 20px; line-height: 20px; }
   .member .h3 { margin: 20px 0 10px; }
