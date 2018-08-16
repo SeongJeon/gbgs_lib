@@ -626,7 +626,7 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 2px; 
   /* TAB */
   .tab-zone ul li { height: auto; }
   .tab-zone ul li a { display: table; width: 100%; height: 3.8rem; }
-  .tab-zone ul li a span { display: table-cell; vertical-align: middle; font-size: 0.9rem; line-height: 1.4; word-break: keep-all; }
+  .tab-zone ul li a span { display: table-cell; vertical-align: middle; font-size: 0.9rem; line-height: 1.4; word-break: break-all; }
   /* LAYER */
   #layer .layer-inner .layer-container { width: 95%; }
   #layer .layer-inner .layer-container .layer-header .desc { font-size: 0.9rem; line-height: 1.3rem; }

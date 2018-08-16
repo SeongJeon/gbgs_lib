@@ -1141,7 +1141,7 @@ p.txt-important {
 				height: auto;
 				a {
 					display:table; width:100%; height:3.8rem;
-					span {display: table-cell; vertical-align:middle; font-size:0.9rem; line-height:1.4; word-break:keep-all;}
+					span {display: table-cell; vertical-align:middle; font-size:0.9rem; line-height:1.4; word-break:break-all;}
 				}
 			}
 		}
