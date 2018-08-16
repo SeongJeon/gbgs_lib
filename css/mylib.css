@@ -10,10 +10,25 @@
 
 .mylib .tab-zone { margin-bottom: 30px; }
 
+.mylib .tit-pos { margin-bottom: 15px; font-size: 20px; font-weight: normal; color: #535353; }
+
+.mylib .tbl-type3 .answer th { background: #f8f1f1; }
+
+.mylib .tbl-type3 .tit-book { margin-bottom: 16px; }
+
+.mylib .tbl-type3 .list-dash { text-align: left; }
+
+.mylib .tbl-type3 .list-dash li { position: relative; padding-left: 10px; }
+
+.mylib .tbl-type3 .list-dash li:after { position: absolute; top: 0; left: 0; content: "-"; }
+
 @media (max-width: 970px) { .mylib .tbl-type2 .state span { height: 35px; font-size: 13px; } }
 
-@media (max-width: 768px) { .mylib .ui--searchzone { margin-bottom: 23px; }
+@media (max-width: 768px) { .mylib .ui--searchzone { margin-bottom: 1.7rem; }
   .mylib .tbl-type2 .mobile01 { width: 20% !important; }
   .mylib .tbl-type2 .mobile02 { width: 16% !important; }
   .mylib .tbl-type2 .mobile03 { width: 24% !important; }
-  .mylib .tbl-type2 .state span { min-width: 50px; height: auto; padding: 3px 0 7px; font-size: 0.9rem; } }
+  .mylib .tbl-type2 .state span { min-width: 50px; height: auto; padding: 3px 0 5px; font-size: 0.9rem; }
+  .mylib .tit-pos { margin-bottom: 8px; font-size: 12px; }
+  .mylib .btn-submit-group { margin-top: 23px; }
+  .mylib .btn-submit-group .btn-type2 { min-width: 44px; } }
