@@ -354,7 +354,8 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 2px; 
 .tbl-type2 .lnk a:hover { text-decoration: underline; }
 
 .tbl-type3 { border-top: 2px solid #3e3e3e; border-bottom: 1px solid #878787; font-size: 16px; text-align: left; letter-spacing: -0.5px; }
-.tbl-type3 tr > * { padding: 7px 15px; height: 54px; border-bottom: 1px solid #ddd; color: #888; box-sizing: border-box; }
+.tbl-type3 tr > * { padding: 7px 15px; height: 54px; border-top: 1px solid #ddd; color: #888; box-sizing: border-box; }
+.tbl-type3 tr:first-child > * { border-top: 0; }
 .tbl-type3 th { width: 200px; color: #333; background: #f1f6f8; font-weight: normal; }
 .tbl-type3 th span { position: relative; display: inline-block; margin-left: 20px; }
 .tbl-type3 th .important { color: #ee0808; font-family: "NanumGothic-Bold", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
@@ -591,7 +592,7 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 2px; 
   .tbl-type2 .pc { display: none; }
   .tbl-type3 { font-size: 0.9rem; }
   .tbl-type3 tr > * { height: 4rem; padding: 0.3rem 0.7rem; }
-  .tbl-type3 th { width: 20%; }
+  .tbl-type3 th { width: 25%; }
   .tbl-type3 th span { margin-left: 0.9rem; }
   .tbl-type3 th .important + span { margin-left: 0.3rem; }
   /* FORM */

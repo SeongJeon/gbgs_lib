@@ -514,8 +514,9 @@ p.txt-important {
 	border-top:2px solid #3e3e3e; border-bottom:1px solid #878787; font-size:16px; text-align:left; letter-spacing:-0.5px;
 	tr > * {
 		padding:7px 15px;
-		height:54px; border-bottom:1px solid #ddd; color:#888; box-sizing:border-box;
+		height:54px; border-top:1px solid #ddd; color:#888; box-sizing:border-box;
 	}
+	tr:first-child > * {border-top:0;}
 	th {
 		width:200px; color:#333; background:#f1f6f8; font-weight:normal;
 		span {position:relative; display:inline-block; margin-left:20px}
@@ -1066,7 +1067,7 @@ p.txt-important {
 		font-size:0.9rem;
 		tr > * {height:4rem; padding:0.3rem 0.7rem; }
 		th {
-			width:20%;
+			width:25%;
 			span {margin-left:0.9rem}
 			.important + span {margin-left:0.3rem}
 		}
