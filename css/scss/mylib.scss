@@ -15,7 +15,7 @@
     .state {
       span {
         display: inline-block;
-        min-width: 100px;
+        width:85%;
         height: 40px;
         padding: 8px 0 14px;
         text-align: center;
@@ -40,6 +40,17 @@
   }
 }
 
+@media (max-width:970px) {
+  .mylib {
+    .tbl-type2 {
+      .state span {
+        height:35px;
+        font-size:13px;
+      }
+    } 
+  }
+}
+
 @media (max-width: 768px) {
   .mylib {
     .ui--searchzone {
@@ -58,8 +69,9 @@
       .state {
         span {
           min-width: 50px;
-          height: 20px;
+          height: auto;
           padding: 3px 0 7px;
+          font-size:0.9rem;
         }
       }
     }

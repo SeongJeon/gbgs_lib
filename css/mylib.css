@@ -2,7 +2,7 @@
 
 .mylib .tbl-type2 .link:hover a { color: #333; text-decoration: underline; }
 
-.mylib .tbl-type2 .state span { display: inline-block; min-width: 100px; height: 40px; padding: 8px 0 14px; text-align: center; color: #fff; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.mylib .tbl-type2 .state span { display: inline-block; width: 85%; height: 40px; padding: 8px 0 14px; text-align: center; color: #fff; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .mylib .tbl-type2 .state.ok span { background: #f98c0b; }
 
@@ -10,8 +10,10 @@
 
 .mylib .tab-zone { margin-bottom: 30px; }
 
+@media (max-width: 970px) { .mylib .tbl-type2 .state span { height: 35px; font-size: 13px; } }
+
 @media (max-width: 768px) { .mylib .ui--searchzone { margin-bottom: 23px; }
   .mylib .tbl-type2 .mobile01 { width: 20% !important; }
   .mylib .tbl-type2 .mobile02 { width: 16% !important; }
   .mylib .tbl-type2 .mobile03 { width: 24% !important; }
-  .mylib .tbl-type2 .state span { min-width: 50px; height: 20px; padding: 3px 0 7px; } }
+  .mylib .tbl-type2 .state span { min-width: 50px; height: auto; padding: 3px 0 7px; font-size: 0.9rem; } }
