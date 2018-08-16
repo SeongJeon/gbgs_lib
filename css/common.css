@@ -624,9 +624,9 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 2px; 
   .ui--searchzone .form .btn-type2 { float: none; position: absolute; right: 0; top: 0; font-family: "NanumGothic-Regular", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; padding-bottom: 0; }
   .ui--searchzone .btn-type2.write { margin: 0.5rem 0 0; }
   /* TAB */
-  .tab-zone ul li { height: auto; }
-  .tab-zone ul li a { display: table; width: 100%; height: 3.8rem; }
-  .tab-zone ul li a span { display: table-cell; vertical-align: middle; font-size: 0.9rem; line-height: 1.4; word-break: break-all; }
+  .tab-zone ul li { height: auto; overflow: hidden; }
+  .tab-zone ul li a { position: relative; width: 100%; height: 3.8rem; }
+  .tab-zone ul li a span { display: block; width: 100%; position: absolute; top: 50%; -ms-transform: translate(0, -50%); -moz-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); vertical-align: middle; font-size: 0.9rem; line-height: 1.4; word-break: break-all; }
   /* LAYER */
   #layer .layer-inner .layer-container { width: 95%; }
   #layer .layer-inner .layer-container .layer-header .desc { font-size: 0.9rem; line-height: 1.3rem; }
