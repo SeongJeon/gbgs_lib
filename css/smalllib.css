@@ -1,199 +1,68 @@
-.smalllib .h3 {
-  margin-bottom: 30px;
-}
+.smalllib .h3 { margin-bottom: 30px; }
 
-.smalllib .tit-sub {
-  margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: normal;
-}
+.smalllib .tit-sub { margin-bottom: 20px; font-size: 20px; font-weight: normal; }
 
-.smalllib .img-txt {
-  margin-bottom: 36px;
-}
+.smalllib .img-txt { margin-bottom: 36px; }
 
-.smalllib .history-area {
-  margin-bottom: 40px;
-}
+.smalllib .history-area { margin-bottom: 40px; }
 
-.smalllib .history-area .history-inner {
-  float: left;
-}
+.smalllib .history-area .history-inner { float: left; }
 
-.smalllib .history-area:after {
-  display: block;
-  clear: both;
-  content: "";
-}
+.smalllib .history-area:after { display: block; clear: both; content: ""; }
 
-.smalllib .history > * {
-  float: left;
-  font-style: italic;
-}
+.smalllib .history > * { float: left; font-style: italic; }
 
-.smalllib .history dt {
-  margin-right: 30px;
-  font-weight: bold;
-  font-size: 24px;
-}
+.smalllib .history dt { margin-right: 30px; font-weight: bold; font-size: 24px; }
 
-.smalllib .history dd {
-  position: relative;
-  padding: 9px 0 0 36px;
-  font-size: 16px;
-}
+.smalllib .history dd { position: relative; padding: 9px 0 0 36px; font-size: 16px; }
 
-.smalllib .history dd:before {
-  position: absolute;
-  top: 17px;
-  left: 0;
-  width: 7px;
-  height: 7px;
-  background: #257d92;
-  border-radius: 50%;
-  content: "";
-}
+.smalllib .history dd:before { position: absolute; top: 17px; left: 0; width: 7px; height: 7px; background: #257d92; border-radius: 50%; content: ""; }
 
-.smalllib .history em {
-  display: inline-block;
-  margin-right: 32px;
-  font-weight: bold;
-  font-style: italic;
-}
+.smalllib .history em { display: inline-block; margin-right: 32px; font-weight: bold; font-style: italic; }
 
-.smalllib .img-box {
-  float: right;
-}
+.smalllib .img-box { float: right; }
 
-.smalllib .tbl-type1.left {
-  margin-bottom: 53px;
-}
+.smalllib .tbl-type1.left { margin-bottom: 53px; }
 
-.smalllib .tbl-type1.left td {
-  padding-left: 22px;
-  text-align: left;
-}
+.smalllib .tbl-type1.left td { padding-left: 22px; text-align: left; }
 
-.smalllib .tbl-type1.color td:first-child {
-  color: #008fc0;
-}
+.smalllib .tbl-type1.color td:first-child { color: #008fc0; }
 
-.smalllib .tbl-type1.color td:last-child {
-  font-weight: bold;
-}
+.smalllib .tbl-type1.color td:last-child { font-weight: bold; }
 
-.smalllib .tbl-type1.use {
-  margin-bottom: 56px;
-}
+.smalllib .tbl-type1.use { margin-bottom: 56px; }
 
-.smalllib .tbl-type1.use > tbody th {
-  color: #2a5caa;
-}
+.smalllib .tbl-type1.use > tbody th { color: #2a5caa; }
 
-.smalllib .gallery-info {
-  margin-top: 0;
-}
+.smalllib .gallery-info { margin-top: 0; }
 
-.smalllib .map-area {
-  text-align: center;
-}
+.smalllib .map-area { text-align: center; }
 
-.smalllib .map-area .img-txt {
-  margin-bottom: 25px;
-}
+.smalllib .map-area .img-txt { margin-bottom: 25px; }
 
-.smalllib .map-area p {
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 35px;
-}
+.smalllib .map-area p { font-size: 20px; line-height: 30px; margin-bottom: 35px; }
 
-.smalllib .map-area .map {
-  width: 100%;
-  height: 538px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+.smalllib .map-area .map { width: 100%; height: 538px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-@media (max-width: 900px) {
-  .smalllib .tit-sub {
-    margin-bottom: 10px;
-    font-size: 15px;
-  }
-  .smalllib .img-txt.sub {
-    width: 116px;
-    margin: 0 auto 18px;
-  }
-  .smalllib .history-area {
-    margin-bottom: 20px;
-  }
-  .smalllib .history-area .history-inner {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-  .smalllib .history {
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 18px;
-  }
-  .smalllib .history:after {
-    display: block;
-    clear: both;
-    content: "";
-  }
-  .smalllib .img-box {
-    float: none;
-    text-align: center;
-  }
-  .smalllib .map-area .img-txt {
-    width: 70%;
-    margin: 0 auto 13px;
-  }
-}
+@media (max-width: 900px) { .smalllib .tit-sub { margin-bottom: 10px; font-size: 15px; }
+  .smalllib .img-txt.sub { width: 116px; margin: 0 auto 18px; }
+  .smalllib .history-area { margin-bottom: 20px; }
+  .smalllib .history-area .history-inner { float: none; display: block; text-align: center; }
+  .smalllib .history { display: inline-block; text-align: center; margin-bottom: 18px; }
+  .smalllib .history:after { display: block; clear: both; content: ""; }
+  .smalllib .img-box { float: none; text-align: center; }
+  .smalllib .map-area .img-txt { width: 70%; margin: 0 auto 13px; } }
 
-@media (max-width: 768px) {
-  .smalllib .h3 {
-    margin-bottom: 15px;
-  }
-  .smalllib .history dt {
-    margin-right: 15px;
-    font-size: 15px;
-  }
-  .smalllib .history dd {
-    padding: 4px 0 0 18px;
-    font-size: 12px;
-  }
-  .smalllib .history dd:before {
-    top: 10px;
-  }
-  .smalllib .img-box img {
-    width: 223px;
-  }
-  .smalllib .tbl-type1.use {
-    margin-bottom: 28px;
-  }
-  .smalllib .tbl-type1.left {
-    margin-bottom: 27px;
-  }
-  .smalllib .tbl-type1.left td {
-    padding-left: 10px;
-  }
-  .smalllib .map-area .img-txt {
-    width: 320px;
-  }
-  .smalllib .map-area p {
-    margin-bottom: 18px;
-    font-size: 12px;
-    line-height: 15px;
-  }
-  .smalllib .map-area .map {
-    height: 50vh;
-  }
-}
+@media (max-width: 768px) { .smalllib .h3 { margin-bottom: 15px; }
+  .smalllib .history dt { margin-right: 15px; font-size: 15px; }
+  .smalllib .history dd { padding: 4px 0 0 18px; font-size: 12px; }
+  .smalllib .history dd:before { top: 10px; }
+  .smalllib .img-box img { width: 223px; }
+  .smalllib .tbl-type1.use { margin-bottom: 28px; }
+  .smalllib .tbl-type1.left { margin-bottom: 27px; }
+  .smalllib .tbl-type1.left td { padding-left: 10px; }
+  .smalllib .map-area .img-txt { width: 320px; }
+  .smalllib .map-area p { margin-bottom: 18px; font-size: 12px; line-height: 15px; }
+  .smalllib .map-area .map { height: 50vh; } }
 
-@media (max-width: 360px) {
-  .smalllib .map-area .img-txt {
-    width: 100%;
-  }
-}
+@media (max-width: 360px) { .smalllib .map-area .img-txt { width: 100%; } }

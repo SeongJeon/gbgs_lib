@@ -1,128 +1,38 @@
-.member .top-banner {
-  position: relative;
-  display: -webkit-box;
-  display: box;
-  padding: 25px 30px;
-  background: #f1fafe;
-  border-top: 3px solid #daeff9;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  line-height: 26px;
-}
+.member .top-banner { position: relative; display: -webkit-box; display: box; padding: 25px 30px; background: #f1fafe; border-top: 3px solid #daeff9; -webkit-box-sizing: border-box; box-sizing: border-box; line-height: 26px; }
 
-.member .top-banner:before {
-  position: absolute;
-  top: -3px;
-  left: 0;
-  display: block;
-  width: 136px;
-  height: 3px;
-  background: #4089c1;
-  content: "";
-}
+.member .top-banner:before { position: absolute; top: -3px; left: 0; display: block; width: 136px; height: 3px; background: #4089c1; content: ""; }
 
-.member .top-banner:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 3px;
-  height: 49px;
-  background: #4089c1;
-  content: "";
-}
+.member .top-banner:after { position: absolute; top: 0; left: 0; display: block; width: 3px; height: 49px; background: #4089c1; content: ""; }
 
-.member .h3 {
-  margin: 40px 0 22px;
-}
+.member .h3 { margin: 40px 0 22px; }
 
-.member .list-dash {
-  text-align: left;
-}
+.member .list-dash { text-align: left; }
 
-.member .list-dash li {
-  position: relative;
-  padding-left: 10px;
-  word-break: keep-all;
-}
+.member .list-dash li { position: relative; padding-left: 10px; word-break: keep-all; }
 
-.member .list-dash li:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "-";
-}
+.member .list-dash li:after { position: absolute; top: 0; left: 0; content: "-"; }
 
-.member .banner-inner li {
-  margin-top: 20px;
-}
+.member .banner-inner li { margin-top: 20px; }
 
-.member .banner-inner li:first-child {
-  margin-top: 0;
-}
+.member .banner-inner li:first-child { margin-top: 0; }
 
-.member .banner-inner li a {
-  overflow: hidden;
-  display: block;
-  padding: 9px 12px 5px 12px;
-  border: 1px solid #e2e1e1;
-  background: url(/gbgs_lib/images/member/btn-arrow-off.jpg) right 8px no-repeat;
-}
+.member .banner-inner li a { overflow: hidden; display: block; padding: 9px 12px 5px 12px; border: 1px solid #e2e1e1; background: url(/gbgs_lib/images/member/btn-arrow-off.jpg) right 8px no-repeat; }
 
-.member .banner-inner li a:hover {
-  padding: 8px 11px 4px 11px;
-  border: 2px solid #30809f;
-  background: url(/gbgs_lib/images/member/btn-arrow-on.jpg) right 9px no-repeat;
-}
+.member .banner-inner li a:hover { padding: 8px 11px 4px 11px; border: 2px solid #30809f; background: url(/gbgs_lib/images/member/btn-arrow-on.jpg) right 9px no-repeat; }
 
-.member .banner-inner li a .banner-img {
-  display: block;
-  float: left;
-  margin-right: 20px;
-}
+.member .banner-inner li a .banner-img { display: block; float: left; margin-right: 20px; }
 
-.member .banner-inner li a .banner-img img {
-  border: 1px solid #e2e1e1;
-}
+.member .banner-inner li a .banner-img img { border: 1px solid #e2e1e1; }
 
-.member .banner-inner li a .banner-txt {
-  float: left;
-  padding-top: 4px;
-}
+.member .banner-inner li a .banner-txt { float: left; padding-top: 4px; }
 
-.member .banner-inner li a .banner-txt p {
-  margin-bottom: 2px;
-  font-weight: bold;
-  font-size: 18px;
-}
+.member .banner-inner li a .banner-txt p { margin-bottom: 2px; font-weight: bold; font-size: 18px; }
 
-@media (max-width: 768px) {
-  .member .top-banner {
-    padding: 20px;
-    line-height: 20px;
-  }
-  .member .h3 {
-    margin: 20px 0 10px;
-  }
-  .member .list-dash li {
-    line-height: 1.5;
-  }
-  .member .banner-inner li a {
-    background: none;
-  }
-  .member .banner-inner li a:hover {
-    background: none;
-  }
-  .member .banner-inner li a .banner-img {
-    float: none;
-    margin: 0;
-    text-align: center;
-  }
-  .member .banner-inner li a .banner-txt {
-    float: none;
-    text-align: center;
-  }
-  .member .banner-inner li a .banner-txt p {
-    font-size: 15px;
-  }
-}
+@media (max-width: 768px) { .member .top-banner { padding: 20px; line-height: 20px; }
+  .member .h3 { margin: 20px 0 10px; }
+  .member .list-dash li { line-height: 1.5; }
+  .member .banner-inner li a { background: none; }
+  .member .banner-inner li a:hover { background: none; }
+  .member .banner-inner li a .banner-img { float: none; margin: 0; text-align: center; }
+  .member .banner-inner li a .banner-txt { float: none; text-align: center; }
+  .member .banner-inner li a .banner-txt p { font-size: 15px; } }
