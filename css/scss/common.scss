@@ -620,11 +620,11 @@ p.txt-important {
 }
 /* 만족도조사 */
 .satisfaction-zone {
-	position: absolute; bottom:65px; right:0; width:990px; border:1px solid #d4d4d5; box-sizing:border-box; 
+	position: absolute; bottom:65px; right:0; width:990px; border:1px solid #d4d4d5; box-sizing:border-box;
 	.lst {
-		height:50px; background: #f4f7fc; padding-top:11px; box-sizing:border-box; 
+		height:50px; background: #f4f7fc; padding-top:11px; box-sizing:border-box;
 		&:after {display:block; clear:both; content:""}
-		li {float:left; position: relative;  width:25%; text-align:center; color:#353535; font-size:15px; line-height: 25px} 
+		li {float:left; position: relative;  width:25%; text-align:center; color:#353535; font-size:15px; line-height: 25px}
 		li:after {display: inline-block;  position: absolute; left:0; top:0; content:""; width:1px; height:25px; background: #c7dff4;}
 		li:before {display: inline-block; position: relative; top:3px; content:""; vertical-align: top;}
 		li:first-child:after { display: none}
@@ -1056,10 +1056,10 @@ p.txt-important {
 
 	/* 만족도조사 */
 	.satisfaction-zone {
-		position: static; width:100%; margin-top:3rem;
+		position: relative; bottom:inherit; right:inherit; width:100%; margin-top:3rem;
 		.lst {
 			height:auto; padding:0 1rem 0;
-			li { width:50%;font-size:0.9rem; line-height: 2.8rem} 
+			li { width:50%;font-size:0.9rem; line-height: 2.8rem}
 			li:after {display: none;}
 			li:nth-child(even):after {display: inline-block;  position: absolute; left:0; top:50%; content:""; width:1px; height:1.8rem; background: #c7dff4; margin-top:-0.9rem}
 			li:before {top:1rem;}

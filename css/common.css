@@ -598,7 +598,7 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 2px; 
   .txt-dotted2 > li { padding-left: 0.7rem; font-size: 0.7rem; line-height: 1rem; letter-spacing: -1px; }
   .txt-dotted2 > li:before { top: 0.4rem; width: 0.2rem; height: 0.2rem; }
   /* 만족도조사 */
-  .satisfaction-zone { position: static; width: 100%; }
+  .satisfaction-zone { position: relative; bottom: inherit; right: inherit; width: 100%; margin-top: 3rem; }
   .satisfaction-zone .lst { height: auto; padding: 0 1rem 0; }
   .satisfaction-zone .lst li { width: 50%; font-size: 0.9rem; line-height: 2.8rem; }
   .satisfaction-zone .lst li:after { display: none; }
