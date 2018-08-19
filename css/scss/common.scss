@@ -1350,11 +1350,12 @@ p.txt-important {
 		}
 		/* 주소 */
 		.form--addr {
+			.inp-type2 {width:100%;}
 			.block {
 				margin-top: 0.3rem;
 				&:nth-of-type(1) {
 					display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex; margin-top: 0;
-					.ipt-type2 {flex:1;}
+					.inp-type2 {flex:1}
 					.btn-type3 {margin-left:0.3rem;}
 				}
 			}

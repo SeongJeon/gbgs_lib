@@ -743,9 +743,10 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 1px; 
   .tbl-type3 .form--call .inp-type2 { flex: 1; }
   .tbl-type3 .form--call + .ipt-lst { display: block; margin: 0.2rem 0 0.3rem; }
   .tbl-type3 .form--call + .ipt-lst li + li { margin-left: 0; }
+  .tbl-type3 .form--addr .inp-type2 { width: 100%; }
   .tbl-type3 .form--addr .block { margin-top: 0.3rem; }
   .tbl-type3 .form--addr .block:nth-of-type(1) { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; margin-top: 0; }
-  .tbl-type3 .form--addr .block:nth-of-type(1) .ipt-type2 { flex: 1; }
+  .tbl-type3 .form--addr .block:nth-of-type(1) .inp-type2 { flex: 1; }
   .tbl-type3 .form--addr .block:nth-of-type(1) .btn-type3 { margin-left: 0.3rem; }
   .tbl-type3 .form--id { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
   .tbl-type3 .form--id .inp-type2 { flex: 1; }

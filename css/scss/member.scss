@@ -73,7 +73,7 @@
 		}
 	}
 
-	/* 로그인 */
+	/* 로그인 */ 
 	.login {
 		.content-zone .txt {height:26px; text-indent: -9999em; @include background("member/img-login-txt.png", no-repeat 50% 50%); }
 		.member-box {
@@ -138,6 +138,38 @@
 			.radio-type1 label {color:#777;}
 		}
 	}
+
+	/* 회원가입 */
+	.join {
+		.txt-welcome {height:26px; @include background("member/img-login-txt.png",no-repeat 50% 50%); text-indent:-999em;}
+		.join-process-zone {
+			padding:14px 16px; margin:24px 0 45px; background: #f1f6f8;
+			ul {
+				padding:27px 63px;
+				overflow:hidden; background: #fff;
+				li {
+					float:left; position: relative;  display:inline-block; width:150px; height:150px; margin-left:76px; text-align:center; border:1px solid #d8d7d7; border-radius: 100px; color:#444444; font-size:18px; box-sizing:border-box;
+					&:before {display: block; content:""; position: absolute; top:50%; left:-46px; width:21px; height:39px; margin-top:-20px; @include background("member/bul-arrow.png",no-repeat 50% 50%); }
+					&:first-child {margin-left:0;}
+					&:first-child:before {display:none}
+					& > div {position: absolute; top:50%; left:0; width:100%; transform:translateY(-50%);}
+
+					&.current {
+						background: #2e5ead; border-color:#2e5ead; color:#fff;
+						&:before {@include background("member/bul-arrow--on.png",no-repeat 50% 50%); }
+						.num {
+							color:#fff;
+							&:after {background:#fff;}
+						}
+					}
+				}
+				.num {
+					position:relative; display: block; padding-bottom:9px; margin-bottom:10px; font-size:20px; color:#737272;
+					&:after  {display: block; position: absolute; bottom:0; left:50%; width:36px; height:4px; margin-left:-18px; border-radius: 100px; content:''; background: #c5c5c5}
+				}
+			}
+		}
+	}
 }
 
 
@@ -168,8 +200,22 @@
 				.group {display: inline-block; }
 			}
 		}
-	}
 
+		/* 회원가입 */
+		.join {
+			.join-process-zone {
+				padding:14px 1.2vw; 
+				ul {
+					padding:27px 4.7vw; text-align:center;
+					li {
+						float:none; width:12vw; height:12vw; margin-left:5.7vw; font-size:1.3vw;
+						&:before {left:-3.8vw; }
+					}
+					.num {font-size:1.5vw; }
+				}
+			}
+		}
+	}
 }
 @media (max-width: 768px) {
 	.member {
@@ -273,15 +319,49 @@
 			.txt {margin-top:1.5rem; padding:1rem 1rem 1.2rem; font-size:0.8rem; line-height: 1.6;}
 			.check {margin:3rem 0 -1rem; }
 		}
+	
+		/* 회원가입 */
+		.join {
+			.txt-welcome {height:26px; background-size:80% auto;}
+			.join-process-zone {
+				padding:1rem 1rem; margin:1rem 0 2rem; text-align:center;
+				ul {
+					padding:1.5rem 1rem;
+					li {
+						width:5rem; height:5rem; margin-left:2.2rem; font-size:0.8rem;
+						&:before {left:-1.8rem; width:0.9rem; height:1.7rem; margin-top:-1rem; background-size:auto 100%;} 
+
+						&.current:before {background-size:auto 100%;}
+					}
+					.num { 
+						padding-bottom:0.5rem; margin-bottom:0.4rem; font-size:1rem;
+						&:after  {width:2rem; height:2px; margin-left:-1rem; }
+					}
+				}
+			}
+		}
+
 	}
 
 }
 
 @media (max-width: 370px) {
-	.pc .member {
-		.login {
-			.btm-help-zone li {height:13rem}
+	.pc .member .login .btm-help-zone li {height:13rem}
+}
+
+@media (max-width: 320px) {
+	.member {
+		/* 회원가입 */
+		.join { 
+			.join-process-zone {
+				ul {
+					padding:1rem 0.5rem;
+					li {
+						margin-left:1.5rem;
+						&:before {left:-1.4rem; width:0.7rem; height:1.4rem;  }
+					}
+				}
+			}
 		}
 	}
-
 }

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.member { /* 개인정보처리방침 */ /* 배너모음 */ /* 아이디&비밀번호찾기 */ /* 로그인 */ /* 회원탈퇴 */ }
+.member { /* 개인정보처리방침 */ /* 배너모음 */ /* 아이디&비밀번호찾기 */ /* 로그인 */ /* 회원탈퇴 */ /* 회원가입 */ }
 .member .policy .top-banner { position: relative; display: -webkit-box; display: box; padding: 25px 30px; background: #f1fafe; border-top: 3px solid #daeff9; box-sizing: border-box; line-height: 26px; }
 .member .policy .top-banner:before { position: absolute; top: -3px; left: 0; display: block; width: 136px; height: 3px; background: #4089c1; content: ""; }
 .member .policy .top-banner:after { position: absolute; top: 0; left: 0; display: block; width: 3px; height: 49px; background: #4089c1; content: ""; }
@@ -66,15 +66,34 @@
 .member .moveout-zone .check { margin: 70px 0 -25px; text-align: center; }
 .member .moveout-zone .check .radio-type1 { display: inline-block; }
 .member .moveout-zone .check .radio-type1 label { color: #777; }
+.member .join .txt-welcome { height: 26px; background: url("../images/member/img-login-txt.png") no-repeat 50% 50%; text-indent: -999em; }
+.member .join .join-process-zone { padding: 14px 16px; margin: 24px 0 45px; background: #f1f6f8; }
+.member .join .join-process-zone ul { padding: 27px 63px; overflow: hidden; background: #fff; }
+.member .join .join-process-zone ul li { float: left; position: relative; display: inline-block; width: 150px; height: 150px; margin-left: 76px; text-align: center; border: 1px solid #d8d7d7; border-radius: 100px; color: #444444; font-size: 18px; box-sizing: border-box; }
+.member .join .join-process-zone ul li:before { display: block; content: ""; position: absolute; top: 50%; left: -46px; width: 21px; height: 39px; margin-top: -20px; background: url("../images/member/bul-arrow.png") no-repeat 50% 50%; }
+.member .join .join-process-zone ul li:first-child { margin-left: 0; }
+.member .join .join-process-zone ul li:first-child:before { display: none; }
+.member .join .join-process-zone ul li > div { position: absolute; top: 50%; left: 0; width: 100%; transform: translateY(-50%); }
+.member .join .join-process-zone ul li.current { background: #2e5ead; border-color: #2e5ead; color: #fff; }
+.member .join .join-process-zone ul li.current:before { background: url("../images/member/bul-arrow--on.png") no-repeat 50% 50%; }
+.member .join .join-process-zone ul li.current .num { color: #fff; }
+.member .join .join-process-zone ul li.current .num:after { background: #fff; }
+.member .join .join-process-zone ul .num { position: relative; display: block; padding-bottom: 9px; margin-bottom: 10px; font-size: 20px; color: #737272; }
+.member .join .join-process-zone ul .num:after { display: block; position: absolute; bottom: 0; left: 50%; width: 36px; height: 4px; margin-left: -18px; border-radius: 100px; content: ''; background: #c5c5c5; }
 
-@media (max-width: 1319px) { .member { /* 아이디&비밀번호찾기 */ /* 로그인 */ }
+@media (max-width: 1319px) { .member { /* 아이디&비밀번호찾기 */ /* 로그인 */ /* 회원가입 */ }
   .member .find .member-box .box a { width: 17vw; }
   .member .find .member-box .box button { width: 12vw; }
   .member .find .member-box .form { width: 34.5vw; }
   .member .login .member-box { padding: 70px 20px 55px; background: none; text-align: center; }
   .member .login .member-box .box { width: 455px; margin: 0 auto; }
-  .member .login .member-box .group { display: inline-block; } }
-@media (max-width: 768px) { .member { /* 개인정보처리방침 */ /* 배너모음 */ /* 아이디&비밀번호찾기 */ /* 로그인 */ /* 회원탈퇴 */ }
+  .member .login .member-box .group { display: inline-block; }
+  .member .join .join-process-zone { padding: 14px 1.2vw; }
+  .member .join .join-process-zone ul { padding: 27px 4.7vw; text-align: center; }
+  .member .join .join-process-zone ul li { float: none; width: 12vw; height: 12vw; margin-left: 5.7vw; font-size: 1.3vw; }
+  .member .join .join-process-zone ul li:before { left: -3.8vw; }
+  .member .join .join-process-zone ul .num { font-size: 1.5vw; } }
+@media (max-width: 768px) { .member { /* 개인정보처리방침 */ /* 배너모음 */ /* 아이디&비밀번호찾기 */ /* 로그인 */ /* 회원탈퇴 */ /* 회원가입 */ }
   .member .policy .top-banner { padding: 20px; line-height: 20px; }
   .member .policy .h3 { margin: 20px 0 10px; }
   .member .policy .list-dash li { line-height: 1.5; }
@@ -118,5 +137,17 @@
   .member .login .btm-help-zone .btn-type2 { position: absolute; left: 1rem; bottom: 1rem; margin-top: 0; }
   .member .moveout-zone .h4 { margin-top: 2rem; }
   .member .moveout-zone .txt { margin-top: 1.5rem; padding: 1rem 1rem 1.2rem; font-size: 0.8rem; line-height: 1.6; }
-  .member .moveout-zone .check { margin: 3rem 0 -1rem; } }
+  .member .moveout-zone .check { margin: 3rem 0 -1rem; }
+  .member .join .txt-welcome { height: 26px; background-size: 80% auto; }
+  .member .join .join-process-zone { padding: 1rem 1rem; margin: 1rem 0 2rem; text-align: center; }
+  .member .join .join-process-zone ul { padding: 1.5rem 1rem; }
+  .member .join .join-process-zone ul li { width: 5rem; height: 5rem; margin-left: 2.2rem; font-size: 0.8rem; }
+  .member .join .join-process-zone ul li:before { left: -1.8rem; width: 0.9rem; height: 1.7rem; margin-top: -1rem; background-size: auto 100%; }
+  .member .join .join-process-zone ul li.current:before { background-size: auto 100%; }
+  .member .join .join-process-zone ul .num { padding-bottom: 0.5rem; margin-bottom: 0.4rem; font-size: 1rem; }
+  .member .join .join-process-zone ul .num:after { width: 2rem; height: 2px; margin-left: -1rem; } }
 @media (max-width: 370px) { .pc .member .login .btm-help-zone li { height: 13rem; } }
+@media (max-width: 320px) { .member { /* 회원가입 */ }
+  .member .join .join-process-zone ul { padding: 1rem 0.5rem; }
+  .member .join .join-process-zone ul li { margin-left: 1.5rem; }
+  .member .join .join-process-zone ul li:before { left: -1.4rem; width: 0.7rem; height: 1.4rem; } }
