@@ -1,38 +1,122 @@
-.member .top-banner { position: relative; display: -webkit-box; display: box; padding: 25px 30px; background: #f1fafe; border-top: 3px solid #daeff9; -webkit-box-sizing: border-box; box-sizing: border-box; line-height: 26px; }
-
-.member .top-banner:before { position: absolute; top: -3px; left: 0; display: block; width: 136px; height: 3px; background: #4089c1; content: ""; }
-
-.member .top-banner:after { position: absolute; top: 0; left: 0; display: block; width: 3px; height: 49px; background: #4089c1; content: ""; }
-
-.member .h3 { margin: 40px 0 22px; }
-
-.member .list-dash { text-align: left; }
-
-.member .list-dash li { position: relative; padding-left: 10px; word-break: keep-all; }
-
-.member .list-dash li:after { position: absolute; top: 0; left: 0; content: "-"; }
-
+@charset "UTF-8";
+.member { /* 개인정보처리방침 */ /* 배너모음 */ /* 아이디&비밀번호찾기 */ /* 로그인 */ /* 회원탈퇴 */ }
+.member .policy .top-banner { position: relative; display: -webkit-box; display: box; padding: 25px 30px; background: #f1fafe; border-top: 3px solid #daeff9; box-sizing: border-box; line-height: 26px; }
+.member .policy .top-banner:before { position: absolute; top: -3px; left: 0; display: block; width: 136px; height: 3px; background: #4089c1; content: ""; }
+.member .policy .top-banner:after { position: absolute; top: 0; left: 0; display: block; width: 3px; height: 49px; background: #4089c1; content: ""; }
+.member .policy .h3 { margin: 40px 0 22px; }
+.member .policy .list-dash { text-align: left; }
+.member .policy .list-dash li { position: relative; padding-left: 10px; word-break: keep-all; }
+.member .policy .list-dash li:after { position: absolute; top: 0; left: 0; content: "-"; }
 .member .banner-inner li { margin-top: 20px; }
-
 .member .banner-inner li:first-child { margin-top: 0; }
-
 .member .banner-inner li a { overflow: hidden; display: block; padding: 9px 12px 5px 12px; border: 1px solid #e2e1e1; background: url(/gbgs_lib/images/member/btn-arrow-off.jpg) right 8px no-repeat; }
-
 .member .banner-inner li a:hover { padding: 8px 11px 4px 11px; border: 2px solid #30809f; background: url(/gbgs_lib/images/member/btn-arrow-on.jpg) right 7px no-repeat; }
-
 .member .banner-inner li a .banner-img { display: block; float: left; margin-right: 20px; }
-
 .member .banner-inner li a .banner-img img { border: 1px solid #e2e1e1; }
-
 .member .banner-inner li a .banner-txt { float: left; padding-top: 4px; }
-
 .member .banner-inner li a .banner-txt p { margin-bottom: 2px; font-weight: bold; font-size: 18px; }
+.member .member-box { margin-top: 30px; border: 1px solid #d6d5d5; border-top: 2px solid #028090; }
+.member .find .content-zone .txt { height: 61px; text-indent: -9999em; background: url("../images/member/img-find-txt.png") no-repeat 50% 50%; }
+.member .find .member-box { padding: 55px 0 50px; text-align: center; }
+.member .find .member-box .box { overflow: hidden; display: inline-block; vertical-align: top; }
+.member .find .member-box .box a { display: block; width: 185px; height: 110px; line-height: 110px; color: #fff; text-align: center; background: #4089c1; }
+.member .find .member-box .box button { float: left; display: block; width: 122px; height: 110px; margin-left: 8px; line-height: 110px; color: #fff; text-align: center; background: #028090; }
+.member .find .member-box .or { display: inline-block; line-height: 110px; font-size: 20px; margin: 0 33px; font-family: "NanumGothic-Regular", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.member .find .member-box .form { float: left; width: 352px; }
+.member .find .member-box .form input { height: 50px; width: 100%; padding: 0 19px; margin-top: 10px; color: #222; box-sizing: border-box; color: #333; border: 1px solid #c3c3c3; font-size: 16px; font-family: "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.member .find .member-box .form input:nth-of-type(1) { margin-top: 0; }
+.member .find .member-box .form input::-webkit-input-placeholder { color: #b0b0b0; }
+.member .find .member-box .form input::-moz-placeholder { color: #b0b0b0; }
+.member .find .member-box .form input:-ms-input-placeholder { color: #b0b0b0; }
+.member .find .member-box .form input:-moz-placeholder { color: #b0b0b0; }
+.member .find .member-box .txt-important { text-align: left; clear: both; margin-top: 120px; }
+.member .login .content-zone .txt { height: 26px; text-indent: -9999em; background: url("../images/member/img-login-txt.png") no-repeat 50% 50%; }
+.member .login .member-box { padding: 70px 0 55px 370px; text-align: left; background: url("../images/member/icon-login.png") no-repeat 120px 44px; }
+.member .login .member-box .box { overflow: hidden; }
+.member .login .member-box .box button { float: left; display: block; width: 122px; height: 110px; margin-left: 8px; line-height: 110px; color: #fff; text-align: center; background: #028090; }
+.member .login .member-box .form { float: left; width: 325px; }
+.member .login .member-box .form div[class*="ipt"] { position: relative; margin-top: 10px; }
+.member .login .member-box .form div[class*="ipt"]:nth-of-type(1) { margin-top: 0; }
+.member .login .member-box .form div[class*="ipt"]:after { display: inline-block; content: ""; position: absolute; top: 0; right: 11px; width: 24px; height: 100%; }
+.member .login .member-box .form div[class*="ipt"].ipt1:after { background: url("../images/member/icon-ipt1.png") no-repeat 50% 50%; }
+.member .login .member-box .form div[class*="ipt"].ipt2:after { background: url("../images/member/icon-ipt2.png") no-repeat 50% 50%; }
+.member .login .member-box .form input { height: 50px; width: 100%; padding: 0 35px 0 19px; color: #222; box-sizing: border-box; color: #333; border: 1px solid #c3c3c3; font-size: 16px; font-family: "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.member .login .member-box .form input::-webkit-input-placeholder { color: #b0b0b0; }
+.member .login .member-box .form input::-moz-placeholder { color: #b0b0b0; }
+.member .login .member-box .form input:-ms-input-placeholder { color: #b0b0b0; }
+.member .login .member-box .form input:-moz-placeholder { color: #b0b0b0; }
+.member .login .member-box .group { margin-top: 16px; }
+.member .login .member-box .group:after { display: block; clear: both; content: ""; }
+.member .login .member-box .group li { float: left; position: relative; margin-left: 60px; }
+.member .login .member-box .group li:first-child { margin-left: 0; }
+.member .login .member-box .group li input { position: absolute; left: 0; top: 40%; }
+.member .login .member-box .group li label { font-size: 14px; color: #111; cursor: pointer; }
+.member .login .member-box .group li label:before { display: inline-block; content: ""; vertical-align: middle; width: 68px; height: 25px; margin-right: 8px; background: url("../images/common/ipt-check2.png") no-repeat 50% 50%; }
+.member .login .member-box .group li input:checked + label:before { background: url("../images/common/ipt-check2--checked.png") no-repeat 50% 50%; }
+.member .login .btm-help-zone { position: relative; margin-top: 30px; border: 1px solid #d6d5d5; }
+.member .login .btm-help-zone:after { display: block; clear: both; content: ""; }
+.member .login .btm-help-zone:before { display: block; position: absolute; top: 0; left: 50%; width: 2px; height: 100%; background: #d6d5d5; content: ""; }
+.member .login .btm-help-zone li { float: left; width: 50%; padding: 30px 20px 25px 185px; box-sizing: border-box; color: #2e2e2e; font-size: 15px; line-height: 24px; }
+.member .login .btm-help-zone li.join { background: url("../images/member/icon-login1.png") no-repeat 34px 50%; }
+.member .login .btm-help-zone li.idfind { background: url("../images/member/icon-login2.png") no-repeat 34px 50%; }
+.member .login .btm-help-zone .tit { font-size: 20px; margin-bottom: 5px; letter-spacing: -0.5px; }
+.member .login .btm-help-zone .btn-type2 { margin-top: 13px; }
+.member .moveout-zone .h4 { margin-top: 30px; }
+.member .moveout-zone .txt { margin-top: 15px; padding: 10px 15px 12px; background: #f1fafe; color: #000; font-size: 15px; line-height: 26px; }
+.member .moveout-zone .check { margin: 70px 0 -25px; text-align: center; }
+.member .moveout-zone .check .radio-type1 { display: inline-block; }
+.member .moveout-zone .check .radio-type1 label { color: #777; }
 
-@media (max-width: 768px) { .member .top-banner { padding: 20px; line-height: 20px; }
-  .member .h3 { margin: 20px 0 10px; }
-  .member .list-dash li { line-height: 1.5; }
+@media (max-width: 1319px) { .member { /* 아이디&비밀번호찾기 */ /* 로그인 */ }
+  .member .find .member-box .box a { width: 17vw; }
+  .member .find .member-box .box button { width: 12vw; }
+  .member .find .member-box .form { width: 34.5vw; }
+  .member .login .member-box { padding: 70px 20px 55px; background: none; text-align: center; }
+  .member .login .member-box .box { width: 455px; margin: 0 auto; }
+  .member .login .member-box .group { display: inline-block; } }
+@media (max-width: 768px) { .member { /* 개인정보처리방침 */ /* 배너모음 */ /* 아이디&비밀번호찾기 */ /* 로그인 */ /* 회원탈퇴 */ }
+  .member .policy .top-banner { padding: 20px; line-height: 20px; }
+  .member .policy .h3 { margin: 20px 0 10px; }
+  .member .policy .list-dash li { line-height: 1.5; }
   .member .banner-inner li a { background: none; }
   .member .banner-inner li a:hover { background: none; }
   .member .banner-inner li a .banner-img { float: none; margin: 0; text-align: center; }
   .member .banner-inner li a .banner-txt { float: none; text-align: center; }
-  .member .banner-inner li a .banner-txt p { font-size: 15px; } }
+  .member .banner-inner li a .banner-txt p { font-size: 15px; }
+  .member .member-box { margin-top: 30px; border: 1px solid #d6d5d5; border-top: 2px solid #028090; }
+  .member .find .content-zone .txt { height: 5rem; background-size: 80% auto; }
+  .member .find .member-box { padding: 3rem 1rem; margin-top: 2rem; }
+  .member .find .member-box .or { display: block; line-height: 1.2; font-size: 1.2rem; margin: 1.5rem 0 2rem; }
+  .member .find .member-box .box { display: block; }
+  .member .find .member-box .box a { width: 100%; height: 4rem; line-height: 4rem; }
+  .member .find .member-box .box button { width: 28%; height: 6.3rem; margin-left: 2%; line-height: 5.3rem; }
+  .member .find .member-box .form { float: left; width: 70%; }
+  .member .find .member-box .form input { height: 3rem; padding: 0 1rem; margin-top: 0.3rem; font-size: 0.8rem; }
+  .member .find .member-box .form input:nth-of-type(1) { margin-top: 0; }
+  .member .find .member-box .txt-important { margin-top: 6.7rem; }
+  .member .login .content-zone .txt { height: 26px; background-size: 80% auto; }
+  .member .login .member-box { padding: 3rem 1rem 3rem; }
+  .member .login .member-box .box { width: 100%; }
+  .member .login .member-box .box button { width: 28%; height: 6.3rem; margin-left: 2%; line-height: 6.3rem; font-size: 0.8rem; }
+  .member .login .member-box .form { width: 70%; }
+  .member .login .member-box .form div[class*="ipt"] { position: relative; margin-top: 0.3rem; }
+  .member .login .member-box .form div[class*="ipt"]:nth-of-type(1) { margin-top: 0; }
+  .member .login .member-box .form div[class*="ipt"]:after { display: inline-block; content: ""; position: absolute; top: 0; right: 11px; width: 24px; height: 100%; }
+  .member .login .member-box .form div[class*="ipt"].ipt1:after { background-size: auto 50%; }
+  .member .login .member-box .form div[class*="ipt"].ipt2:after { background-size: auto 50%; }
+  .member .login .member-box .form input { height: 3rem; padding: 0 3.5rem 0 1rem; font-size: 0.8rem; }
+  .member .login .member-box .group { margin-top: 1rem; }
+  .member .login .member-box .group li { margin-left: 3rem; }
+  .member .login .member-box .group li:first-child { margin-left: 0; }
+  .member .login .member-box .group li label { font-size: 0.8rem; }
+  .member .login .member-box .group li label:before { display: inline-block; content: ""; vertical-align: middle; width: 3.4rem; height: 1.25rem; margin-right: 0.4rem; background-size: auto 100%; }
+  .member .login .member-box .group li input:checked + label:before { background-size: auto 100%; }
+  .member .login .btm-help-zone { margin-top: 2rem; }
+  .member .login .btm-help-zone:before { width: 1px; }
+  .member .login .btm-help-zone li { position: relative; padding: 1rem 0.5rem 1rem 1rem; height: 11rem; font-size: 0.8rem; line-height: 1.4; background: none !important; box-sizing: border-box; }
+  .member .login .btm-help-zone .tit { font-size: 1rem; margin-bottom: 0.2rem; }
+  .member .login .btm-help-zone .btn-type2 { position: absolute; left: 1rem; bottom: 1rem; margin-top: 0; }
+  .member .moveout-zone .h4 { margin-top: 2rem; }
+  .member .moveout-zone .txt { margin-top: 1.5rem; padding: 1rem 1rem 1.2rem; font-size: 0.8rem; line-height: 1.6; }
+  .member .moveout-zone .check { margin: 3rem 0 -1rem; } }
+@media (max-width: 370px) { .pc .member .login .btm-help-zone li { height: 13rem; } }
