@@ -97,7 +97,7 @@
 .introduce .map-area { text-align: center; }
 .introduce .map-area .img-txt { margin-bottom: 25px; }
 .introduce .map-area p { font-size: 20px; line-height: 30px; margin-bottom: 35px; }
-.introduce .map-area .map { width: 100%; height: 538px; }
+.introduce .map-area .map { width: 100%; height: 538px; box-sizing:border-box;}
 .introduce .transport {}
 .introduce .transport > li {display:-webkit-box; display:box; margin-top:11px; padding:17px 35px 17px 0; border:1px solid #d6d5d5;}
 .introduce .transport > li:first-child {margin-top:0;}
@@ -159,9 +159,9 @@
 	.gallery-info .tab-info .tit {display:none;}
 	.gallery-info .tab-info .tab {overflow:hidden; border-top:1px solid #d6d5d5; border-left:1px solid #d6d5d5;}
 	.gallery-info .tab-info .tab > li {float:left; width:33.33%;}
-	.gallery-info .tab-info .tab > li a {background:#fff; border:none; border-right:1px solid #d6d5d5; border-bottom:1px solid #d6d5d5; font-size:0.9rem;}
+	.gallery-info .tab-info .tab > li a {padding:10px 0 12px; background:#fff; border:none; border-right:1px solid #d6d5d5; border-bottom:1px solid #d6d5d5; font-size:0.9rem; text-align:center;}
 	.gallery-info .tab-info .tab > li:nth-child(3n+1) {clear:both;}
-	.gallery-info .tab-info .tab > li.on a {padding-top:8px;}
+	.gallery-info .tab-info .tab > li.on a {padding:8px 0 11px;}
 	.gallery-info .tab-con .tab-contents .tit {width:100%; text-align:center;}
 	.gallery-info .tab-con {display:block; width:auto; margin-top:2rem;}
 	.gallery-info .tab-con .slider.room:before {display:none;}
@@ -199,7 +199,10 @@
 	.introduce .transport > li .img img {width:5rem;}
 	.introduce .status-info ul > li {float:none; width:100%;}
 	.introduce .status-info ul > li.building dl {margin-top:1rem;}
-
+	.introduce .layout-floor_wrap {display:block;}
+	.introduce .layout-floor {display:block; width:100%;}
+	.introduce .tab-contents {width:100%; display:block;}
+	.introduce .layout-floor ul > li a {border-left:1px solid #d6d9db}
 	/* //수련아 옮길부분이야*/
 
 }
