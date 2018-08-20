@@ -56,8 +56,8 @@
 .use p.txt-bul {position:relative; padding-left:14px;line-height:26px;}
 .use .txt-bul > li:before,
 .use p.txt-bul:before {display:block; content:""; position:absolute; left:0; top:10px; width:5px; height:5px; border-radius:2px; background:#4089c1;}
-.use .bg-txt-list {margin-top:10px; padding:10px 20px 9px; background:#ecf8fe; font-size:16px; line-height:26px; color:#383838;}
-.use .bg-txt-list:before {content:"-"; margin-right:5px; color:#2a5caa;}
+.use .bg-txt-list {position:relative; margin-top:10px; padding:10px 20px 9px 30px; background:#ecf8fe; font-size:16px; line-height:26px; color:#383838;}
+.use .bg-txt-list:before {position:absolute; left:20px; top:7px; display:block; content:"-"; margin-right:5px; color:#2a5caa;}
 .use .list-dash {text-align: left; }
 .use .list-dash > li {position: relative; padding-left: 10px; }
 .use .list-dash > li:after {position: absolute; top: 0; left: 0; content: "-"; }
@@ -183,11 +183,13 @@
 	.use .service-area .list ul > li,
 	.use .service-area .list ul > li .num {font-size:1rem; line-height:1.4;}
 	.use .h3_wrap .txt-important {top:0; font-size:1rem;}
-	.use .bg-txt-list {font-size:1rem;}
+	.use .bg-txt-list {padding-left:2.5rem; font-size:1rem; line-height:1.4;}
 	.use .donation-process {margin-top:1.5rem; margin-bottom:2.5rem;}
 	.use .top-banner .inner .txt-bul > li,
 	.use .donation-process ol > li > *,
-	.use .bg-box-list ul > li {line-height:1.4;}
+	.use .bg-box-list ul > li ,
+	.use .txt-bul > li, .use p.txt-bul{line-height:1.4;}
+	.use .bg-txt-list:before {margin-right:3px;}
 
 
 	/*수련아 옮길 부분이야*/
@@ -217,7 +219,7 @@
 	.use .top-banner .inner .txt-bul {padding-left:1rem;}
 	.use .top-banner .inner .img {padding-right:1rem;}
 	p.txt-important {font-size:0.9rem;}
-	.use .list-notes ul > li {font-size:1rem; line-height:1.4;}
+	.use .list-notes ul > li {font-size:1rem; line-height:1.7;}
 	.use .list-notes {background-position: right bottom; padding-bottom: 150px; background-size: 15rem auto; margin-bottom: 2rem;} 
 
 	/*수련아 옮길 부분이야*/
