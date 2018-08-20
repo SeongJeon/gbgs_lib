@@ -1215,20 +1215,20 @@ p.txt-important {
 
 	/* TABLE */
 	.tbl-type1 { // 데이터형
-		font-size:0.9rem;
+		font-size:1rem;
 		tr > * {height:4rem; }
 	}
 	.tbl-type2 {// 목록 형
-		font-size:0.9rem;
+		font-size:1rem;
 		tr > * {height:3.5rem; }
 		.pc {display:none}
 	}
 	.tbl-type3 {// 폼 형
-		font-size:0.9rem;
+		font-size:1rem;
 		tr > * {height:4rem; padding:0.3rem 0.7rem; }
 		th {
 			width:25%; line-height:1.4; padding-top:1.2rem; letter-spacing:-0.7px;
-			span {margin-left:0.9rem}
+			span {margin-left:1rem}
 			.important + span {margin-left:0.3rem}
 		}
 	}

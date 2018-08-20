@@ -679,15 +679,15 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 1px; 
   .btn-submit-group .btn-type2 { min-width: 7rem; padding: 0 2rem 3px; }
   /* ICON */
   /* TABLE */
-  .tbl-type1 { font-size: 0.9rem; }
+  .tbl-type1 { font-size: 1rem; }
   .tbl-type1 tr > * { height: 4rem; }
-  .tbl-type2 { font-size: 0.9rem; }
+  .tbl-type2 { font-size: 1rem; }
   .tbl-type2 tr > * { height: 3.5rem; }
   .tbl-type2 .pc { display: none; }
-  .tbl-type3 { font-size: 0.9rem; }
+  .tbl-type3 { font-size: 1rem; }
   .tbl-type3 tr > * { height: 4rem; padding: 0.3rem 0.7rem; }
   .tbl-type3 th { width: 25%; line-height: 1.4; padding-top: 1.2rem; letter-spacing: -0.7px; }
-  .tbl-type3 th span { margin-left: 0.9rem; }
+  .tbl-type3 th span { margin-left: 1rem; }
   .tbl-type3 th .important + span { margin-left: 0.3rem; }
   /* FORM */
   .sel-type1 select { height: 28px; width: 100%; padding: 0 8px; font-size: 10px; background-size: auto 30%; letter-spacing: -1px; }

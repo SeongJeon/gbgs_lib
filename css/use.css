@@ -14,7 +14,7 @@
 .gallery-info .tab-con {display:-webkit-box; display:box; -webkit-box-orient:vertical; box-orient:vertical; box-pack:center; -webkit-box-flex:1; box-flex:1; width:657px;}
 .gallery-info .tab-con .tab-contents {position:relative; display:none;}
 .gallery-info .tab-con .tab-contents.on {display:block;}
-.gallery-info .tab-con .tab-contents .tit {width:63%; height:50px; position:absolute; right:0; top:0; padding:13px 0 0 71px; box-sizing: border-box; background:rgba(0, 0, 0, 0.5); z-index:2; color:#fff;}
+.gallery-info .tab-con .tab-contents .tit {width:100%; height:50px; position:absolute; right:0; top:0; padding:13px 0 0 0; box-sizing: border-box; background:rgba(0, 0, 0, 0.5); z-index:2; color:#fff; text-align:center;}
 .gallery-info .tab-con .slider.room:before {display:block; content:""; width:114px; height:50px; position:absolute; right:0; top:0; background:rgba(0, 0, 0, 0.5); z-index:1;}
 .gallery-info .tab-con .slider.room .inner {position:relative;}
 .gallery-info .tab-con .slider.room .img {}
@@ -149,12 +149,12 @@
 .introduce .layout-floor ul > li a .info-list {width:80%;padding:23px 0 18px 20px;}
 .introduce .layout-floor ul > li a .info-list > li {position:relative; padding-left:15px; font-size:14px; line-height:26px; color:#2e2e2e;}
 .introduce .layout-floor ul > li a .info-list > li:before {position:absolute; left:0; top:11px; display:block; content:""; width:5px; height:5px; border-radius:5px; background:#4089c1;}
-.introduce .tab-contents {display:table-cell; width:60%; text-align:center; vertical-align:middle; border-bottom:1px solid #d6d9db;}
+.introduce .layout-floor_wrap .tab-contents {display:table-cell; width:60%; text-align:center; vertical-align:middle; border-bottom:1px solid #d6d9db;}
 
 /* //수련아 옮길부분이야*/
 
 @media (max-width: 1319px) {
-	.gallery-info {display:block; height:auto; margin-bottom:2rem; padding:2rem 1rem; border:none;background: url(/gbgs_lib/images/use/bg-gallery-info.png) repeat;}
+	.gallery-info {display:block; height:auto; margin:0 0 2rem; padding:2rem 1rem; border:none;background: url(/gbgs_lib/images/use/bg-gallery-info.png) repeat;}
 	.gallery-info .tab-info {display:block; width:100%; padding:0; box-sizing:border-box;}
 	.gallery-info .tab-info .tit {display:none;}
 	.gallery-info .tab-info .tab {overflow:hidden; border-top:1px solid #d6d5d5; border-left:1px solid #d6d5d5;}
@@ -162,10 +162,10 @@
 	.gallery-info .tab-info .tab > li a {padding:10px 0 12px; background:#fff; border:none; border-right:1px solid #d6d5d5; border-bottom:1px solid #d6d5d5; font-size:0.9rem; text-align:center;}
 	.gallery-info .tab-info .tab > li:nth-child(3n+1) {clear:both;}
 	.gallery-info .tab-info .tab > li.on a {padding:8px 0 11px;}
-	.gallery-info .tab-con .tab-contents .tit {width:100%; text-align:center;}
+	.gallery-info .tab-con .tab-contents .tit {width:100%; text-align:center; font-size:1.1rem;}
 	.gallery-info .tab-con {display:block; width:auto; margin-top:2rem;}
 	.gallery-info .tab-con .slider.room:before {display:none;}
-	.gallery-info .tab-con .slider.room .info .txt {margin:0; padding:1rem 0; background:#fff; font-size:0.9rem; border-bottom:1px solid #d8dadb;}
+	.gallery-info .tab-con .slider.room .info .txt {margin:0; padding:1rem 1rem; background:#fff; font-size:1rem; border-bottom:1px solid #d8dadb; word-break:keep-all;}
 	.gallery-info .tab-con .slider.room .slick-prev,
 	.gallery-info .tab-con .slider.room .custom-paging,
 	.gallery-info .tab-con .slider.room .slick-next {display:none !important;}
@@ -188,8 +188,10 @@
 	.use .top-banner .inner .txt-bul > li,
 	.use .donation-process ol > li > *,
 	.use .bg-box-list ul > li ,
-	.use .txt-bul > li, .use p.txt-bul{line-height:1.4;}
+	.use .txt-bul > li, .use p.txt-bul{line-height:1.4; font-size:1rem; word-break: keep-all}
 	.use .bg-txt-list:before {margin-right:3px;}
+	.use .tbl-type1 ul.txt-bul {padding:1rem 0 1.5rem 1rem;}
+	.use .txt-bul > li:before, .use p.txt-bul:before {top:0.45rem;}
 
 
 	/*수련아 옮길 부분이야*/
@@ -234,6 +236,7 @@
 	.use .service-area .list {margin-top:3rem; padding:0 5rem;}
 	.use .service-area:before {background:url(../images/use/service-area-t.png) no-repeat left bottom; background-size:contain;}
 	.use .service-area:after {background-size:contain;}
+
 
 	/*수련아 옮길 부분이야 */
 	.introduce .status-info ul > li dl dt {width:50px;}

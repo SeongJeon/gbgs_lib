@@ -219,5 +219,12 @@
         }
       }
     }
+
+
+    .layout-floor  {
+      ul > li a .info-list {padding:1.5rem 0 1.5rem 1.5rem;}
+      ul > li a .info-list > li {font-size:1rem; line-height: 1.6}
+      ul > li a .info-list > li:before {top:0.5rem}
+    }
   }
 }
