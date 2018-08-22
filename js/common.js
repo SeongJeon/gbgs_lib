@@ -469,6 +469,14 @@ var plugin_lnb = (function(){
 	})
 })();
 
+// DATE PICKER
+$( ".ipt-datepicker input" ).datepicker({
+	showOn: "button",
+	buttonImage: "/gbgs_lib/images/button/btn-datepicker.png",
+	buttonImageOnly: true,
+	buttonText: "Select date"
+});
+
 /* -----------------------------------------------------------------
 DOCUMENT READY
 ----------------------------------------------------------------- */

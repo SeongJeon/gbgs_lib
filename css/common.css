@@ -262,7 +262,6 @@ br.mo { display: none; }
 .btn-submit-group * + * { margin-left: 5px; }
 .btn-submit-group .btn-type2 { min-width: 88px; padding: 0 35px 3px; }
 
-/* ICON */
 /* TITLE */
 .h3 { font-size: 20px; color: #222; font-family: "NanumGothic-Bold", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: left; }
 .h3:before { display: inline-block; position: relative; top: 4px; content: ""; width: 31px; height: 21px; margin-right: 10px; background: url("../images/common/bul-tit1.png") no-repeat 50% 50%; }
@@ -316,6 +315,10 @@ br.mo { display: none; }
 .radio-type1 input:checked + label:before { background: url("../images/common/ipt-radio--checked.png") no-repeat 0 0; }
 
 .textarea1 { width: 100%; padding: 10px 15px; min-height: 125px; border: 1px solid #c8c8c8; box-sizing: border-box; font-size: 16px; font-family: "NanumGothic-Regular", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; resize: none; color: #333; }
+
+.ipt-datepicker { position: relative; display: inline-block; vertical-align: top; }
+.ipt-datepicker input { width: 190px; padding: 0 40px 0 15px; box-sizing: border-box; }
+.ipt-datepicker .ui-datepicker-trigger { position: absolute; top: 50%; right: 13px; margin-top: -10px; cursor: pointer; }
 
 /* FORM - LIST  */
 .ipt-lst:after { display: block; clear: both; content: ""; }
@@ -456,6 +459,20 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 1px; 
 .tbl-type3 .form--addr .block { margin-top: 4px; }
 .tbl-type3 .form--addr .block:nth-of-type(1) { margin-top: 0; }
 .tbl-type3 .form--addr .btn-type3 { vertical-align: top; }
+
+/* DATEPICKER */
+.ui-datepicker { display: none; width: 220px; padding-bottom: 10px; border: 1px solid #ccc; background: #fafafa; font-size: 12px; text-align: center; }
+.ui-datepicker .ui-datepicker-title { padding: 15px 0 15px; font-size: 14px; font-weight: bold; }
+.ui-datepicker .ui-datepicker-prev { position: absolute; left: 0; top: 12px; padding: 8px; cursor: pointer; }
+.ui-datepicker .ui-datepicker-prev:before { display: block; width: 0; height: 0; border-right: 5px solid #000; border-top: 5px solid transparent; border-bottom: 5px solid transparent; content: ""; }
+.ui-datepicker .ui-datepicker-prev .ui-icon { display: none; }
+.ui-datepicker .ui-datepicker-next { position: absolute; right: 0; top: 12px; padding: 8px; cursor: pointer; }
+.ui-datepicker .ui-datepicker-next:before { display: block; width: 0; height: 0; border-left: 5px solid #000; border-top: 5px solid transparent; border-bottom: 5px solid transparent; content: ""; }
+.ui-datepicker .ui-datepicker-next .ui-icon { display: none; }
+.ui-datepicker .ui-datepicker-calendar tr th { height: 25px; background: #eee; }
+.ui-datepicker .ui-datepicker-calendar tr > * { height: 20px; }
+.ui-datepicker .ui-datepicker-calendar tr > *:first-child { padding-left: 10px; }
+.ui-datepicker .ui-datepicker-calendar tr > *:last-child { padding-right: 10px; }
 
 /* LAYER */
 #layer { display: none; position: fixed; min-width: 320px; width: 100%; height: 100%; left: 0; top: 0; background: rgba(0, 0, 0, 0.6); z-index: 100000; }
@@ -696,6 +713,8 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 1px; 
   .inp-type1 { height: 2rem; width: 100%; padding: 0 0.8rem; font-size: 0.8rem; }
   .inp-type2 { height: 2.7rem; padding: 0 1rem; font-size: 0.8rem; }
   .textarea1 { padding: 1rem; min-height: 10rem; font-size: 0.8rem; }
+  .ipt-datepicker .inp-type2 { padding-right: 3rem; }
+  .ipt-datepicker .ui-datepicker-trigger { width: 1.5rem; height: 1.5rem; right: 1rem; margin-top: -0.8rem; }
   /* PAGING */
   .ui-paging { margin-top: 2.5rem; }
   .ui-paging > div { padding: 0 6rem; }
