@@ -33,6 +33,12 @@
         }
       }
     }
+    label {
+      padding-left: 0;
+    }
+    .delay {
+      color: #2f6ab9;
+    }
   }
   .tab-zone {
     margin-bottom: 30px;
@@ -71,7 +77,92 @@
       th {
         background: #ecf8fe;
         font-weight: bold;
+        color: #575757;
+        text-align: center;
+        span {
+          margin: 0;
+        }
       }
+      td {
+        overflow: hidden;
+        * {
+          float: left;
+        }
+        .txt {
+          display: inline-block;
+          height: 40px;
+          margin: 0 10px;
+          line-height: 40px;
+          vertical-align: top;
+        }
+        .sel-type3 {
+          width: 125px;
+        }
+        .ipt-datepicker {
+          width: 194px;
+          .inp-type2 {
+            width: 100%;
+          }
+        }
+        .btn-type2 {
+          margin-left: 25px;
+        }
+      }
+    }
+  }
+  .btn-type2 {
+    padding-bottom: 0;
+  }
+  .check-area {
+    overflow: hidden;
+    padding: 1.2rem 1.6rem;
+    border: 1px solid #d0d0d0;
+    background: #f5f5f5;
+    * {
+      float: left;
+    }
+    p {
+      position: relative;
+      padding: 12px 25px 9px 45px;
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 2.3rem;
+        height: 2.3rem;
+        background: #30809f url(/gbgs_lib/images/mylib/ico-check.png) no-repeat
+          center center;
+        border-radius: 50%;
+        content: "";
+      }
+      &:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100%;
+        border-right: 1px solid #d0d0d0;
+        content: "";
+      }
+      span {
+        float: none;
+        font-weight: bold;
+      }
+    }
+    .id-check {
+      width: 69%;
+      padding-left: 30px;
+      box-sizing: border-box;
+      label {
+        margin: 12px 16px 0 0;
+      }
+      .inp-type1 {
+        width: 33rem;
+      }
+    }
+    & + .btn-submit-group .btn-type2.navy {
+      box-shadow: 4px 4px #cfcfcf;
     }
   }
 }
@@ -82,9 +173,27 @@
       &.form {
         td {
           & > div {
-            &.form02 {
+            overflow: hidden;
+          }
+          .form01 {
+            float: none;
+          }
+          .form02 {
+            float: none;
+            .btn-type2 {
               float: none;
             }
+            .ipt-datepicker {
+              width: 12rem;
+            }
+            .btn-type2 {
+              margin-left: 1rem;
+            }
+          }
+          .txt {
+            height: 3rem;
+            line-height: 3rem;
+            margin: 0 5px;
           }
         }
       }
@@ -131,10 +240,38 @@
       margin-bottom: 8px;
       font-size: 12px;
     }
+    .tbl-type3 {
+      &.form {
+        .form01 {
+          height: 2.7rem;
+          .sel-type3 {
+            width: 8rem;
+          }
+        }
+        .txt {
+          height: 2.7rem;
+          line-height: 2.7rem;
+          font-size: 0.8rem;
+        }
+        .form02 {
+          margin-top: 0.5rem;
+          .ipt-datepicker {
+            width: 8rem !important;
+          }
+          .btn-type2 {
+            margin-left: 0 !important;
+          }
+        }
+      }
+    }
     .btn-submit-group {
-      margin-top: 23px;
-      .btn-type2 {
-        min-width: 44px;
+      &.btn-group {
+        width: 24rem;
+        margin: 3rem auto 0;
+      }
+      button.btn-type2:nth-of-type(2),
+      a.btn-type2:nth-of-type(4) {
+        margin: 5px 0 0 0;
       }
     }
   }

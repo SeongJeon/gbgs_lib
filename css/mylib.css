@@ -8,6 +8,10 @@
 
 .mylib .tbl-type2 .state.not span { background: #5b5c5c; }
 
+.mylib .tbl-type2 label { padding-left: 0; }
+
+.mylib .tbl-type2 .delay { color: #2f6ab9; }
+
 .mylib .tab-zone { margin-bottom: 30px; }
 
 .mylib .tit-pos { margin-bottom: 15px; font-size: 20px; font-weight: normal; color: #535353; }
@@ -24,9 +28,53 @@
 
 .mylib .tbl-type3.form { margin-bottom: 3rem; font-weight: bold; }
 
-.mylib .tbl-type3.form th { background: #ecf8fe; font-weight: bold; }
+.mylib .tbl-type3.form th { background: #ecf8fe; font-weight: bold; color: #575757; text-align: center; }
 
-@media (max-width: 1040px) { .mylib .tbl-type3.form td > div.form02 { float: none; } }
+.mylib .tbl-type3.form th span { margin: 0; }
+
+.mylib .tbl-type3.form td { overflow: hidden; }
+
+.mylib .tbl-type3.form td * { float: left; }
+
+.mylib .tbl-type3.form td .txt { display: inline-block; height: 40px; margin: 0 10px; line-height: 40px; vertical-align: top; }
+
+.mylib .tbl-type3.form td .sel-type3 { width: 125px; }
+
+.mylib .tbl-type3.form td .ipt-datepicker { width: 194px; }
+
+.mylib .tbl-type3.form td .ipt-datepicker .inp-type2 { width: 100%; }
+
+.mylib .tbl-type3.form td .btn-type2 { margin-left: 25px; }
+
+.mylib .btn-type2 { padding-bottom: 0; }
+
+.mylib .check-area { overflow: hidden; padding: 1.2rem 1.6rem; border: 1px solid #d0d0d0; background: #f5f5f5; }
+
+.mylib .check-area * { float: left; }
+
+.mylib .check-area p { position: relative; padding: 12px 25px 9px 45px; }
+
+.mylib .check-area p:before { position: absolute; top: 0; left: 0; display: inline-block; width: 2.3rem; height: 2.3rem; background: #30809f url(/gbgs_lib/images/mylib/ico-check.png) no-repeat center center; border-radius: 50%; content: ""; }
+
+.mylib .check-area p:after { position: absolute; top: 0; right: 0; width: 1px; height: 100%; border-right: 1px solid #d0d0d0; content: ""; }
+
+.mylib .check-area p span { float: none; font-weight: bold; }
+
+.mylib .check-area .id-check { width: 69%; padding-left: 30px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.mylib .check-area .id-check label { margin: 12px 16px 0 0; }
+
+.mylib .check-area .id-check .inp-type1 { width: 33rem; }
+
+.mylib .check-area + .btn-submit-group .btn-type2.navy { -webkit-box-shadow: 4px 4px #cfcfcf; box-shadow: 4px 4px #cfcfcf; }
+
+@media (max-width: 1040px) { .mylib .tbl-type3.form td > div { overflow: hidden; }
+  .mylib .tbl-type3.form td .form01 { float: none; }
+  .mylib .tbl-type3.form td .form02 { float: none; }
+  .mylib .tbl-type3.form td .form02 .btn-type2 { float: none; }
+  .mylib .tbl-type3.form td .form02 .ipt-datepicker { width: 12rem; }
+  .mylib .tbl-type3.form td .form02 .btn-type2 { margin-left: 1rem; }
+  .mylib .tbl-type3.form td .txt { height: 3rem; line-height: 3rem; margin: 0 5px; } }
 
 @media (max-width: 970px) { .mylib .tbl-type2 .state span { height: 35px; font-size: 13px; } }
 
@@ -36,5 +84,11 @@
   .mylib .tbl-type2 .mobile03 { width: 24% !important; }
   .mylib .tbl-type2 .state span { min-width: 50px; height: auto; padding: 3px 0 5px; font-size: 0.9rem; }
   .mylib .tit-pos { margin-bottom: 8px; font-size: 12px; }
-  .mylib .btn-submit-group { margin-top: 23px; }
-  .mylib .btn-submit-group .btn-type2 { min-width: 44px; } }
+  .mylib .tbl-type3.form .form01 { height: 2.7rem; }
+  .mylib .tbl-type3.form .form01 .sel-type3 { width: 8rem; }
+  .mylib .tbl-type3.form .txt { height: 2.7rem; line-height: 2.7rem; font-size: 0.8rem; }
+  .mylib .tbl-type3.form .form02 { margin-top: 0.5rem; }
+  .mylib .tbl-type3.form .form02 .ipt-datepicker { width: 8rem !important; }
+  .mylib .tbl-type3.form .form02 .btn-type2 { margin-left: 0 !important; }
+  .mylib .btn-submit-group.btn-group { width: 24rem; margin: 3rem auto 0; }
+  .mylib .btn-submit-group button.btn-type2:nth-of-type(2), .mylib .btn-submit-group a.btn-type2:nth-of-type(4) { margin: 5px 0 0 0; } }
