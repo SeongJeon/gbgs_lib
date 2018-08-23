@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+.sel-type5 select {height: 40px; width: 100%; padding: 0 40px 0 20px; color: #333; border: 0; font-size: 16px; border:1px solid #c8c8c8; font-family: "NanumGothic-Regular", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; background: url(../images/common/ipt-sel5.png) no-repeat 100% 50%;
+    color: #333;}
+
+/*bullet*/
+.datasearch .txt-bul {text-align:left;}
+.datasearch .txt-bul > li,
+.datasearch p.txt-bul {position:relative; padding-left:14px;line-height:26px;}
+.datasearch .txt-bul > li:before,
+.datasearch p.txt-bul:before {display:block; content:""; position:absolute; left:0; top:10px; width:5px; height:5px; border-radius:2px; background:#4089c1;}
+.datasearch .bg-txt-list {position:relative; margin-top:10px; padding:10px 20px 9px 30px; background:#ecf8fe; font-size:16px; line-height:26px; color:#383838;}
+.datasearch .bg-txt-list:before {position:absolute; left:20px; top:7px; display:block; content:"-"; margin-right:5px; color:#2a5caa;}
+.datasearch .list-dash {text-align: left; }
+.datasearch .list-dash > li {position: relative; padding-left: 10px; }
+.datasearch .list-dash > li:after {position: absolute; top: 0; left: 0; content: "-"; }
+.datasearch .list-num {}
+.datasearch .list-num > li {margin-top:4px;text-indent:-16px; padding-left:16px;}
+.datasearch .bg-box-list {margin:19px 0 13px; padding:14px 15px 12px; text-indent:0; background:#f1fafe;}
+.datasearch .bg-box-list ul {}
+.datasearch .bg-box-list ul > li {padding-left:23px; text-indent:-23px; line-height:26px; color:#010101;}
+
+.datasearch .h3_wrap .txt-important {position:absolute; right:0; top:18px; font-size:16px; color:#ff002a;}
+.datasearch .top-banner {position:relative; display:-webkit-box; display:box; min-height:153px; margin:54px 0 0; background:#f1fafe; border-top:3px solid #daeff9; box-sizing:border-box;}
+.datasearch .top-banner:before {position:absolute; left:0; top:-3px; display:block; content:""; width:136px; height:3px; background:#4089c1;}
+.datasearch .top-banner:after {position:absolute; left:0; top:0; display:block; content:""; width:3px; height:49px; background:#4089c1;}
+.datasearch .top-banner .inner {display:table; margin:0 auto; padding:25px 20px;}
+.datasearch .top-banner .inner > * {display:table-cell; vertical-align:middle;}
+.datasearch .top-banner .inner .img {padding-right:35px; }
+.datasearch .top-banner .inner .txt-bul {padding:0 0 0 40px; border-left:1px solid #bcdae7;}
+.datasearch .top-banner .inner .txt-bul > li {font-weight:bold;}
+.datasearch .top-banner .inner .txt-bul > li.tit {margin-bottom:8px; padding:0; font-size:20px;}
+.datasearch .top-banner .inner .txt-bul > li.tit:before {display:none; }
+.datasearch .top-banner.book .inner .img {margin-top:-12px;}
+.datasearch .top-banner.service-charter {min-height:auto;}
+
+.datasearch .search-tab {margin:40px 0 0;}
+.datasearch .tab-contents{margin:50px 0 0;}
+
+.datasearch .search-area {border-top:2px solid #3e3e3e; border-bottom:1px solid #c6c6c6;}
+.datasearch .search-area + .search-area {margin-top:30px;}
+.datasearch .tbl-type1.search {border-top:none;margin-bottom:40px;}
+.datasearch .tbl-type1.search tr:first-child > * {border-top:none;}
+.datasearch .tbl-type1.search td {padding:9px 18px;}
+.datasearch .tbl-type1.search td .sel-type5 {width:178px;}
+.datasearch .tbl-type1.search td .year {overflow:hidden;}
+.datasearch .tbl-type1.search td .year * {float:left; }
+.datasearch .tbl-type1.search td .year .sel-type5 {width:112px;}
+.datasearch .tbl-type1.search td .year .txt {height:40px; margin:0 4px; line-height:40px;}
+.datasearch .search-area .form-list {display:table; width:100%; padding:10px 17px; box-sizing:border-box;}
+.datasearch .search-area .form-list * {display:table-cell; box-sizing:border-box;}
+
+.datasearch .search-area .form-list .width1 {width:178px;}
+.datasearch .search-area .form-list .width2 {width:215px; padding-left:10px;}
+.datasearch .search-area .form-list input[type="text"] {margin-left:10px;}
+.datasearch .search-area .raido-choice {}
+.datasearch .search-area .raido-choice .tit {padding:16px 0 18px 30px; font-size:16px;}
+.datasearch .search-area .raido-choice .ipt-lst {background:#f1f6f8;}
+.datasearch .search-area .raido-choice .ipt-lst > li  {width:25%; margin:0; padding:20px 0 20px 30px;  box-sizing:border-box;}
+
+@media (max-width: 1319px) {
+	.datasearch .top-banner .inner .txt-bul > li,
+	.datasearch .donation-process ol > li > *,
+	.datasearch .bg-box-list ul > li ,
+	.datasearch .txt-bul > li, .use p.txt-bul{line-height:1.4; font-size:1rem; word-break: keep-all}
+	.datasearch .bg-txt-list:before {margin-right:3px;}
+	.datasearch .tbl-type1 ul.txt-bul {padding:1rem 0 1.5rem 1rem;}
+	.datasearch .txt-bul > li:before, .use p.txt-bul:before {top:0.45rem;}
+	.datasearch .top-banner .inner .txt-bul > li.tit {margin-bottom:0.3rem; font-size:1.4rem;} 
+	
+	.datasearch .search-tab {margin-top:1rem;}
+	.datasearch .search-tab + .tab-contents {margin-top:1.5rem;}
+	.datasearch .search-area + .search-area {margin-top:1.5rem;}
+	.datasearch .tbl-type1.search {margin-bottom:1.5rem;}
+	.datasearch .search-area .form-list {padding:0.5rem 0.7rem;}
+	.datasearch .search-area .form-list .width1 {width:20%; }
+	.datasearch .search-area .form-list .width2 {width:25%; padding-left:0.5rem;}
+	.datasearch .search-area .form-list input[type="text"] {margin-left:0.5rem;}
+	.datasearch .search-area .raido-choice .tit {padding:0.5rem 0.7rem; font-size:1rem;}
+	.datasearch .search-area .raido-choice .ipt-lst {padding-bottom:0.5rem;}
+	.datasearch .search-area .raido-choice .ipt-lst > li {width:50%; padding:0.5rem 0 0 0.7rem;}
+
+	.datasearch .tbl-type1.search td {height:auto; padding:0.5rem 0.7rem;}
+	.datasearch .tbl-type1.search td .sel-type5 {width:100%;}
+	.datasearch .tbl-type1.search select {height: 2.7rem; background-size: auto 100%; padding: 0 2.3rem 0 1rem;}
+	.datasearch .tbl-type1.search td .year .until {float:none; overflow:hidden; padding-top:0.5rem; clear:both;}
+	.datasearch .tbl-type1.search td .year .sel-type5 {width:67%;}
+	.datasearch .tbl-type1.search td .year .txt {height: 2.7rem; line-height:2.7rem;}
+}
+@media (max-width: 1273px) {
+}
+@media (max-width: 1024px) {
+
+	}
+@media (max-width: 768px) {
+	.datasearch .search-area .form-list .width1 {width:20%; min-width:62px;}
+	.datasearch .search-area .form-list .width2 {width:25%; min-width:87px}
+	.datasearch .tbl-type1.search > *,
+	.datasearch .tbl-type1.search select {font-size:0.8rem;}
+	.datasearch .search-area .form-list select {height:2.7rem; font-size:0.8rem; background-size: auto 100%; padding: 0 2.3rem 0 1rem;}
+}
+@media (max-width: 360px) {
+
+}
+
