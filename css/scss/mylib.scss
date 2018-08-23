@@ -65,6 +65,30 @@
         }
       }
     }
+    &.form {
+      margin-bottom: 3rem;
+      font-weight: bold;
+      th {
+        background: #ecf8fe;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+  .mylib {
+    .tbl-type3 {
+      &.form {
+        td {
+          & > div {
+            &.form02 {
+              float: none;
+            }
+          }
+        }
+      }
+    }
   }
 }
 

@@ -22,6 +22,12 @@
 
 .mylib .tbl-type3 .list-dash li:after { position: absolute; top: 0; left: 0; content: "-"; }
 
+.mylib .tbl-type3.form { margin-bottom: 3rem; font-weight: bold; }
+
+.mylib .tbl-type3.form th { background: #ecf8fe; font-weight: bold; }
+
+@media (max-width: 1040px) { .mylib .tbl-type3.form td > div.form02 { float: none; } }
+
 @media (max-width: 970px) { .mylib .tbl-type2 .state span { height: 35px; font-size: 13px; } }
 
 @media (max-width: 768px) { .mylib .ui--searchzone { margin-bottom: 1.7rem; }
