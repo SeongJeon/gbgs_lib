@@ -127,6 +127,7 @@
 	.datasearch .tbl-type1.search td .year .until {float:none; overflow:hidden; padding-top:0.5rem; clear:both;}
 	.datasearch .tbl-type1.search td .year .sel-type5 {width:67%;}
 	.datasearch .tbl-type1.search td .year .txt {height: 2.7rem; line-height:2.7rem;}
+	.datasearch .txt-search {font-size:1.2rem; margin:2rem 0;}
 	.datasearch .tab-search_wrap .align .tab-search ul > li a {width:2.7rem; height:2.7rem; background-size:2.7rem auto;}
 	.datasearch .tab-search_wrap .align .sel-type5  {width:9.5rem;}
 	.datasearch .tab-search_wrap .align .tab-search {margin-left:7px;}
