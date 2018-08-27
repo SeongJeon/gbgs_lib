@@ -92,12 +92,13 @@
 .datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list .btn a {display:block; height:100%;}
 .datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list {overflow:hidden; margin:8px 0 0 8px; }
 .datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li {float:left; position:relative; width:50%; padding-left:16px; box-sizing:border-box; font-size:16px; line-height:26px;}
-.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li.hide {display:none;}
 .datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li:before {display:block; content:""; position:absolute; left:0; top:10px; width:6px; height:6px; background:#4089c1; border-radius:6px;}
 .datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li .txt1 {display:inline-block; width:118px; color:#010101;}
 .datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li .txt2 {color:#676767;}
 
 @media (max-width: 1319px) {
+	.datasearch .sel-type5 select {height: 2.7rem; font-size: 0.8rem; background-size: auto 100%; padding: 0 2.3rem 0 1rem;}
+
 	.datasearch .top-banner .inner .txt-bul > li,
 	.datasearch .donation-process ol > li > *,
 	.datasearch .bg-box-list ul > li ,
@@ -109,6 +110,7 @@
 	
 	.datasearch .search-tab {margin-top:1rem;}
 	.datasearch .search-tab + .tab-contents {margin-top:1.5rem;}
+	.datasearch .search-tab + .tab-contents + .tab-contents {margin-top:1.5rem;}
 	.datasearch .search-area + .search-area {margin-top:1.5rem;}
 	.datasearch .tbl-type1.search {margin-bottom:1.5rem;}
 	.datasearch .search-area .form-list {padding:0.5rem 0.7rem;}
@@ -125,9 +127,14 @@
 	.datasearch .tbl-type1.search td .year .until {float:none; overflow:hidden; padding-top:0.5rem; clear:both;}
 	.datasearch .tbl-type1.search td .year .sel-type5 {width:67%;}
 	.datasearch .tbl-type1.search td .year .txt {height: 2.7rem; line-height:2.7rem;}
-	
+	.datasearch .tab-search_wrap .align .tab-search ul > li a {width:2.7rem; height:2.7rem; background-size:2.7rem auto;}
+	.datasearch .tab-search_wrap .align .sel-type5  {width:9.5rem;}
+	.datasearch .tab-search_wrap .align .tab-search {margin-left:7px;}
+	.datasearch .tab-search_wrap .align .tab-search ul > li.image a,
+	.datasearch .tab-search_wrap .align .tab-search ul > li.image.current a,
+	.datasearch .tab-search_wrap .align .tab-search ul > li.list a,
+	.datasearch .tab-search_wrap .align .tab-search ul > li.list.current a {background-size:50% auto;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li {padding:0.5rem 0.7rem;}
-
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info {position:relative; padding-left:1rem;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .subject {margin-bottom:0.5rem; padding:0 6rem 0.5rem 0; font-size:1rem;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .subject .tail{font-size:0.8rem;}
@@ -138,6 +145,7 @@
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list .btn {position:absolute; right:0; top:0; width:2.5rem; height:2.5rem; padding-top:0.2rem; font-size:0.9rem; line-height:1.2; box-sizing:border-box;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list {margin-left:0;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li {display:table; padding-left:0.5rem; font-size:0.8rem; }
+	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li.hide {display:none;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li > * {display:table-cell; line-height:1.4;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li:before {width: 0.3rem; height: 0.3rem; top:6px; border-radius: 0.3rem;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li .txt1 {display:table-cell; width:4rem;}
