@@ -75,26 +75,42 @@
 .datasearch .tab-search_wrap .align .tab-search ul > li.list.current a {background:url(../images/datasearch/tab-search-on-02.png) no-repeat center;}
 
 .datasearch .tab-search_wrap .tab-search-contents {clear:both; padding-top:18px;}
-.datasearch .tab-search_wrap .tab-search-contents .image-type {}
-.datasearch .tab-search_wrap .tab-search-contents .image-type > li {overflow:hidden; margin-top:10px; padding:16px 25px 16px 32px; border:1px solid #d6d9db;}
-.datasearch .tab-search_wrap .tab-search-contents .image-type > li:first-child {margin-top:0;}
-.datasearch .tab-search_wrap .tab-search-contents .image-type > li .thumb {float:left;width:20%;}
-.datasearch .tab-search_wrap .tab-search-contents .image-type > li .thumb img {}
-.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info {float:left; width:80%; padding-left:28px; box-sizing:border-box;}
+.datasearch .image-type {}
+.datasearch .image-type > li {overflow:hidden; margin-top:10px; padding:16px 25px 16px 32px; border:1px solid #d6d9db;}
+.datasearch .image-type > li:first-child {margin-top:0;}
+.datasearch .image-type > li .thumb {float:left;width:20%;}
+.datasearch .image-type > li .thumb img {width:100%;}
+.datasearch .image-type > li .info {float:left; width:80%; padding-left:28px; box-sizing:border-box;}
 .datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .subject {display:block; margin-bottom:15px; padding-bottom:15px; border-bottom:1px solid #d6d9db; font-size:20px; color:#010101;}
-.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .subject .tail {display:block; font-size:14px; color:#979797;}
-.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list {display:table; width:100%; }
-.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list > * {display:table-cell; }
-.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list .local {padding:0 0 0 20px; background:#ecf8fe; font-size:16px; color:#204fc9;}
-.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list .ico {width:40px; height:40px; padding:0 10px; background:url(../images/datasearch/ico-add.png) no-repeat center; vertical-align:top; }
-.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list .ico a {display:block; height:100%; text-indent:-9999px;}
-.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list .btn {width:114px; height:40px; line-height:40px; background:#f98c0b; text-align:center; font-size:16px; color:#fff;}
-.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list .btn a {display:block; height:100%;}
-.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list {overflow:hidden; margin:8px 0 0 8px; }
-.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li {float:left; position:relative; width:50%; padding-left:16px; box-sizing:border-box; font-size:16px; line-height:26px;}
-.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li:before {display:block; content:""; position:absolute; left:0; top:10px; width:6px; height:6px; background:#4089c1; border-radius:6px;}
-.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li .txt1 {display:inline-block; width:118px; color:#010101;}
-.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li .txt2 {color:#676767;}
+.datasearch .image-type > li .info .subject .tail {display:block; font-size:14px; color:#979797;}
+.datasearch .image-type > li .info .loan-list {display:table; width:100%; }
+.datasearch .image-type > li .info .loan-list > * {display:table-cell; }
+.datasearch .image-type > li .info .loan-list .local {padding:0 0 0 20px; background:#ecf8fe; font-size:16px; color:#204fc9;}
+.datasearch .image-type > li .info .loan-list .ico {width:40px; height:40px; padding:0 10px; background:url(../images/datasearch/ico-add.png) no-repeat center; vertical-align:top; }
+.datasearch .image-type > li .info .loan-list .ico a {display:block; height:100%; text-indent:-9999px;}
+.datasearch .image-type > li .info .loan-list .btn {width:114px; height:40px; line-height:40px; background:#f98c0b; text-align:center; font-size:16px; color:#fff;}
+.datasearch .image-type > li .info .loan-list .btn a {display:block; height:100%;}
+.datasearch .image-type > li .info .list {overflow:hidden; margin:8px 0 0 8px; }
+.datasearch .image-type > li .info .list > li {float:left; position:relative; width:50%; padding-left:16px; box-sizing:border-box; font-size:16px; line-height:26px;}
+.datasearch .image-type > li .info .list > li:before {display:block; content:""; position:absolute; left:0; top:10px; width:6px; height:6px; background:#4089c1; border-radius:6px;}
+.datasearch .image-type > li .info .list > li .txt1 {display:inline-block; width:118px; color:#010101;}
+.datasearch .image-type > li .info .list > li .txt2 {color:#676767;}
+
+.datasearch .list-type {}
+.datasearch .list-type > li {overflow:hidden; position:relative; margin-top:10px; padding:20px 18px 12px 0; border:1px solid #d6d9db;}
+.datasearch .list-type > li:first-child {margin-top:0;}
+.datasearch .list-type > li .num {position:relative; float:left; width:78px; height:46px; line-height:46px; font-size:18px; text-align:center;}
+.datasearch .list-type > li .num:after {display:block; content:""; position:absolute; right:0; top:0; width:1px; height:100%; background:#d6d9db;}
+.datasearch .list-type > li .subject {float:left; margin-left:27px;}
+.datasearch .list-type > li .subject a {display:block; margin-bottom:11px; font-size:18px; color:#010101;}
+.datasearch .list-type > li .subject .tail {font-size:14px; color:#979797;}
+.datasearch .list-type > li .subject .local {display:inline-block; margin:0 0 0 20px; padding:4px 14px; background:#ecf8fe; font-size:14px; color:#204fc9;}
+.datasearch .list-type > li .status {float:right; }
+.datasearch .list-type > li .status .ico {display:inline-block; width: 40px; height: 40px; padding: 0 10px; background: url(../images/datasearch/ico-add.png) no-repeat center; vertical-align: top;}
+.datasearch .list-type > li .status .ico a {display: block; height: 100%; text-indent: -9999px;}
+.datasearch .list-type > li .status .btn {display:inline-block; width:114px; height:40px; line-height:40px; background:#5b5c5c; font-size:16px; color:#fff; text-align:center;}
+.datasearch .list-type > li .status .btn a {display:block;}
+.datasearch .list-type > li .status .btn.on {background:#f98c0b;}
 
 @media (max-width: 1319px) {
 	.datasearch .sel-type5 select {height: 2.7rem; font-size: 0.8rem; background-size: auto 100%; padding: 0 2.3rem 0 1rem;}
@@ -151,6 +167,15 @@
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li:before {width: 0.3rem; height: 0.3rem; top:6px; border-radius: 0.3rem;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li .txt1 {display:table-cell; width:4rem;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li .txt2 {display:table-cell; }
+
+	.datasearch .list-type > li {padding:0.5rem 0.7rem 0.5rem 0}
+	.datasearch .list-type > li .num {width:2.5rem; height:6rem; line-height:6rem; font-size:1rem;}
+	.datasearch .list-type > li .subject {width:70%; margin:0.5rem;}
+	.datasearch .list-type > li .subject a {margin-bottom:0.2rem; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; width:100%; overflow:hidden;font-size:1rem;}
+	.datasearch .list-type > li .subject .tail {display:block; font-size:0.8rem;}
+	.datasearch .list-type > li .subject .local {margin:0.5rem 0 0 ; padding: 0.5rem 0.4rem; font-size:0.8rem;}
+	.datasearch .list-type > li .status .ico {position: absolute; right: 3.5rem; top: 0.7rem; width: 2.5rem; height: 2.5rem; padding: 0; background-size: 2.5rem auto;}
+	.datasearch .list-type > li .status .btn {position: absolute; right: 0.5rem; top: 0.7rem; width: 2.5rem; height: 2.5rem; padding-top: 0.2rem; font-size: 0.9rem; line-height: 1.2; box-sizing: border-box;}
 }
 @media (max-width: 1273px) {
 }
