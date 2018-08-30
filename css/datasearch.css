@@ -167,6 +167,17 @@
 .datasearch .form-list > li .txt {position:absolute; left:0; top:0; width:100%; padding-left:71px; box-sizing:border-box;}
 .datasearch .form-list > li .txt input {width:100%;}
 
+.datasearch .tbl-type3.form { margin-bottom: 3rem; font-weight: bold; }
+.datasearch .tbl-type3.form th { background: #ecf8fe; font-weight: bold; color: #575757; text-align: center; }
+.datasearch .tbl-type3.form th span { margin: 0; }
+.datasearch .tbl-type3.form td { overflow: hidden; }
+.datasearch .tbl-type3.form td * { float: left; }
+.datasearch .tbl-type3.form td .txt { display: inline-block; height: 40px; margin: 0 10px; line-height: 40px; vertical-align: top; }
+.datasearch .tbl-type3.form td .sel-type3 { width: 125px; }
+.datasearch .tbl-type3.form td .ipt-datepicker { width: 194px; }
+.datasearch .tbl-type3.form td .ipt-datepicker .inp-type2 { width: 100%; }
+.datasearch .tbl-type3.form td .btn-type2 { margin-left: 25px; }
+
 @media (max-width: 1319px) {
 	.datasearch .h3 {margin:2rem 0 1rem;}
 	.datasearch .sel-type5 select {height: 2.7rem; font-size: 0.8rem; background-size: auto 100%; padding: 0 2.3rem 0 1rem;}
@@ -266,7 +277,12 @@
 @media (max-width: 1273px) {
 }
 @media (max-width: 1024px) {
-	
+	.datasearch .tbl-type3.form td .form01 { float: none; }
+	.datasearch .tbl-type3.form td .form02 { float: none; }
+	.datasearch .tbl-type3.form td .form02 .btn-type2 { float: none; }
+	.datasearch .tbl-type3.form td .form02 .ipt-datepicker { width: 12rem; }
+	.datasearch .tbl-type3.form td .form02 .btn-type2 { margin-left: 1rem; }
+	.datasearch .tbl-type3.form td .txt { height: 3rem; line-height: 3rem; margin: 0 5px; }
 	}
 @media (max-width: 768px) {
 	.datasearch .tbl-type1 .pc {display:none;}
@@ -277,6 +293,7 @@
 	.datasearch .search-area .form-list select {height:2.7rem; font-size:0.8rem; background-size: auto 100%; padding: 0 2.3rem 0 1rem;}
 	.datasearch .form-list > li {height:2.7rem;}
 	.datasearch .form-list > li .tit {height:2.7rem; line-height:2.7rem; margin:0; padding-left:0.7rem;}
+	.datasearch .tbl-type3.form .form02 .ipt-datepicker { width: 8rem !important; }
 }
 @media (max-width: 360px) {
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list .btn {padding-top:0.1rem;}
