@@ -1,6 +1,6 @@
 @charset "utf-8";
 .datasearch .h3 {margin:46px 0 20px;}
-.sel-type5 select {height: 40px; width: 100%; padding: 0 40px 0 20px; color: #333; border: 0; font-size: 16px; border:1px solid #c8c8c8; font-family: "NanumGothic-Regular", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; background: url(../images/common/ipt-sel5.png) no-repeat 100% 50%;
+.sel-type5 select {height: 40px; width: 100%; padding: 0 40px 0 20px; color: #333; border: 0; font-size: 16px; border:1px solid #c8c8c8; font-family: "NanumGothic-Regular", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; background:#fff url(../images/common/ipt-sel5.png) no-repeat 100% 50%;
     color: #333;}
 .btn-type2.orange {background:#f94607; border:1px solid #f94607; color:#fff;}
 
@@ -178,6 +178,27 @@
 .datasearch .tbl-type3.form td .ipt-datepicker .inp-type2 { width: 100%; }
 .datasearch .tbl-type3.form td .btn-type2 { margin-left: 25px; }
 
+.datasearch .year-search {overflow:hidden; padding:25px 0 25px 37px; background:#ecf8fe; border-top:2px solid #3e3e3e;}
+.datasearch .year-search .txt-year {float:left; font-size:34px; font-weight:bold; color:#257d92;}
+.datasearch .year-search .form {float:right; overflow:hidden;}
+.datasearch .year-search .form > * {float:left; margin-left:7px;}
+.datasearch .year-search .form .sel-type5 {width:9.5rem;}
+.datasearch .year-search .form .sel-type5:first-child {margin-left:0;}
+.datasearch .year-search .form .btn {}
+.datasearch .year-search .form .btn .btn-type3.blue {border-color: #30809f; background: #30809f; color: #fff;}
+
+.datasearch .best-seller {display:-webkit-box; display:box; width:100%; margin:30px 0 15px; background:#f3fafc; }
+.datasearch .best-seller > li {display:-webkit-box; display:box; -webkit-box-orient:vertical; box-orient:vertical; -webkit-box-pack:center; box-pack:center; -webkit-box-flex:1; box-flex:1; width:33.333%; margin:20px 0; text-align:center; box-sizing:border-box; border-left:1px solid #d6d9db;}
+.datasearch .best-seller > li:first-child {border-left:none; }
+.datasearch .best-seller > li a {display:block; padding:10px;   box-sizing:border-box;}
+.datasearch .best-seller > li a .img {position:relative; display:inline-block;}
+.datasearch .best-seller > li a .img .num {position:absolute; left:-15px; top:-7px; display:block; width:57px; height:73px; padding:11px 0 0 0; box-sizing:border-box; background:url(../images/datasearch/best-seller-ticket.png) no-repeat; background-size:57px 73px; font-size:26px; color:#fff; font-weight:bold;}
+.datasearch .best-seller > li a .img .num em {margin-left:-6px;}
+.datasearch .best-seller > li a .img img {width:142px; height:auto;}
+.datasearch .best-seller > li a .txt-area {}
+.datasearch .best-seller > li a .txt-area .subject {display: inline-block; width:20rem; margin:10px 0 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size:18px; font-weight:bold; color:#1d1d1d;}
+.datasearch .best-seller > li a .txt-area .writer {font-size:16px; color:#1d1d1d;}
+
 @media (max-width: 1319px) {
 	.datasearch .h3 {margin:2rem 0 1rem;}
 	.datasearch .sel-type5 select {height: 2.7rem; font-size: 0.8rem; background-size: auto 100%; padding: 0 2.3rem 0 1rem;}
@@ -271,8 +292,18 @@
 	.datasearch .check-area .id-check input[type="text"] {width:100%;}
 	.datasearch .tbl-type3 .form--call + .ipt-lst {display:block; margin:0.5rem 0 0 0;}
 	.datasearch .tbl-type3 .ipt-lst li {width:50%; margin:0 !important;}
-
 	.datasearch .form-list > li .txt {padding-left:4.5rem;}
+	
+	.datasearch .year-search {padding:1rem 1.5rem;}
+	.datasearch .year-search .txt-year {float:none; font-size:1.8rem;}
+	.datasearch .year-search .form {float:none; margin-top:0.5rem;} 
+
+	.datasearch .best-seller {margin-top:1.5rem;}
+	.datasearch .best-seller > li {margin:0.5rem 0;}
+	.datasearch .best-seller > li a {padding:0.5rem;}
+	.datasearch .best-seller > li a .img .num {width: 2rem; height:3.5rem; background-size:2rem 3.5rem; left: -0.2rem; padding-top:0.5rem; font-size: 0.8rem;}
+	.datasearch .best-seller > li a .txt-area .subject {width:auto; white-space: inherit; overflow: auto; text-overflow: inherit;font-size:0.8rem;}
+	.datasearch .best-seller > li a .txt-area .writer {font-size:0.8rem;}
 }
 @media (max-width: 1273px) {
 }
@@ -294,6 +325,11 @@
 	.datasearch .form-list > li {height:2.7rem;}
 	.datasearch .form-list > li .tit {height:2.7rem; line-height:2.7rem; margin:0; padding-left:0.7rem;}
 	.datasearch .tbl-type3.form .form02 .ipt-datepicker { width: 8rem !important; }
+
+	.datasearch .year-search .form .sel-type5 {width:100%; margin:0.5rem 0 0 ; }
+	.datasearch .year-search .form .sel-type5:first-child {margin:0;}
+	.datasearch .year-search .form .btn {width:100%; margin:0.5rem 0 0;}
+	.datasearch .year-search .form .btn .btn-type3 {min-width:100%;}
 }
 @media (max-width: 360px) {
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list .btn {padding-top:0.1rem;}
