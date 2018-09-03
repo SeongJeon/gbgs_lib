@@ -1,0 +1,25 @@
+.openboard .faq { border-top: 2px solid #30809f; }
+
+.openboard .faq li { border-bottom: 1px solid #ddd; }
+
+.openboard .faq li .que-area { padding: 15px 0; }
+
+.openboard .faq li .que-area a { color: #525252; }
+
+.openboard .faq li .que-area a:before { display: inline-block; width: 3rem; height: 3rem; margin-right: 2rem; background: #1e6bca; color: #fff; font-size: 16px; line-height: 3rem; text-align: center; font-weight: bold; border-radius: 5px; content: "Q"; }
+
+.openboard .faq li .que-area:hover a { text-decoration: underline; }
+
+.openboard .faq li .ans-area { position: relative; padding: 3.2rem 1rem 3.2rem 7%; border-top: 1px solid #ddd; }
+
+.openboard .faq li .ans-area:before { position: absolute; top: 3.2rem; left: 7.6%; display: inline-block; width: 3rem; height: 3rem; margin-right: 2rem; background: #f15323; color: #fff; font-size: 16px; line-height: 3rem; text-align: center; font-weight: bold; border-radius: 5px; content: "A"; }
+
+.openboard .faq li .ans-area p { display: inline-block; margin-left: 5.5rem; color: #f15323; text-decoration: underline; }
+
+.openboard .faq li.on .que-area a { color: #1e6bca; text-decoration: underline; }
+
+.openboard .index { display: inline-block; width: 7%; text-align: center; }
+
+.openboard .ans-area { display: none; }
+
+@media (max-width: 768px) { .openboard .faq li { font-size: 1.3rem; line-height: 2.4rem; } }
