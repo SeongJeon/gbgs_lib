@@ -3,63 +3,57 @@
     .faq {
         border-top: 2px solid #30809f;
         li {
+            p:before {
+                display: inline-block;
+                width: 3rem;
+                height: 3rem;
+                color: #fff;
+                font-size: 16px;
+                line-height: 3rem;
+                text-align: center;
+                font-weight: bold;
+                border-radius: 5px;
+            }
             .que-area {
                 padding: 15px 0;
-                a {
+                p {
                     &:before {
-                        display: inline-block;
-                        width: 3rem;
-                        height: 3rem;
                         margin-right: 2rem;
                         background: #1e6bca;
-                        color: #fff;
-                        font-size: 16px;
-                        line-height: 3rem;
-                        text-align: center;
-                        font-weight: bold;
-                        border-radius: 5px;
                         content: "Q";
                     }
+                    display: inline-block;
                     color: #525252;
-                }
-                &:hover {
-                    a {
-                        text-decoration: underline;
+                    &:hover {
+                        a {
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
             border-bottom: 1px solid #ddd;
             .ans-area {
-                position: relative;
                 padding: 3.2rem 1rem 3.2rem 7%;
                 border-top: 1px solid #ddd;
-                &:before {
-                    position: absolute;
-                    top: 3.2rem;
-                    left: 7.6%;
-                    display: inline-block;
-                    width: 3rem;
-                    height: 3rem;
-                    margin-right: 2rem;
-                    background: #f15323;
-                    color: #fff;
-                    font-size: 16px;
-                    line-height: 3rem;
-                    text-align: center;
-                    font-weight: bold;
-                    border-radius: 5px;
-                    content: "A";
-                }
                 p {
+                    position: relative;
                     display: inline-block;
-                    margin-left: 5.5rem;
+                    margin-left: 0.5rem;
+                    padding-left: 5rem;
                     color: #f15323;
                     text-decoration: underline;
+                    &:before {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: #f15323;
+                        content: "A";
+                    }
                 }
             }
             &.on {
                 .que-area {
-                    a {
+                    p {
                         color: #1e6bca;
                         text-decoration: underline;
                     }
@@ -81,8 +75,29 @@
     .openboard {
         .faq {
             li {
-                font-size: 1.3rem;
-                line-height: 2.4rem;
+                font-size: 1rem;
+                line-height: 2rem;
+                .que-area {
+                    p:before {
+                        margin-right: 1rem;
+                    }
+                }
+                .ans-area {
+                    p {
+                        padding-left: 4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .openboard {
+        .faq {
+            li {
+                font-size: 1.2rem;
+                line-height: 2.1rem;
             }
         }
     }
