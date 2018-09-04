@@ -32,6 +32,36 @@
 
 .openboard .ans-area { display: none; }
 
+.openboard .top-banner { position: relative; display: box; min-height: 153px; margin: 54px 0 3rem 0; background: #f1fafe; border-top: 3px solid #daeff9; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.openboard .top-banner:before { position: absolute; top: -3px; left: 0; display: block; width: 136px; height: 3px; background: #4089c1; content: ""; }
+
+.openboard .top-banner:after { position: absolute; top: 0; left: 0; display: block; width: 3px; height: 49px; background: #4089c1; content: ""; }
+
+.openboard .top-banner .inner { display: table; margin: 0 auto; padding: 25px 50px; }
+
+.openboard .top-banner .inner > * { display: table-cell; vertical-align: middle; }
+
+.openboard .top-banner .inner .img { padding-right: 35px; }
+
+.openboard .top-banner .inner p { padding: 0 0 0 40px; border-left: 1px solid #bcdae7; word-break: break-all; line-height: 26px; }
+
+.openboard .h3 { margin-bottom: 1.6rem; }
+
+.openboard .h4 { margin-bottom: 2.5rem; }
+
+.openboard .txt-important { color: #2a5caa; }
+
+.openboard .btn-type2.navy { -webkit-box-shadow: 4px 4px #cfcfcf; box-shadow: 4px 4px #cfcfcf; }
+
+@media (max-width: 1319px) { .openboard .top-banner { margin-top: 2.5rem; }
+  .openboard .top-banner .inner .img { text-align: center; }
+  .openboard .top-banner .inner p { line-height: 1.4; font-size: 1rem; word-break: keep-all; } }
+
+@media (max-width: 1024px) { .openboard .top-banner .inner { padding: 25px 20px; }
+  .openboard .top-banner .inner .img { padding-right: 1rem; }
+  .openboard .top-banner .inner p { padding-left: 1rem; } }
+
 @media (max-width: 768px) { .openboard .faq li { font-size: 1rem; line-height: 2rem; }
   .openboard .faq li .que-area p:before { margin-right: 1rem; }
   .openboard .faq li .que-area button { right: 1rem; padding: 3px 0 4px; font-size: 1.1rem; color: #a1b5cd; }
