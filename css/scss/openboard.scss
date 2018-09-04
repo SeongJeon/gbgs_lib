@@ -15,6 +15,7 @@
                 border-radius: 5px;
             }
             .que-area {
+                position: relative;
                 padding: 15px 0;
                 p {
                     &:before {
@@ -22,13 +23,32 @@
                         background: #1e6bca;
                         content: "Q";
                     }
+                    overflow: hidden;
                     display: inline-block;
+                    width: 66%;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
                     color: #525252;
                     &:hover {
                         a {
                             text-decoration: underline;
                         }
                     }
+                }
+                button {
+                    position: absolute;
+                    top: 15px;
+                    right: 2.3rem;
+                    padding: 6px 0 8px;
+                    font-size: 16px;
+                    color: #a1b5cd;
+                    span {
+                        display: inline-block;
+                        padding: 0 41px 0 13px;
+                        background: url(/gbgs_lib/images/openboard/ico-arrow-off.png)
+                            no-repeat 53px center;
+                    }
+                    border: 1px solid #a1b5cd;
                 }
             }
             border-bottom: 1px solid #ddd;
@@ -58,6 +78,13 @@
                         text-decoration: underline;
                     }
                 }
+                button {
+                    span {
+                        background: url(/gbgs_lib/images/openboard/ico-arrow-on.png)
+                            no-repeat 53px center;
+                    }
+                    border: 1px solid #a1b5cd;
+                }
             }
         }
     }
@@ -65,6 +92,7 @@
         display: inline-block;
         width: 7%;
         text-align: center;
+        vertical-align: 10px;
     }
     .ans-area {
         display: none;
@@ -81,10 +109,31 @@
                     p:before {
                         margin-right: 1rem;
                     }
+                    button {
+                        right: 1rem;
+                        padding: 3px 0 4px;
+                        font-size: 1.1rem;
+                        color: #a1b5cd;
+                        span {
+                            padding: 0 2rem 0 0.6rem;
+                            background: url(/gbgs_lib/images/openboard/ico-arrow-off.png)
+                                no-repeat 3rem center;
+                            background-size: 20% auto;
+                        }
+                    }
                 }
                 .ans-area {
                     p {
                         padding-left: 4rem;
+                    }
+                }
+                &.on {
+                    button {
+                        span {
+                            background: url(/gbgs_lib/images/openboard/ico-arrow-on.png)
+                                no-repeat 3rem center;
+                            background-size: 20% auto;
+                        }
                     }
                 }
             }

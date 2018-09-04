@@ -4,13 +4,17 @@
 
 .openboard .faq li p:before { display: inline-block; width: 3rem; height: 3rem; color: #fff; font-size: 16px; line-height: 3rem; text-align: center; font-weight: bold; border-radius: 5px; }
 
-.openboard .faq li .que-area { padding: 15px 0; }
+.openboard .faq li .que-area { position: relative; padding: 15px 0; }
 
-.openboard .faq li .que-area p { display: inline-block; color: #525252; }
+.openboard .faq li .que-area p { overflow: hidden; display: inline-block; width: 66%; text-overflow: ellipsis; white-space: nowrap; color: #525252; }
 
 .openboard .faq li .que-area p:before { margin-right: 2rem; background: #1e6bca; content: "Q"; }
 
 .openboard .faq li .que-area p:hover a { text-decoration: underline; }
+
+.openboard .faq li .que-area button { position: absolute; top: 15px; right: 2.3rem; padding: 6px 0 8px; font-size: 16px; color: #a1b5cd; border: 1px solid #a1b5cd; }
+
+.openboard .faq li .que-area button span { display: inline-block; padding: 0 41px 0 13px; background: url(/gbgs_lib/images/openboard/ico-arrow-off.png) no-repeat 53px center; }
 
 .openboard .faq li .ans-area { padding: 3.2rem 1rem 3.2rem 7%; border-top: 1px solid #ddd; }
 
@@ -20,12 +24,19 @@
 
 .openboard .faq li.on .que-area p { color: #1e6bca; text-decoration: underline; }
 
-.openboard .index { display: inline-block; width: 7%; text-align: center; }
+.openboard .faq li.on button { border: 1px solid #a1b5cd; }
+
+.openboard .faq li.on button span { background: url(/gbgs_lib/images/openboard/ico-arrow-on.png) no-repeat 53px center; }
+
+.openboard .index { display: inline-block; width: 7%; text-align: center; vertical-align: 10px; }
 
 .openboard .ans-area { display: none; }
 
 @media (max-width: 768px) { .openboard .faq li { font-size: 1rem; line-height: 2rem; }
   .openboard .faq li .que-area p:before { margin-right: 1rem; }
-  .openboard .faq li .ans-area p { padding-left: 4rem; } }
+  .openboard .faq li .que-area button { right: 1rem; padding: 3px 0 4px; font-size: 1.1rem; color: #a1b5cd; }
+  .openboard .faq li .que-area button span { padding: 0 2rem 0 0.6rem; background: url(/gbgs_lib/images/openboard/ico-arrow-off.png) no-repeat 3rem center; background-size: 20% auto; }
+  .openboard .faq li .ans-area p { padding-left: 4rem; }
+  .openboard .faq li.on button span { background: url(/gbgs_lib/images/openboard/ico-arrow-on.png) no-repeat 3rem center; background-size: 20% auto; } }
 
 @media (max-width: 500px) { .openboard .faq li { font-size: 1.2rem; line-height: 2.1rem; } }
