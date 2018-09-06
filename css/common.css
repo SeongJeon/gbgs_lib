@@ -601,7 +601,7 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 1px; 
   .btn-search:before { top: 0; vertical-align: middle; }
   .btn-type1 { min-width: 6.2rem; height: 1.5rem; padding: 0 0.8rem; line-height: 1.5rem; font-size: 0.8rem; }
   .btn-type1.color01 { background: #eca414; color: #fff; }
-  .btn-type2 { min-width: inherit; padding: 0 1rem 3px; line-height: 2.5rem; font-size: 0.8rem; }
+  .btn-type2 { min-width: inherit; padding: 0 1rem 3px; line-height: 2.5rem; font-size: 1rem; }
   .btn-type2.green { line-height: 2.5rem; }
   .btn-type2.write { line-height: 2.5rem; }
   .btn-type2.write:before { vertical-align: -5px; width: 1.1rem; height: 1rem; margin-right: 7px; background-size: auto 100%; }
@@ -616,7 +616,7 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 1px; 
   .sel-type4 select { height: 2.5rem; padding: 0 1.5rem 0 1rem; font-size: 0.8rem; background-size: auto 100%; }
   .inp-type1 { height: 40px; width: 100%; padding: 0 0.7rem; font-size: 0.7rem; }
   .inp-type3 { height: 2.5rem; padding: 0 1rem; font-size: 0.8rem; }
-  .radio-type1 label { font-size: 0.8rem; line-height: 1rem; }
+  .radio-type1 label { font-size: 1rem; line-height: 1rem; }
   .radio-type1 label:before { width: 1rem; height: 1rem; background-size: auto 100%; }
   .radio-type1 label span { margin-left: 0.3rem; }
   .radio-type1 input:checked + label:before { background-size: auto 100%; }
@@ -708,11 +708,11 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 1px; 
   .tbl-type3 th .important + span { margin-left: 0.3rem; }
   /* FORM */
   .sel-type1 select { height: 28px; width: 100%; padding: 0 8px; font-size: 10px; background-size: auto 30%; letter-spacing: -1px; }
-  .sel-type2 select { height: 2rem; padding: 0 0.8rem; font-size: 0.8rem; background-size: auto 100%; }
-  .sel-type3 select { height: 2.7rem; padding: 0 1rem; font-size: 0.8rem; background-size: auto 100%; }
-  .inp-type1 { height: 2rem; width: 100%; padding: 0 0.8rem; font-size: 0.8rem; }
-  .inp-type2 { height: 2.7rem; padding: 0 1rem; font-size: 0.8rem; }
-  .textarea1 { padding: 1rem; min-height: 10rem; font-size: 0.8rem; }
+  .sel-type2 select { height: 2rem; padding: 0 0.8rem; font-size: 1rem; background-size: auto 100%; }
+  .sel-type3 select { height: 2.7rem; padding: 0 1rem; font-size: 1rem; background-size: auto 100%; }
+  .inp-type1 { height: 2rem; width: 100%; padding: 0 0.8rem; font-size: 1rem; }
+  .inp-type2 { height: 2.7rem; padding: 0 1rem; font-size: 1rem; }
+  .textarea1 { padding: 1rem; min-height: 10rem; font-size: 1rem; }
   .ipt-datepicker .inp-type2 { padding-right: 3rem; }
   .ipt-datepicker .ui-datepicker-trigger { width: 1.5rem; height: 1.5rem; right: 1rem; margin-top: -0.8rem; }
   /* PAGING */
