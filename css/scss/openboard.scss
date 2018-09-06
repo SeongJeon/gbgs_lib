@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import "reset";
+
 .openboard {
     .faq {
         border-top: 2px solid #30809f;
@@ -142,6 +144,17 @@
                 word-break: break-all;
                 line-height: 26px;
             }
+            .txt-dotted2 {
+                padding: 0 0 0 40px;
+                border-left: 1px solid #bcdae7;
+                li {
+                    line-height: 26px;
+                    &:before {
+                        top: 10px;
+                        background: #4089c1;
+                    }
+                }
+            }
         }
     }
     .h3 {
@@ -156,6 +169,107 @@
     .btn-type2.navy {
         box-shadow: 4px 4px #cfcfcf;
     }
+    .calendar-zone {
+        padding-top: 24px;
+        text-align: center;
+        border-top: 2px solid #30809f;
+        .month {
+            font-size: 34px;
+            font-weight: bold;
+            color: #257d92;
+        }
+        .indicator {
+            position: relative;
+            width: 30%;
+            margin: 0 auto 23px;
+        }
+        .arrow {
+            overflow: hidden;
+            position: absolute;
+            top: 8px;
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            text-indent: -999em;
+            border-left: none;
+            border-top: none;
+            border-right: 2px #257d92 solid;
+            border-bottom: 2px #257d92 solid;
+            &.prev {
+                right: 0;
+                transform: rotate(-45deg);
+            }
+            &.next {
+                left: 0;
+                transform: rotate(-225deg);
+            }
+        }
+        .info {
+            margin: -20px 0 12px 0;
+            font-size: 14px;
+            text-align: right;
+            font-family: $font4;
+            span {
+                display: inline-block;
+                margin-right: 5px;
+                padding: 5px 12px 6px 12px;
+                background: #f2ad09;
+                border-radius: 30px;
+                color: #fff;
+            }
+        }
+        .tbl-calendar {
+            margin-bottom: 60px;
+            border-top: 1px solid #d6d9db;
+            border-bottom: 1px solid #d6d9db;
+            font-family: $font4;
+            th {
+                height: 60px;
+                background: #ecf8fe;
+                border-left: 1px solid #d6d9db;
+                font-family: $font4;
+                font-weight: normal;
+                &:first-child {
+                    border-left: 0 none;
+                    color: #f40723;
+                }
+                &:last-child {
+                    color: #1277cd;
+                }
+            }
+            td {
+                height: 60px;
+                padding: 12px 0 0 12px;
+                position: relative;
+                text-align: left;
+                vertical-align: top;
+                border-top: 1px solid #d6d9db;
+                border-left: 1px solid #d6d9db;
+                &:first-child {
+                    border-left: 0 none;
+                    color: #f40723;
+                }
+                &:last-child {
+                    color: #1277cd;
+                }
+                .btn-app {
+                    position: absolute;
+                    top: 7px;
+                    left: 35px;
+                    display: inline-block;
+                    padding: 5px 12px 6px 12px;
+                    background: #f2ad09;
+                    border-radius: 30px;
+                    color: #fff;
+                }
+                .holiday {
+                    padding-left: 5px;
+                    color: #aeaeae;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1319px) {
@@ -166,10 +280,20 @@
                 .img {
                     text-align: center;
                 }
-                p {
+                p,
+                .txt-dotted2 li {
                     line-height: 1.4;
                     font-size: 1rem;
                     word-break: keep-all;
+                }
+                .txt-dotted2 li {
+                    padding-left: 14px;
+                    letter-spacing: 0;
+                    &:before {
+                        top: 0.45rem;
+                        width: 5px;
+                        height: 5px;
+                    }
                 }
             }
         }
@@ -184,7 +308,8 @@
                 .img {
                     padding-right: 1rem;
                 }
-                p {
+                p,
+                .txt-dotted2 {
                     padding-left: 1rem;
                 }
             }
@@ -199,8 +324,11 @@
                 font-size: 1rem;
                 line-height: 2rem;
                 .que-area {
-                    p:before {
-                        margin-right: 1rem;
+                    p {
+                        font-size: 1.1rem;
+                        &:before {
+                            margin-right: 1rem;
+                        }
                     }
                     button {
                         right: 1rem;
@@ -216,8 +344,11 @@
                     }
                 }
                 .ans-area {
+                    padding: 1.5rem 1rem 2rem 0;
                     p {
+                        margin: 0;
                         padding-left: 4rem;
+                        font-size: 1.1rem;
                     }
                 }
                 &.on {
@@ -230,6 +361,9 @@
                     }
                 }
             }
+        }
+        .index {
+            display: none;
         }
     }
 }
