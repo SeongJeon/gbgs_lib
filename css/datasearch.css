@@ -10,6 +10,8 @@
 .datasearch .tbl-type1 tr > td .btn-type2 {height:35px; line-height:35px;}
 
 .datasearch .tbl-type3 tr > * {color:#323232;}
+.datasearch .tbl-type1.pc {display:table; }
+.datasearch .tbl-type1.mo {display:none; }
 
 
 /*bullet*/
@@ -133,7 +135,7 @@
 .datasearch .search_view .inner {overflow:hidden; padding:30px 0 0; border-top:2px solid #30809f; border-bottom:1px solid #d8dadb;}
 .datasearch .search_view .inner .thumb {float:left; width:20%;}
 .datasearch .search_view .inner .thumb img {width:100%;}
-.datasearch .search_view .inner .thumb .status {overflow:hidden; margin-top:8px;}
+.datasearch .search_view .inner .thumb .status {overflow:hidden; margin:10px 0px;}
 .datasearch .search_view .inner .thumb .status .ico {float:left; display:block; width: 40px; height: 40px; background: url(../images/datasearch/ico-add.png) no-repeat center; vertical-align: top;}
 .datasearch .search_view .inner .thumb .status .ico a {display:block; height:100%; text-indent:-9999px;}
 .datasearch .search_view .inner .thumb .status .btn {float:left; display:block; width: 114px; height: 40px; margin-left:8px; line-height: 40px; background:#5b5c5c; text-align: center; font-size: 16px; color: #fff;}
@@ -157,7 +159,7 @@
 
 .datasearch .check-area {overflow: hidden; margin-top:40px; padding: 1.2rem 1.6rem; border: 1px solid #d0d0d0; background: #f5f5f5;}
 .datasearch .check-area * { float: left; }
-	.datasearch .check-area p { position: relative; padding: 12px 25px 9px 45px; }
+.datasearch .check-area p { position: relative; padding: 12px 25px 9px 45px; }
 .datasearch .check-area p:before { position: absolute; top: 3px; left: 0; display: inline-block; width: 2.3rem; height: 2.3rem; background: #30809f url(/gbgs_lib/images/mylib/ico-check.png) no-repeat center center; border-radius: 50%; content: ""; }
 .datasearch .check-area p:after { position: absolute; top: 0; right: 0; width: 1px; height: 100%; border-right: 1px solid #d0d0d0; content: ""; }
 .datasearch .check-area p span { float: none; font-weight: bold; }
@@ -168,8 +170,8 @@
 
 .datasearch .form-list {}
 .datasearch .form-list > li {position:relative; height:40px; margin-top:6px;}
-.datasearch .form-list > li .tit {position:relative; margin-left:6px; padding-left:11px; line-height:40px;}
-.datasearch .form-list > li .tit:before {position:absolute; left:0; top:-12px; content:"-";}
+.datasearch .form-list > li .tit {position:relative; display:block; margin-left:6px; padding-left:11px; line-height:40px;}
+.datasearch .form-list > li .tit:before {position:absolute; left:0; top:-2px; display:block; content:"-";}
 .datasearch .form-list > li .txt {position:absolute; left:0; top:0; width:100%; padding-left:71px; box-sizing:border-box;}
 .datasearch .form-list > li .txt input {width:100%;}
 
@@ -200,15 +202,20 @@
 .datasearch .best-seller > li a .img {position:relative; display:inline-block;}
 .datasearch .best-seller > li a .img .num {position:absolute; left:-15px; top:-7px; display:block; width:57px; height:73px; padding:11px 0 0 0; box-sizing:border-box; background:url(../images/datasearch/best-seller-ticket.png) no-repeat; background-size:57px 73px; font-size:26px; color:#fff; font-weight:bold;}
 .datasearch .best-seller > li a .img .num em {margin-left:-6px;}
-.datasearch .best-seller > li a .img img {width:142px; height:auto;}
+.datasearch .best-seller > li a .img img {width:142px; height:197px;}
 .datasearch .best-seller > li a .txt-area {}
 .datasearch .best-seller > li a .txt-area .subject {display: inline-block; width:20rem; margin:10px 0 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size:18px; font-weight:bold; color:#1d1d1d;}
 .datasearch .best-seller > li a .txt-area .writer {font-size:16px; color:#1d1d1d;}
 
 
 @media (max-width: 1319px) {
+	.datasearch .tbl-type1.pc {display:none; }
+	.datasearch .tbl-type1.mo {display:table; }
+	.datasearch .tbl-type1.mo td {height:2.5rem; text-align:left; padding:10px 15px; box-sizing:border-box;}
+	.datasearch .tbl-type1.mo tr > td .btn-type2 {    min-width: 7rem;
+    padding: 0 2rem 3px;}
 	.datasearch .h3 {margin:2rem 0 1rem;}
-	.datasearch .sel-type5 select {height: 2.7rem; font-size: 0.8rem; background-size: auto 100%; padding: 0 2.3rem 0 1rem;}
+	.datasearch .sel-type5 select {height: 2.7rem; font-size: 1rem; background-size: auto 100%; padding: 0 2.3rem 0 1rem;}
 
 	.datasearch .top-banner .inner .txt-bul > li,
 	.datasearch .donation-process ol > li > *,
@@ -249,16 +256,16 @@
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li {padding:0.5rem 0.7rem;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info {position:relative; padding-left:1rem;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .subject {margin-bottom:0.5rem; padding:0 6rem 0.5rem 0; font-size:1rem;}
-	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .subject .tail{font-size:0.8rem;}
+	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .subject .tail{font-size:1rem;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list {display:block;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list > * {display:block;}
-	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list .local {padding: 0.5rem 0.4rem; font-size:0.8rem;}
+	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list .local {padding: 0.5rem 0.4rem; font-size:1rem;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list .ico {position:absolute; right:3rem; top:0; width:2.5rem; height:2.5rem; padding:0; background-size:2.5rem auto;}
-	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list .btn {position:absolute; right:0; top:0; width:2.5rem; height:2.5rem; padding-top:0.2rem; font-size:0.8rem; line-height:1.2; box-sizing:border-box;}
+	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list .btn {position:absolute; right:0; top:0; width:2.5rem; height:2.5rem; padding-top:0.2rem; font-size:1rem; line-height:1.2; box-sizing:border-box;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list .btn.on {font-size:0.9rem;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .loan-list .btn.on {font-size:0.9rem;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list {margin-left:0;}
-	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li {display:table; padding-left:0.5rem; font-size:0.8rem; }
+	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li {display:table; padding-left:0.5rem; font-size:1rem; }
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li.hide {display:none;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li > * {display:table-cell; line-height:1.4;}
 	.datasearch .tab-search_wrap .tab-search-contents .image-type > li .info .list > li:before {width: 0.3rem; height: 0.3rem; top:6px; border-radius: 0.3rem;}
@@ -269,10 +276,10 @@
 	.datasearch .list-type > li .num {width:2.5rem; height:6rem; line-height:6rem; font-size:1rem;}
 	.datasearch .list-type > li .subject {width:70%; margin:0.5rem;}
 	.datasearch .list-type > li .subject a {margin-bottom:0.2rem; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; width:100%; overflow:hidden;font-size:1rem;}
-	.datasearch .list-type > li .subject .tail {display:block; font-size:0.8rem;}
-	.datasearch .list-type > li .subject .local {margin:0.5rem 0 0 ; padding: 0.5rem 0.4rem; font-size:0.8rem;}
+	.datasearch .list-type > li .subject .tail {display:block; font-size:1rem;}
+	.datasearch .list-type > li .subject .local {margin:0.5rem 0 0 ; padding: 0.5rem 0.4rem; font-size:1rem;}
 	.datasearch .list-type > li .status .ico {position: absolute; right: 3.5rem; top: 0.7rem; width: 2.5rem; height: 2.5rem; padding: 0; background-size: 2.5rem auto;}
-	.datasearch .list-type > li .status .btn {position: absolute; right: 0.5rem; top: 0.7rem; width: 2.5rem; height: 2.5rem; padding-top: 0.2rem; font-size: 0.8rem; line-height: 1.2; box-sizing: border-box;}
+	.datasearch .list-type > li .status .btn {position: absolute; right: 0.5rem; top: 0.7rem; width: 2.5rem; height: 2.5rem; padding-top: 0.2rem; font-size: 1rem; line-height: 1.2; box-sizing: border-box;}
 	.datasearch .list-type > li .status .btn.on {font-size:0.9rem;}
 
 	.datasearch .list-type.best > li .subject {width:57%}
@@ -284,13 +291,13 @@
 	.datasearch .list-type.best > li .tail > li:after {display: block; content: ""; position: absolute; left: 0; top: 6px; width: 0.3rem; height: 0.3rem; background: #4089c1; border-radius: 0.3rem;}
 	.datasearch .list-type.best > li .status .btn {width:7rem; line-height:2rem;}
 
-	.datasearch .search_view .inner .thumb {width:35%; }
+	.datasearch .search_view .inner .thumb {font-size:0;}
 	.datasearch .search_view .inner .thumb .status .ico {width: 2.5rem; height: 2.5rem; padding: 0; background-size: 2.5rem auto;}
-	.datasearch .search_view .inner .thumb .status .btn {width: 2.5rem; height: 2.5rem; font-size: 0.8rem; line-height: 1.2;}
+	.datasearch .search_view .inner .thumb .status .btn {width: 2.5rem; height: 2.5rem; font-size: 1rem; line-height: 1.2;}
 	.datasearch .search_view .inner .thumb .status .btn.on {font-size:0.9rem;}
-	.datasearch .search_view .inner .info {width:65%; padding-left:1.5rem;}
+	.datasearch .search_view .inner .info {padding-left:1.5rem;}
 	.datasearch .search_view .inner .info .subject {padding-bottom:1rem; font-size:1.1rem;}
-	.datasearch .search_view .inner .info .subject .tail {font-size:0.8rem;}
+	.datasearch .search_view .inner .info .subject .tail {font-size:1rem;}
 	.datasearch .search_view .inner .info .list > li {padding:0.5rem 0 0.5rem 0.7rem; font-size:1rem;}
 	.datasearch .search_view .inner .info .list > li:before {width: 0.3rem; height: 0.3rem; top: 16px; margin:0 0.3rem; border-radius: 0.3rem;}
 	.datasearch .tbl-type1 tr > td {font-size:1rem;}
@@ -301,12 +308,12 @@
 	
 	.datasearch .check-area {margin-top:2rem; }
 	.datasearch .check-area * {float:none;}
-	.datasearch .check-area p {padding-left:3rem; font-size:1rem;}
-	.datasearch .check-area p:before {top:3px;}
+	.datasearch .check-area p {padding:0.7rem 0 0.7rem 3rem; font-size:1rem;}
+	.datasearch .check-area p:before {top:3px; background-size:1rem;}
 	.datasearch .check-area p:after {display:none;}
- 	.datasearch .check-area .id-check {float:none; width:100%; padding:0;}
-	.datasearch .check-area .id-check label {float:none; height:2rem; line-height:2rem; font-size:0.8rem;} 
-	.datasearch .check-area .id-check input[type="text"] {width:100%;}
+ 	.datasearch .check-area .id-check {display:table; float:none; margin-top:0.5rem; width:100%; padding:0;}
+	.datasearch .check-area .id-check label {display:table-cell; width:7rem; height:2rem; margin:0; line-height:2rem; font-size:1rem;} 
+	.datasearch .check-area .id-check input[type="text"] {display:table-cell; width:100%; }
 	.datasearch .tbl-type3 .form--call + .ipt-lst {display:block; margin:0.5rem 0 0 0;}
 	.datasearch .tbl-type3 .ipt-lst li {width:50%; margin:0 !important;}
 	.datasearch .form-list > li .txt {padding-left:4.5rem;}
@@ -318,9 +325,9 @@
 	.datasearch .best-seller {margin-top:1.5rem;}
 	.datasearch .best-seller > li {margin:0.5rem 0;}
 	.datasearch .best-seller > li a {padding:0.5rem;}
-	.datasearch .best-seller > li a .img .num {width: 2rem; height:3.5rem; background-size:2rem 3.5rem; left: -0.2rem; padding-top:0.5rem; font-size: 0.8rem;}
-	.datasearch .best-seller > li a .txt-area .subject {width:auto; white-space: inherit; overflow: auto; text-overflow: inherit;font-size:0.8rem;}
-	.datasearch .best-seller > li a .txt-area .writer {font-size:0.8rem;}
+	.datasearch .best-seller > li a .img .num {width: 2rem; height:3.5rem; background-size:2rem 3.5rem; left: -0.2rem; padding-top:0.5rem; font-size: 1rem;}
+	.datasearch .best-seller > li a .txt-area .subject {width:auto; white-space: inherit; overflow: auto; text-overflow: inherit;font-size:1rem;}
+	.datasearch .best-seller > li a .txt-area .writer {font-size:1rem;}
 
 	.datasearch .bg-box {margin:1rem 0;}
 }
@@ -339,8 +346,8 @@
 	.datasearch .search-area .form-list .width1 {width:20%; min-width:62px;}
 	.datasearch .search-area .form-list .width2 {width:25%; min-width:87px}
 	.datasearch .tbl-type1.search > *,
-	.datasearch .tbl-type1.search select {font-size:0.8rem;}
-	.datasearch .search-area .form-list select {height:2.7rem; font-size:0.8rem; background-size: auto 100%; padding: 0 2.3rem 0 1rem;}
+	.datasearch .tbl-type1.search select {font-size:1rem;}
+	.datasearch .search-area .form-list select {height:2.7rem; font-size:1rem; background-size: auto 100%; padding: 0 2.3rem 0 1rem;}
 	.datasearch .form-list > li {height:2.7rem;}
 	.datasearch .form-list > li .tit {height:2.7rem; line-height:2.7rem; margin:0; padding-left:0.7rem;}
 	.datasearch .tbl-type3.form .form02 .ipt-datepicker { width: 8rem !important; }
