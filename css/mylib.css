@@ -68,7 +68,12 @@
 
 .mylib .check-area + .btn-submit-group .btn-type2.navy { -webkit-box-shadow: 4px 4px #cfcfcf; box-shadow: 4px 4px #cfcfcf; }
 
-@media (max-width: 1319px) { .mylib { /* .check-area { { float: none; display: inline-block; } p { padding: 12px 13px 5px 3rem; font-size: 0.7rem; text-align: center; } .id-check { padding-left: 15px; label { margin: 0 8px 0 0; font-size: 0.7rem; text-align: center; } } } */ } }
+@media (max-width: 1319px) { .mylib .check-area * { float: none; }
+  .mylib .check-area p { padding: 0.7rem 0 0.7rem 3rem; font-size: 1rem; }
+  .mylib .check-area p:after { display: none; }
+  .mylib .check-area .id-check { display: table; float: none; margin-top: 0.5rem; width: 100%; padding: 0; }
+  .mylib .check-area .id-check label { display: table-cell; width: 7rem; height: 2rem; margin: 0; line-height: 2rem; font-size: 1rem; }
+  .mylib .check-area .id-check input[type="text"] { display: table-cell; width: 100%; } }
 
 @media (max-width: 1040px) { .mylib .tbl-type3.form td > div { overflow: hidden; }
   .mylib .tbl-type3.form td .form01 { float: none; }
@@ -94,6 +99,7 @@
   .mylib .tbl-type3.form td .form02 .ipt-datepicker input { padding: 0 20px 0 7px; }
   .mylib .tbl-type3.form td .form02 .ipt-datepicker .ui-datepicker-trigger { right: 0.5rem; }
   .mylib .btn-submit-group.btn-group { width: 24rem; margin: 3rem auto 0; }
-  .mylib .btn-submit-group button.btn-type2:nth-of-type(2), .mylib .btn-submit-group a.btn-type2:nth-of-type(4) { margin: 5px 0 0 0; } }
+  .mylib .btn-submit-group button.btn-type2:nth-of-type(2), .mylib .btn-submit-group a.btn-type2:nth-of-type(4) { margin: 5px 0 0 0; }
+  .mylib .check-area p:before { top: 3px; background-size: 1rem; } }
 
 @media (max-width: 510px) { .mylib .tbl-type3.form td .form02 .btn-type2 { margin: 5px 0 0 0; } }

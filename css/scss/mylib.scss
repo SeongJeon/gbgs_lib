@@ -1,322 +1,342 @@
 @charset "utf-8";
 .mylib {
-  .ui--searchzone {
-    margin-bottom: 45px;
-  }
-  .tbl-type2 {
-    .link {
-      &:hover {
-        a {
-          color: #333;
-          text-decoration: underline;
+    .ui--searchzone {
+        margin-bottom: 45px;
+    }
+    .tbl-type2 {
+        .link {
+            &:hover {
+                a {
+                    color: #333;
+                    text-decoration: underline;
+                }
+            }
         }
-      }
-    }
-    .state {
-      span {
-        display: inline-block;
-        width: 85%;
-        height: 40px;
-        padding: 8px 0 14px;
-        text-align: center;
-        color: #fff;
-        box-sizing: border-box;
-      }
-      &.ok {
-        span {
-          background: #f98c0b;
+        .state {
+            span {
+                display: inline-block;
+                width: 85%;
+                height: 40px;
+                padding: 8px 0 14px;
+                text-align: center;
+                color: #fff;
+                box-sizing: border-box;
+            }
+            &.ok {
+                span {
+                    background: #f98c0b;
+                }
+            }
+            &.not {
+                span {
+                    background: #5b5c5c;
+                }
+            }
         }
-      }
-      &.not {
-        span {
-          background: #5b5c5c;
+        label {
+            padding-left: 0;
         }
-      }
-    }
-    label {
-      padding-left: 0;
-    }
-    .delay {
-      color: #2f6ab9;
-    }
-  }
-  .tab-zone {
-    margin-bottom: 30px;
-  }
-  .tit-pos {
-    margin-bottom: 15px;
-    font-size: 20px;
-    font-weight: normal;
-    color: #535353;
-  }
-  .tbl-type3 {
-    .answer {
-      th {
-        background: #f8f1f1;
-      }
-    }
-    .tit-book {
-      margin-bottom: 16px;
-    }
-    .list-dash {
-      text-align: left;
-      li {
-        position: relative;
-        padding-left: 10px;
-        &:after {
-          position: absolute;
-          top: 0;
-          left: 0;
-          content: "-";
+        .delay {
+            color: #2f6ab9;
         }
-      }
     }
-    &.form {
-      margin-bottom: 3rem;
-      font-weight: bold;
-      th {
-        background: #ecf8fe;
-        font-weight: bold;
-        color: #575757;
-        text-align: center;
-        span {
-          margin: 0;
+    .tab-zone {
+        margin-bottom: 30px;
+    }
+    .tit-pos {
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: normal;
+        color: #535353;
+    }
+    .tbl-type3 {
+        .answer {
+            th {
+                background: #f8f1f1;
+            }
         }
-      }
-      td {
+        .tit-book {
+            margin-bottom: 16px;
+        }
+        .list-dash {
+            text-align: left;
+            li {
+                position: relative;
+                padding-left: 10px;
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    content: "-";
+                }
+            }
+        }
+        &.form {
+            margin-bottom: 3rem;
+            font-weight: bold;
+            th {
+                background: #ecf8fe;
+                font-weight: bold;
+                color: #575757;
+                text-align: center;
+                span {
+                    margin: 0;
+                }
+            }
+            td {
+                overflow: hidden;
+                * {
+                    float: left;
+                }
+                .txt {
+                    display: inline-block;
+                    height: 40px;
+                    margin: 0 10px;
+                    line-height: 40px;
+                    vertical-align: top;
+                }
+                .sel-type3 {
+                    width: 125px;
+                }
+                .ipt-datepicker {
+                    width: 194px;
+                    .inp-type2 {
+                        width: 100%;
+                    }
+                }
+                .btn-type2 {
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
+    .btn-type2 {
+        padding-bottom: 0;
+    }
+    .check-area {
         overflow: hidden;
+        padding: 1.2rem 1.6rem;
+        border: 1px solid #d0d0d0;
+        background: #f5f5f5;
         * {
-          float: left;
+            float: left;
         }
-        .txt {
-          display: inline-block;
-          height: 40px;
-          margin: 0 10px;
-          line-height: 40px;
-          vertical-align: top;
+        p {
+            position: relative;
+            padding: 12px 25px 9px 45px;
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                width: 2.3rem;
+                height: 2.3rem;
+                background: #30809f url(/gbgs_lib/images/mylib/ico-check.png)
+                    no-repeat center center;
+                border-radius: 50%;
+                content: "";
+            }
+            &:after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 1px;
+                height: 100%;
+                border-right: 1px solid #d0d0d0;
+                content: "";
+            }
+            span {
+                float: none;
+                font-weight: bold;
+            }
         }
-        .sel-type3 {
-          width: 125px;
+        .id-check {
+            width: 69%;
+            padding-left: 30px;
+            box-sizing: border-box;
+            label {
+                margin: 12px 16px 0 0;
+            }
+            .inp-type1 {
+                width: 33.5rem;
+            }
         }
-        .ipt-datepicker {
-          width: 194px;
-          .inp-type2 {
-            width: 100%;
-          }
+        & + .btn-submit-group .btn-type2.navy {
+            box-shadow: 4px 4px #cfcfcf;
         }
-        .btn-type2 {
-          margin-left: 25px;
-        }
-      }
     }
-  }
-  .btn-type2 {
-    padding-bottom: 0;
-  }
-  .check-area {
-    overflow: hidden;
-    padding: 1.2rem 1.6rem;
-    border: 1px solid #d0d0d0;
-    background: #f5f5f5;
-    * {
-      float: left;
-    }
-    p {
-      position: relative;
-      padding: 12px 25px 9px 45px;
-      &:before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: inline-block;
-        width: 2.3rem;
-        height: 2.3rem;
-        background: #30809f url(/gbgs_lib/images/mylib/ico-check.png) no-repeat
-          center center;
-        border-radius: 50%;
-        content: "";
-      }
-      &:after {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 1px;
-        height: 100%;
-        border-right: 1px solid #d0d0d0;
-        content: "";
-      }
-      span {
-        float: none;
-        font-weight: bold;
-      }
-    }
-    .id-check {
-      width: 69%;
-      padding-left: 30px;
-      box-sizing: border-box;
-      label {
-        margin: 12px 16px 0 0;
-      }
-      .inp-type1 {
-        width: 33.5rem;
-      }
-    }
-    & + .btn-submit-group .btn-type2.navy {
-      box-shadow: 4px 4px #cfcfcf;
-    }
-  }
 }
 
 @media (max-width: 1319px) {
-  .mylib {
-    /* .check-area {
-      * {
-        float: none;
-        display: inline-block;
-      }
-      p {
-        padding: 12px 13px 5px 3rem;
-        font-size: 0.7rem;
-        text-align: center;
-      }
-      .id-check {
-        padding-left: 15px;
-        label {
-          margin: 0 8px 0 0;
-          font-size: 0.7rem;
-          text-align: center;
+    .mylib {
+        .check-area {
+            * {
+                float: none;
+            }
+            p {
+                padding: 0.7rem 0 0.7rem 3rem;
+                font-size: 1rem;
+                &:after {
+                    display: none;
+                }
+            }
+            .id-check {
+                display: table;
+                float: none;
+                margin-top: 0.5rem;
+                width: 100%;
+                padding: 0;
+                label {
+                    display: table-cell;
+                    width: 7rem;
+                    height: 2rem;
+                    margin: 0;
+                    line-height: 2rem;
+                    font-size: 1rem;
+                }
+                input[type="text"] {
+                    display: table-cell;
+                    width: 100%;
+                }
+            }
         }
-      }
-    } */
-  }
+    }
 }
 
 @media (max-width: 1040px) {
-  .mylib {
-    .tbl-type3 {
-      &.form {
-        td {
-          & > div {
-            overflow: hidden;
-          }
-          .form01 {
-            float: none;
-          }
-          .form02 {
-            float: none;
-            .btn-type2 {
-              float: none;
+    .mylib {
+        .tbl-type3 {
+            &.form {
+                td {
+                    & > div {
+                        overflow: hidden;
+                    }
+                    .form01 {
+                        float: none;
+                    }
+                    .form02 {
+                        float: none;
+                        .btn-type2 {
+                            float: none;
+                        }
+                        .ipt-datepicker {
+                            width: 12rem;
+                        }
+                        .btn-type2 {
+                            margin-left: 1rem;
+                        }
+                    }
+                    .txt {
+                        height: 3rem;
+                        line-height: 3rem;
+                        margin: 0 5px;
+                    }
+                }
             }
-            .ipt-datepicker {
-              width: 12rem;
-            }
-            .btn-type2 {
-              margin-left: 1rem;
-            }
-          }
-          .txt {
-            height: 3rem;
-            line-height: 3rem;
-            margin: 0 5px;
-          }
         }
-      }
     }
-  }
 }
 
 @media (max-width: 970px) {
-  .mylib {
-    .tbl-type2 {
-      .state span {
-        height: 35px;
-        font-size: 13px;
-      }
+    .mylib {
+        .tbl-type2 {
+            .state span {
+                height: 35px;
+                font-size: 13px;
+            }
+        }
     }
-  }
 }
 
 @media (max-width: 768px) {
-  .mylib {
-    .ui--searchzone {
-      margin-bottom: 1.7rem;
-    }
-    .tbl-type2 {
-      .mobile01 {
-        width: 20% !important;
-      }
-      .mobile02 {
-        width: 16% !important;
-      }
-      .mobile03 {
-        width: 24% !important;
-      }
-      .state {
-        span {
-          min-width: 50px;
-          height: auto;
-          padding: 3px 0 5px;
-          font-size: 0.9rem;
+    .mylib {
+        .ui--searchzone {
+            margin-bottom: 1.7rem;
         }
-      }
-    }
-    .tit-pos {
-      margin-bottom: 8px;
-      font-size: 12px;
-    }
-    .tbl-type3 {
-      &.form {
-        td {
-          .form01 {
-            height: 2.7rem;
-            .sel-type3 {
-              width: 9rem;
+        .tbl-type2 {
+            .mobile01 {
+                width: 20% !important;
             }
-          }
-          .txt {
-            height: 2.7rem;
-            margin: 0 3px !important;
-            line-height: 2.7rem;
-            font-size: 0.8rem;
-          }
-          .form02 {
-            margin-top: 0.5rem;
-            .ipt-datepicker {
-              width: 9rem !important;
-              input {
-                padding: 0 20px 0 7px;
-              }
-              .ui-datepicker-trigger {
-                right: 0.5rem;
-              }
+            .mobile02 {
+                width: 16% !important;
             }
-          }
+            .mobile03 {
+                width: 24% !important;
+            }
+            .state {
+                span {
+                    min-width: 50px;
+                    height: auto;
+                    padding: 3px 0 5px;
+                    font-size: 0.9rem;
+                }
+            }
         }
-      }
+        .tit-pos {
+            margin-bottom: 8px;
+            font-size: 12px;
+        }
+        .tbl-type3 {
+            &.form {
+                td {
+                    .form01 {
+                        height: 2.7rem;
+                        .sel-type3 {
+                            width: 9rem;
+                        }
+                    }
+                    .txt {
+                        height: 2.7rem;
+                        margin: 0 3px !important;
+                        line-height: 2.7rem;
+                        font-size: 0.8rem;
+                    }
+                    .form02 {
+                        margin-top: 0.5rem;
+                        .ipt-datepicker {
+                            width: 9rem !important;
+                            input {
+                                padding: 0 20px 0 7px;
+                            }
+                            .ui-datepicker-trigger {
+                                right: 0.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btn-submit-group {
+            &.btn-group {
+                width: 24rem;
+                margin: 3rem auto 0;
+            }
+            button.btn-type2:nth-of-type(2),
+            a.btn-type2:nth-of-type(4) {
+                margin: 5px 0 0 0;
+            }
+        }
+        .check-area {
+            p {
+                &:before {
+                    top: 3px;
+                    background-size: 1rem;
+                }
+            }
+        }
     }
-    .btn-submit-group {
-      &.btn-group {
-        width: 24rem;
-        margin: 3rem auto 0;
-      }
-      button.btn-type2:nth-of-type(2),
-      a.btn-type2:nth-of-type(4) {
-        margin: 5px 0 0 0;
-      }
-    }
-  }
 }
 
 @media (max-width: 510px) {
-  .mylib {
-    .tbl-type3.form {
-      td {
-        .form02 {
-          .btn-type2 {
-            margin: 5px 0 0 0;
-          }
+    .mylib {
+        .tbl-type3.form {
+            td {
+                .form02 {
+                    .btn-type2 {
+                        margin: 5px 0 0 0;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
