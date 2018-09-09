@@ -209,11 +209,10 @@
 
 
 @media (max-width: 1319px) {
-	.datasearch .tbl-type1.pc {display:none; }
-	.datasearch .tbl-type1.mo {display:table; }
+	
 	.datasearch .tbl-type1.mo td {height:2.5rem; text-align:left; padding:10px 15px; box-sizing:border-box;}
-	.datasearch .tbl-type1.mo tr > td .btn-type2 {    min-width: 7rem;
-    padding: 0 2rem 3px;}
+	.datasearch .tbl-type1.mo tr > td .btn-type2 {min-width: 7rem; height:2.5rem; 
+    padding: 0 2rem 0.2rem; line-height: 2.5rem;}
 	.datasearch .h3 {margin:2rem 0 1rem;}
 	.datasearch .sel-type5 select {height: 2.7rem; font-size: 1rem; background-size: auto 100%; padding: 0 2.3rem 0 1rem;}
 
@@ -326,7 +325,8 @@
 	.datasearch .best-seller > li {margin:0.5rem 0;}
 	.datasearch .best-seller > li a {padding:0.5rem;}
 	.datasearch .best-seller > li a .img .num {width: 2rem; height:3.5rem; background-size:2rem 3.5rem; left: -0.2rem; padding-top:0.5rem; font-size: 1rem;}
-	.datasearch .best-seller > li a .txt-area .subject {width:auto; white-space: inherit; overflow: auto; text-overflow: inherit;font-size:1rem;}
+	.datasearch .best-seller > li a .img img {width:100%; height:auto;}
+	.datasearch .best-seller > li a .txt-area .subject {width:auto; white-space: inherit; overflow: auto; text-overflow: inherit;font-size:1rem; word-break: keep-all;}
 	.datasearch .best-seller > li a .txt-area .writer {font-size:1rem;}
 
 	.datasearch .bg-box {margin:1rem 0;}
@@ -342,6 +342,8 @@
 	.datasearch .tbl-type3.form td .txt { height: 3rem; line-height: 3rem; margin: 0 5px; }
 	}
 @media (max-width: 768px) {
+	.datasearch .tbl-type1.pc {display:none; }
+	.datasearch .tbl-type1.mo {display:table; }
 	.datasearch .tbl-type1 .pc {display:none;}
 	.datasearch .search-area .form-list .width1 {width:20%; min-width:62px;}
 	.datasearch .search-area .form-list .width2 {width:25%; min-width:87px}
