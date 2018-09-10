@@ -166,87 +166,20 @@
 							</div>
 
 							<table class="tbl-type3">
-								<caption>정보입력 - 아이디, 비밀번호, 이름, 이메일, 휴대전화, 탈퇴사유</caption>
+								<caption>정보입력 - 신청자 이름, 주소, 학교, 휴대전화, 견학일시, 계층, 문의사항</caption>
 								<colgroup>
 									<col>
 									<col>
 								</colgroup>
 								<tbody>
 									<tr>
-										<th scope="row"><strong class="important">*</strong><span>아이디</span></th>
+										<th scope="row"><strong class="important">*</strong><span>신청자 이름</span></th>
 										<td>
 											<div class="form--id">
-												<input type="text" name="" id="" title="아이디 입력" class="inp-type2">
-												<a href="#" class="btn-type3"><span>중복확인</span></a>
+												<input type="text" name="" id="" title="신청자 이름 입력" class="inp-type2">
 											</div>
-											<p class="txt-help">영문 또는 숫자 6~20자리 입니다.</p>
 										</td>
 									</tr>
-
-									<tr>
-										<th scope="row"><strong class="important">*</strong><span>비밀번호</span></th>
-										<td>
-											<input type="password" name="" id="" title="변경할 비밀번호 입력" class="inp-type2">
-											<input type="password" name="" id="" title="변경할 비밀번호 확인 입력" class="inp-type2" placeholder="비밀번호 확인">
-											<p class="txt-help">숫자, 알파벳, 특수문자 조합으로 10~20자리 입니다.</p>
-										</td>
-									</tr>
-
-									<tr>
-										<th scope="row"><strong class="important">*</strong><span>이름</span></th>
-										<td>
-											<input type="text" name="" id="" title="이름 입력" class="inp-type2">
-											<p class="txt-help">본인인증 후에는 이름과 휴대폰번호나 이름과 이메일이 자동입력 됩니다.</p>
-										</td>
-									</tr>
-
-									<tr>
-										<th scope="row"><strong class="important">*</strong><span>이메일</span></th>
-										<td>
-											<div class="form--email">
-												<input type="text" name="" id="" title="이메일 아이디 입력" class="inp-type2">
-												<span class="txt">@</span>
-												<input type="text" name="" id="" title="이메일 도메인 입력" class="inp-type2">
-												<div class="sel-type3">
-													<select name="" id="" title="이메일 도메인 선택">
-														<option value="">직접입력</option>
-													</select>
-												</div>
-											</div>
-											<p class="txt-help">※ 한메일(다음)은 자사 정책상 메일 전송이 안 될수도 있으니 다른 메일계정을 사용해주시면 감사하겠습니다.</p>
-											<ul class="ipt-lst">
-												<li class="radio-type1"><input type="radio" name="emailagree" id="emailagree1"><label for="emailagree1"><span>이메일
-															수신 미동의</span></label></li>
-												<li class="radio-type1"><input type="radio" name="emailagree" id="emailagree2" checked="checked"><label for="emailagree2"><span>이메일
-															수신 동의</span></label></li>
-											</ul>
-										</td>
-									</tr>
-
-									<tr>
-										<th scope="row"><strong class="important">*</strong><span>휴대전화</span></th>
-										<td>
-											<div class="form--call">
-												<div class="sel-type3">
-													<select name="" id="" title="휴대전화 앞자리 선택">
-														<option value="">010</option>
-													</select>
-												</div>
-												<span class="txt">-</span>
-												<input type="text" name="" id="" title="휴대전화 중간자리 입력" class="inp-type2">
-												<span class="txt">-</span>
-												<input type="text" name="" id="" title="휴대전화 마지막자리 입력" class="inp-type2">
-											</div>
-											<ul class="ipt-lst">
-												<li class="radio-type1"><input type="radio" name="snsagree" id="snsagree1"><label for="snsagree1"><span>문자 수신
-															미동의
-														</span></label></li>
-												<li class="radio-type1"><input type="radio" name="snsagree" id="snsagree2" checked="checked"><label for="snsagree2"><span>문자
-															수신 동의</span></label></li>
-											</ul>
-										</td>
-									</tr>
-
 									<tr>
 										<th scope="row"><strong class="important">*</strong><span>주소</span></th>
 										<td>
@@ -261,19 +194,133 @@
 												</div>
 											</div>
 											<p class="txt-help">우편번호 검색을 누른후 입력해주세요.</p>
-
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><strong class="important">*</strong><span>학교</span></th>
+										<td>
+											<div class="form--id">
+												<input type="text" name="" id="" title="학교 이름 입력" class="inp-type2">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><strong class="important">*</strong><span>휴대전화</span></th>
+										<td>
+											<div class="form--call">
+												<div class="sel-type3">
+													<select name="" id="" title="휴대전화 앞자리 선택">
+														<option value="">010</option>
+													</select>
+												</div>
+												<span class="txt">-</span>
+												<input type="text" name="" id="" title="휴대전화 중간자리 입력" class="inp-type2">
+												<span class="txt">-</span>
+												<input type="text" name="" id="" title="휴대전화 마지막자리 입력" class="inp-type2">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><strong class="important">*</strong><span>견학일시</span></th>
+										<td>
+											<div class="form--date">
+												<div class="sel-type3 year">
+													<select name="" id="" title="견학일시 연도 선택">
+														<option value="">2018</option>
+													</select>
+												</div>
+												<div class="sel-type3 mon">
+													<select name="" id="" title="견학일시 월 선택">
+														<option value="">07</option>
+													</select>
+												</div>
+												<div class="sel-type3 mon">
+													<select name="" id="" title="견학일시 월 선택">
+														<option value="">22</option>
+													</select>
+												</div>
+											</div>
+											<div class="time-area">
+												<div class="form--time">
+													<span>(시간 : </span>
+													<div class="sel-type3">
+														<select name="" id="" title="견학일시 시 선택">
+															<option value="">12</option>
+														</select>
+													</div>
+													<span> 시 </span>
+													<div class="sel-type3">
+														<select name="" id="" title="견학일시 분 선택">
+															<option value="">40</option>
+														</select>
+													</div>
+													<span> 분 - </span>
+												</div>
+												<div class="form--time">
+													<div class="sel-type3">
+														<select name="" id="" title="견학일시 시 선택">
+															<option value="">18</option>
+														</select>
+													</div>
+													<span> 시 </span>
+													<div class="sel-type3">
+														<select name="" id="" title="견학일시 분 선택">
+															<option value="">40</option>
+														</select>
+													</div>
+													<span> 분까지) </span>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><strong class="important">*</strong><span>계층</span></th>
+										<td>
 											<ul class="ipt-lst">
-												<li class="radio-type1"><input type="radio" name="zipagree" id="zipagree1"><label for="zipagree1"><span>우편물 수신
-															미동의
-														</span></label></li>
-												<li class="radio-type1"><input type="radio" name="zipagree" id="zipagree2" checked="checked"><label for="zipagree2"><span>우편물
-															수신 동의</span></label></li>
+												<li>
+													<div class="radio-type1">
+														<input type="radio" name="radio1" id="radio1_1" checked="checked">
+														<label for="radio1_1"><span>미취학</span></label>
+													</div>
+												</li>
+												<li>
+													<div class="radio-type1">
+														<input type="radio" name="radio1" id="radio1_2">
+														<label for="radio1_2"><span>초등학생</span></label>
+													</div>
+												</li>
+												<li>
+													<div class="radio-type1">
+														<input type="radio" name="radio1" id="radio1_3">
+														<label for="radio1_3"><span>중학생</span></label>
+													</div>
+												</li>
+												<li>
+													<div class="radio-type1">
+														<input type="radio" name="radio1" id="radio1_4">
+														<label for="radio1_4"><span>고등학생</span></label>
+													</div>
+												</li>
+												<li>
+													<div class="radio-type1">
+														<input type="radio" name="radio1" id="radio1_5">
+														<label for="radio1_5"><span>일반인</span></label>
+													</div>
+												</li>
 											</ul>
 										</td>
 									</tr>
-
+									<tr>
+										<th scope="row"><strong class="important">*</strong><span>문의사항</span></th>
+										<td>
+											<textarea name="" id="" title="문의사항 입력" class="textarea1"></textarea>
+										</td>
+									</tr>
 								</tbody>
 							</table>
+							<div class="btn-submit-group">
+								<button type="submit" class="btn-type2 blue"><span>봉사활동 신청하기</span></button>
+								</button></div>
 						</div><!-- //content-zone -->
 
 						<div class="satisfaction-zone">
