@@ -169,6 +169,47 @@
 				}
 			}
 		}
+
+		.join4-zone {
+			padding:66px 0 65px; border-top:2px solid #666; border-bottom:1px solid #f0f0f0; background: #f7f7f7; text-align: center; color:#777; line-height: 24px; font-size:16px;
+			.point {margin-bottom:19px; color:#027bc0; font-size:22px; font-weight: bold;}
+			.btn-type2 {width:120px; margin-top:38px}
+		}
+		.join2-zone {
+			margin-bottom:-20px;
+			.h3 {margin:70px 0 22px}
+			textarea {
+				overflow-x:hidden; overflow-y:auto; width:100%; height:257px; padding:10px 20px; border:1px solid #ddd; border-top:3px solid #666;  resize:none; color:#a5a5a5; font-size:15px; line-height: 24px; font-family: $font1; box-sizing:border-box;
+				&.small {overflow:hidden; height:46px;}
+			}
+			.agree-ipt {text-align:center; margin-top:18px;}
+			.form {
+				margin:28px 0 50px; text-align:center;
+				p {display:inline-block; margin-right:9px; line-height:40px; font-size:15px; color:#777}
+				.inp-type2 {width:200px;}
+			}
+		}
+		.join1-zone {
+			.txt {
+				color:#2e2e2e; font-size:16px; line-height: 24px; text-align:center;
+				.point {color:#2e5ead; font-weight: bold;}
+			}
+			.confirmation {
+				&:after {display:block; clear:both; content:""}
+				li {
+					float:left; width:50%; padding:40px 0 35px 170px; border:1px solid #d6d5d5; border-top-width:3px; border-style: solid; box-sizing:border-box;
+					.tit {display:block; font-weight:normal;color:#2e2e2e; font-size:24px; }
+					.txt {display:block; margin:7px 0 13px; color:#2e2e2e; font-size:16px; text-align:left;}
+				}
+				.phone {
+					border-top-color:#028090; 
+				}
+				.email {
+					border-left:0; border-top-color:#e06769;
+
+				}
+			}
+		}
 	}
 }
 
@@ -339,6 +380,26 @@
 					}
 				}
 			}
+			.join4-zone {
+				padding:3rem 0 4rem; line-height: 1.6; font-size:1.1rem; word-break:keep-all;
+				.point {margin-bottom:1rem; font-size:1.5rem}
+				.btn-type2 {width:8rem; margin-top:2rem}
+			}
+			.join2-zone {
+				margin-bottom:0;
+				.h3 {margin:4rem 0 2rem}
+				textarea {
+					height:25rem; padding:1rem 1rem; font-size:1.1rem; line-height: 1.6;
+					&.small {overflow-y:auto; height:6rem;}
+				}
+				.agree-ipt {text-align:center; margin-top:18px;}
+				.form {
+					margin:2rem 0 3rem;
+					p {margin-right:0.4rem;line-height:2.7rem; font-size:1.1rem;}
+					.inp-type2 {width:15rem;}
+				}
+			}
+
 		}
 
 	}

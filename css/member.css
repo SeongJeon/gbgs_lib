@@ -80,6 +80,25 @@
 .member .join .join-process-zone ul li.current .num:after { background: #fff; }
 .member .join .join-process-zone ul .num { position: relative; display: block; padding-bottom: 9px; margin-bottom: 10px; font-size: 20px; color: #737272; }
 .member .join .join-process-zone ul .num:after { display: block; position: absolute; bottom: 0; left: 50%; width: 36px; height: 4px; margin-left: -18px; border-radius: 100px; content: ''; background: #c5c5c5; }
+.member .join .join4-zone { padding: 66px 0 65px; border-top: 2px solid #666; border-bottom: 1px solid #f0f0f0; background: #f7f7f7; text-align: center; color: #777; line-height: 24px; font-size: 16px; }
+.member .join .join4-zone .point { margin-bottom: 19px; color: #027bc0; font-size: 22px; font-weight: bold; }
+.member .join .join4-zone .btn-type2 { width: 120px; margin-top: 38px; }
+.member .join .join2-zone { margin-bottom: -20px; }
+.member .join .join2-zone .h3 { margin: 70px 0 22px; }
+.member .join .join2-zone textarea { overflow-x: hidden; overflow-y: auto; width: 100%; height: 257px; padding: 10px 20px; border: 1px solid #ddd; border-top: 3px solid #666; resize: none; color: #a5a5a5; font-size: 15px; line-height: 24px; font-family: "NanumGothic-Regular", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; box-sizing: border-box; }
+.member .join .join2-zone textarea.small { overflow: hidden; height: 46px; }
+.member .join .join2-zone .agree-ipt { text-align: center; margin-top: 18px; }
+.member .join .join2-zone .form { margin: 28px 0 50px; text-align: center; }
+.member .join .join2-zone .form p { display: inline-block; margin-right: 9px; line-height: 40px; font-size: 15px; color: #777; }
+.member .join .join2-zone .form .inp-type2 { width: 200px; }
+.member .join .join1-zone .txt { color: #2e2e2e; font-size: 16px; line-height: 24px; text-align: center; }
+.member .join .join1-zone .txt .point { color: #2e5ead; font-weight: bold; }
+.member .join .join1-zone .confirmation:after { display: block; clear: both; content: ""; }
+.member .join .join1-zone .confirmation li { float: left; width: 50%; padding: 40px 0 35px 170px; border: 1px solid #d6d5d5; border-top-width: 3px; border-style: solid; box-sizing: border-box; }
+.member .join .join1-zone .confirmation li .tit { display: block; font-weight: normal; color: #2e2e2e; font-size: 24px; }
+.member .join .join1-zone .confirmation li .txt { display: block; margin: 7px 0 13px; color: #2e2e2e; font-size: 16px; text-align: left; }
+.member .join .join1-zone .confirmation .phone { border-top-color: #028090; }
+.member .join .join1-zone .confirmation .email { border-left: 0; border-top-color: #e06769; }
 
 @media (max-width: 1319px) { .member { /* 아이디&비밀번호찾기 */ /* 로그인 */ /* 회원가입 */ }
   .member .find .member-box .box a { width: 17vw; }
@@ -145,7 +164,18 @@
   .member .join .join-process-zone ul li:before { left: -1.8rem; width: 0.9rem; height: 1.7rem; margin-top: -1rem; background-size: auto 100%; }
   .member .join .join-process-zone ul li.current:before { background-size: auto 100%; }
   .member .join .join-process-zone ul .num { padding-bottom: 0.5rem; margin-bottom: 0.4rem; font-size: 1rem; }
-  .member .join .join-process-zone ul .num:after { width: 2rem; height: 2px; margin-left: -1rem; } }
+  .member .join .join-process-zone ul .num:after { width: 2rem; height: 2px; margin-left: -1rem; }
+  .member .join .join4-zone { padding: 3rem 0 4rem; line-height: 1.6; font-size: 1.1rem; word-break: keep-all; }
+  .member .join .join4-zone .point { margin-bottom: 1rem; font-size: 1.5rem; }
+  .member .join .join4-zone .btn-type2 { width: 8rem; margin-top: 2rem; }
+  .member .join .join2-zone { margin-bottom: 0; }
+  .member .join .join2-zone .h3 { margin: 4rem 0 2rem; }
+  .member .join .join2-zone textarea { height: 25rem; padding: 1rem 1rem; font-size: 1.1rem; line-height: 1.6; }
+  .member .join .join2-zone textarea.small { overflow-y: auto; height: 6rem; }
+  .member .join .join2-zone .agree-ipt { text-align: center; margin-top: 18px; }
+  .member .join .join2-zone .form { margin: 2rem 0 3rem; }
+  .member .join .join2-zone .form p { margin-right: 0.4rem; line-height: 2.7rem; font-size: 1.1rem; }
+  .member .join .join2-zone .form .inp-type2 { width: 15rem; } }
 @media (max-width: 370px) { .pc .member .login .btm-help-zone li { height: 13rem; } }
 @media (max-width: 320px) { .member { /* 회원가입 */ }
   .member .join .join-process-zone ul { padding: 1rem 0.5rem; }

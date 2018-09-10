@@ -253,6 +253,7 @@ br.mo { display: none; }
 .btn-type2.navy { border-color: #2a5caa; background: #2a5caa; color: #fff; }
 .btn-type2.green { border-color: #028090; border-width: 2px; line-height: 38px; color: #028090; font-weight: bold; }
 .btn-type2.orange { background: #f94607; border-color: #f94607; color: #fff; }
+.btn-type2.red { background: #e06769; border-color: #e06769; color: #fff; }
 .btn-type2.write { padding-bottom: 0; line-height: 43px; border-color: #006ebd; background: #006ebd; color: #fff; font-family: "NanumGothic-Regular", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 .btn-type2.write:before { display: inline-block; content: ""; vertical-align: -5px; width: 22px; height: 20px; margin-right: 7px; background: url("../images/icon/icon-write.png") no-repeat 50% 50%; }
 
@@ -691,7 +692,7 @@ p.txt-important:before { display: block; position: absolute; left: 0; top: 1px; 
   .btn-search:before { width: 1rem; height: 1.1rem; margin-right: 0.3rem; }
   .btn-type2.write { line-height: 2.5rem; }
   .btn-type2.write:before { position: relative; top: -1px; width: 1.1rem; height: 1rem; margin-right: 7px; background-size: auto 100%; vertical-align: middle; }
-  .btn-type3 { min-width: 7rem; height: 2.7rem; padding: 0 0.5rem; line-height: 2.5rem; font-size: 0.8rem; box-sizing: border-box; }
+  .btn-type3 { min-width: 7rem; height: 2.7rem; padding: 0 0.5rem; line-height: 2.5rem; font-size: 1rem; box-sizing: border-box; }
   /* BUTTON GROUP */
   .btn-submit-group { margin-top: 3rem; }
   .btn-submit-group .btn-type2 { min-width: 7rem; padding: 0 2rem 3px; }
