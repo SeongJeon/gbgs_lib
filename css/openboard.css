@@ -220,13 +220,13 @@ select::-ms-expand { display: none; }
 
 .openboard .tbl-type2 .btn-view.off:after { border: 1px solid #444; border-width: 1px 1px 0 0; -webkit-transform: rotate(45deg); transform: rotate(45deg); content: ""; }
 
-.openboard .tbl-type3 { margin-bottom: 40px; border-color: #30809f; border-bottom: 1px solid #ddd; }
+.openboard .tbl-type3.survey { margin-bottom: 40px; border-color: #30809f; border-bottom: 1px solid #ddd; }
 
-.openboard .tbl-type3 th { text-align: center; background: #f5f5f5; color: #333; }
+.openboard .tbl-type3.survey th { text-align: center; background: #f5f5f5; color: #333; }
 
-.openboard .tbl-type3 td { color: #333; }
+.openboard .tbl-type3.survey td { color: #333; }
 
-.openboard .tbl-type3 td.tit { font-weight: bold; color: #525252; }
+.openboard .tbl-type3.survey td.tit { font-weight: bold; color: #525252; }
 
 .openboard .survey-area dt { margin-bottom: 22px; padding: 40px 0 0 20px; color: #30809f; }
 
@@ -290,6 +290,8 @@ select::-ms-expand { display: none; }
   .openboard .form--time .sel-type3 { width: 57px; }
   .openboard .form--time > * { display: inline-block; }
   .openboard .form--time > span { font-family: "Nanum Square R", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+  .openboard .tbl-type2 .btn-view { height: 30px; padding-left: 7px; line-height: 28px; font-size: 1rem; }
+  .openboard .tbl-type2 .btn-view:after { top: 10px; right: 7px; width: 8px; height: 8px; }
   .openboard .tbl-type3 { margin-bottom: 15px; }
   .openboard .survey-area dt { margin-bottom: 11px; padding: 15px 0 0 0; }
   .openboard .survey-area dd { padding: 0 0 15px 0; }
@@ -307,10 +309,11 @@ select::-ms-expand { display: none; }
   .openboard .time-area .form--time:nth-of-type(1) { margin-bottom: 5px; }
   .openboard .tbl-type2 td:last-child { padding-right: 0; }
   .openboard .tbl-type2 .mobile { width: 22% !important; }
-  .openboard .tbl-type2 .btn-view { height: 25px; padding-left: 7px; line-height: 24px; font-size: 1.1rem; }
-  .openboard .tbl-type2 .btn-view:after { top: 7px; right: 7px; width: 8px; height: 8px; } }
+  .openboard .tbl-type2 .btn-view { height: 25px; line-height: 24px; }
+  .openboard .tbl-type2 .btn-view:after { top: 7px; } }
 
-@media (max-width: 500px) { .openboard .faq li { font-size: 1.2rem; line-height: 2.1rem; } }
+@media (max-width: 500px) { .openboard .faq li { font-size: 1.2rem; line-height: 2.1rem; }
+  .openboard .tbl-type2 .btn-view { font-size: 1rem; } }
 
 @media (max-width: 350px) { .openboard .calendar-zone .tbl-calendar td .btn-app { right: 2px; padding: 3px 9px 3px 9px; }
   .openboard .form--date .sel-type3.year { width: 78px; } }
