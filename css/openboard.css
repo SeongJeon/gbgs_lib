@@ -118,7 +118,7 @@ select::-ms-expand { display: none; }
 
 .openboard .ans-area { display: none; }
 
-.openboard .top-banner { position: relative; display: box; min-height: 153px; margin: 54px 0 3rem 0; background: #f1fafe; border-top: 3px solid #daeff9; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.openboard .top-banner { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 153px; margin: 54px 0 3rem 0; background: #f1fafe; border-top: 3px solid #daeff9; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .openboard .top-banner:before { position: absolute; top: -3px; left: 0; display: block; width: 136px; height: 3px; background: #4089c1; content: ""; }
 
@@ -154,9 +154,9 @@ select::-ms-expand { display: none; }
 
 .openboard .calendar-zone .arrow { overflow: hidden; position: absolute; top: 8px; display: inline-block; width: 28px; height: 28px; text-indent: -999em; border-right: 2px #257d92 solid; border-bottom: 2px #257d92 solid; }
 
-.openboard .calendar-zone .arrow.prev { right: 0; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+.openboard .calendar-zone .arrow.prev { right: 0; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); }
 
-.openboard .calendar-zone .arrow.next { left: 0; -webkit-transform: rotate(-225deg); transform: rotate(-225deg); }
+.openboard .calendar-zone .arrow.next { left: 0; transform: rotate(-225deg); -webkit-transform: rotate(-225deg); -moz-transform: rotate(-225deg); -ms-transform: rotate(-225deg); -o-transform: rotate(-225deg); }
 
 .openboard .calendar-zone .info { margin: -20px 0 12px 0; font-size: 14px; text-align: right; font-family: "Nanum Square R", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 
@@ -214,11 +214,11 @@ select::-ms-expand { display: none; }
 
 .openboard .tbl-type2 .btn-view.on { border: 1px solid #006ebd; color: #006ebd; }
 
-.openboard .tbl-type2 .btn-view.on:after { border: 1px solid #024f89; border-width: 1px 1px 0 0; -webkit-transform: rotate(45deg); transform: rotate(45deg); content: ""; }
+.openboard .tbl-type2 .btn-view.on:after { border: 1px solid #024f89; border-width: 1px 1px 0 0; transform: rotate(45deg); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); content: ""; }
 
 .openboard .tbl-type2 .btn-view.off { border: 1px solid #888; color: #888; }
 
-.openboard .tbl-type2 .btn-view.off:after { border: 1px solid #444; border-width: 1px 1px 0 0; -webkit-transform: rotate(45deg); transform: rotate(45deg); content: ""; }
+.openboard .tbl-type2 .btn-view.off:after { border: 1px solid #444; border-width: 1px 1px 0 0; transform: rotate(45deg); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); content: ""; }
 
 .openboard .tbl-type3.survey { margin-bottom: 40px; border-color: #30809f; border-bottom: 1px solid #ddd; }
 
@@ -240,19 +240,19 @@ select::-ms-expand { display: none; }
 
 .openboard .survey-area + .btn-submit-group { text-align: right; }
 
-.openboard .survey-area .result-list li { overflow: hidden; margin-top: 14px; }
+.openboard .survey-area .result-list li { overflow: hidden; margin-top: 14px; position: relative; }
 
 .openboard .survey-area .result-list li:first-child { margin-top: 0; }
 
 .openboard .survey-area .result-list li > * { display: inline-block; }
 
-.openboard .survey-area .result-list li .example { width: 220px; }
+.openboard .survey-area .result-list li .example { width: 14.8rem; word-break: break-all; }
 
-.openboard .survey-area .result-list li .graph-area { width: calc(94% - 245px); }
+.openboard .survey-area .result-list li .graph-area { position: absolute; top: 50%; margin: -8px 0 0 10px; width: calc(89% - 14.8rem - 20px); }
 
-.openboard .survey-area .result-list li .graph-area .graph { display: inline-block; height: 15px; }
+.openboard .survey-area .result-list li .graph-area .graph { position: relative; display: inline-block; height: 15px; }
 
-.openboard .survey-area .result-list li .graph-area .graph-txt { display: inline-block; }
+.openboard .survey-area .result-list li .graph-area .graph-txt { position: absolute; top: -3px; left: 103%; width: 100%; }
 
 .openboard .survey-area .result-list li .graph-area .color01 { background: #30809f; }
 
@@ -292,10 +292,13 @@ select::-ms-expand { display: none; }
   .openboard .form--time > span { font-family: "Nanum Square R", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
   .openboard .tbl-type2 .btn-view { height: 30px; padding-left: 7px; line-height: 28px; font-size: 1rem; }
   .openboard .tbl-type2 .btn-view:after { top: 10px; right: 7px; width: 8px; height: 8px; }
-  .openboard .tbl-type3 { margin-bottom: 15px; }
+  .openboard .tbl-type3.survey { margin-bottom: 15px; }
   .openboard .survey-area dt { margin-bottom: 11px; padding: 15px 0 0 0; }
   .openboard .survey-area dd { padding: 0 0 15px 0; }
-  .openboard .survey-area .ipt-lst > li { margin: 5px 0 0 0; } }
+  .openboard .survey-area .ipt-lst > li { margin: 5px 0 0 0; }
+  .openboard .survey-area .result-list li .example { width: 13rem; }
+  .openboard .survey-area .result-list li .graph-area { width: calc(89% - 12rem - 3rem); }
+  .openboard .survey-area .result-list li .graph-area .graph-txt { top: 0; } }
 
 @media (max-width: 768px) { .openboard .faq li { font-size: 1rem; line-height: 2rem; }
   .openboard .faq li .que-area p { font-size: 1.1rem; }
@@ -310,10 +313,13 @@ select::-ms-expand { display: none; }
   .openboard .tbl-type2 td:last-child { padding-right: 0; }
   .openboard .tbl-type2 .mobile { width: 22% !important; }
   .openboard .tbl-type2 .btn-view { height: 25px; line-height: 24px; }
-  .openboard .tbl-type2 .btn-view:after { top: 7px; } }
+  .openboard .tbl-type2 .btn-view:after { top: 7px; }
+  .openboard .survey-area .result-list li { margin-top: 10px; }
+  .openboard .survey-area .result-list li .example { width: 10rem; }
+  .openboard .survey-area .result-list li .graph-area { width: calc(89% - 11rem - 3rem); }
+  .openboard .survey-area .result-list li .graph-area .graph-txt { top: 0; } }
 
-@media (max-width: 500px) { .openboard .faq li { font-size: 1.2rem; line-height: 2.1rem; }
-  .openboard .tbl-type2 .btn-view { font-size: 1rem; } }
+@media (max-width: 500px) { .openboard .faq li { font-size: 1.2rem; line-height: 2.1rem; } }
 
 @media (max-width: 350px) { .openboard .calendar-zone .tbl-calendar td .btn-app { right: 2px; padding: 3px 9px 3px 9px; }
   .openboard .form--date .sel-type3.year { width: 78px; } }
