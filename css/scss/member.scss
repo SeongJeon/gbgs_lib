@@ -195,18 +195,20 @@
 				.point {color:#2e5ead; font-weight: bold;}
 			}
 			.confirmation {
+				margin-top:50px;
 				&:after {display:block; clear:both; content:""}
 				li {
-					float:left; width:50%; padding:40px 0 35px 170px; border:1px solid #d6d5d5; border-top-width:3px; border-style: solid; box-sizing:border-box;
+					float:left; width:50%; height:200px; padding:40px 0 0 170px; border:1px solid #d6d5d5; border-top-width:3px; border-style: solid; box-sizing:border-box;
 					.tit {display:block; font-weight:normal;color:#2e2e2e; font-size:24px; }
 					.txt {display:block; margin:7px 0 13px; color:#2e2e2e; font-size:16px; text-align:left;}
 				}
 				.phone {
 					border-top-color:#028090; 
+					@include background("member/icon-phone.png",no-repeat 20px 50%);
 				}
 				.email {
 					border-left:0; border-top-color:#e06769;
-
+					@include background("member/icon-email.png",no-repeat 20px 50%);
 				}
 			}
 		}
@@ -399,6 +401,25 @@
 					.inp-type2 {width:15rem;}
 				}
 			}
+			.join1-zone {
+				.txt {font-size:1.1rem; line-height:1.6; word-break:keep-all;}
+				.confirmation {
+					margin-top:3rem;
+					li {
+						height:23rem; padding:10rem 1rem 0; text-align:center;
+						.tit {font-size:1.5rem}
+						.txt {margin:7px 0 13px;  font-size:1.1rem; word-break:keep-all; text-align:center;}
+					}
+					.phone {
+						@include background("member/icon-phone.png",no-repeat 50% 1rem);
+						background-size:40% auto;
+					}
+					.email {
+						@include background("member/icon-email.png",no-repeat 50% 1rem);
+						background-size:40% auto;
+					}
+				}
+			}
 
 		}
 
@@ -406,6 +427,17 @@
 
 }
 
+@media (max-width: 600px) {
+	.member .join {
+		.join1-zone {
+			.confirmation {
+				.phone {background-size:50% auto; }
+				.email {background-size:50% auto; }
+			}
+
+		}
+	}
+}
 @media (max-width: 370px) {
 	.pc .member .login .btm-help-zone li {height:13rem}
 }
