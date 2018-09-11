@@ -263,6 +263,8 @@ br.mo { display: none; }
 .btn-submit-group { margin-top: 55px; text-align: center; }
 .btn-submit-group * + * { margin-left: 5px; }
 .btn-submit-group .btn-type2 { min-width: 88px; padding: 0 35px 3px; }
+.btn-submit-group.right { text-align: right; }
+.btn-submit-group.left { text-align: left; }
 
 /* TITLE */
 .h3 { font-size: 20px; color: #222; font-family: "NanumGothic-Bold", "NanumGothic-Regular", "맑은고딕", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: left; }

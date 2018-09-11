@@ -453,6 +453,8 @@
                         top: -3px;
                         left: 103%;
                         width: 100%;
+                        line-height: 1.1;
+
                     }
                     .color01 {
                         background: #30809f;
@@ -627,6 +629,7 @@
                     .graph-area {
                         width: calc(89% - 12rem - 3rem);
                         .graph-txt {
+                            width:80px;
                             top: 0;
                         }
                     }
