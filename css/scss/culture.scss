@@ -1,0 +1,331 @@
+@charset "utf-8";
+
+@import 'base';
+
+
+/* 무료영상상영안내 - 상단 알림 영역 */
+.culture .box-infor {
+	position: relative; padding:40px 0 40px 0; margin-bottom:45px; border-top:3px solid #daeff9; background: #f1fafe; text-align:center;
+	&:before {display: block; position: absolute; left:0; top:-3px; content:""; width:136px; height:52px; border-top:3px solid #4089c1; border-left:3px solid #4089c1; }
+	.img {display: inline-block; vertical-align: middle;}
+	.txt-dotted2 {
+		display: inline-block; height:136px; margin-left:55px; padding-left:55px; vertical-align: middle; border-left:1px solid #bfdce8;
+		> li {
+			line-height: 26px; font-size:16px;
+			&:before {top:11px; background: #4089c1}
+		}
+	}
+}
+/* 무료영상상영안내 - 달력 탭 */
+.month-tab {
+	display: table; width:100%; margin-top:20px; table-layout: fixed; border-top:2px solid #58b0e3; border-bottom:1px solid #d6d9db;
+	li {
+		display: table-cell; height:60px; border-left:1px solid #d6d9db;  box-sizing:border-box;
+		&:first-child {border-left:0;}
+	}
+	a {display: block; text-align:center; color:#010101; font-size:16px; text-align:center; line-height: 60px;}
+	.current a {background: #ecf8fe }
+	a:hover {background: #ecf8fe }
+}
+/* 무료영상상영안내 - 리스트 */
+.month-movie-lst {
+	& > ul > li {
+		display: table; width:100%;
+		padding:16px 23px 16px 30px; border:1px solid #d6d9db; margin-top:20px; box-sizing:border-box;
+		&:first-child {margin-top:40px;}
+	}
+	.poster {display: table-cell; width:190px; vertical-align: middle;}
+	.infor {
+		display: table-cell; vertical-align: middle;
+		padding:0 0 0 30px;
+		.title {display: block; font-size:22px; color:#000;}
+		.actor {display: block; font-size:14px; color:#979797; margin-top:7px;}
+		.detail-infor {border-top:1px solid #d6d9db; padding-top:18px; margin-top:17px;}
+		.time {display:block; height:45px; padding:0 15px; font-size:18px; color:#2a5caa; background: #ecf8fe; line-height: 45px; box-sizing:border-box;}
+		.txt-dotted2 {
+			margin:14px 0 0 4px;
+			li {color:#000; font-size:16px; line-height: 26px;}
+			li:before {top:11px; background: #4089c1}
+		}
+	}
+}
+
+
+/* 이달의 행사 - 달력 */
+strong[class*="bul"] {
+	display: inline-block; width:15px; height:15px; box-sizing:border-box; border-radius: 100px; text-indent:-9999em; vertical-align: middle;
+	&.bul1 {background: #ff0042}
+	&.bul2 {background: #336ac9}
+	&.bul3 {background: #ffeda9; border-radius: 0;}
+	&.bul4 {@include background("culture/bul1.jpg",no-repeat 50% 50%); border-radius: 0;}
+	&.bul5 {background: #33c9b2}
+	&.bul6 {background: #fff; border:3px solid #b233c9;}
+}
+.culture .calendar-zone { 
+	padding-top: 24px; text-align: center; border-top: 2px solid #30809f; 
+	.month { font-size: 34px; font-weight: bold; color: #257d92; }
+	.indicator { position: relative; width: 30%; margin: 0 auto 23px; }
+	.arrow { 
+		overflow: hidden; position: absolute; top: 8px; display: inline-block; width: 28px; height: 28px; text-indent: -999em; border-right: 2px #257d92 solid; border-bottom: 2px #257d92 solid; 
+		&.prev { right: 0; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); }
+		&.next { left: 0; transform: rotate(-225deg); -webkit-transform: rotate(-225deg); -moz-transform: rotate(-225deg); -ms-transform: rotate(-225deg); -o-transform: rotate(-225deg); }
+	}
+	.info { 
+		margin: -20px 0 12px 0; font-size: 14px; text-align: right; font-family:$font4; 
+		span { display: inline-block; margin-right: 5px; padding: 5px 12px 6px 12px; background: #f2ad09; border-radius: 30px; color: #fff; }
+	}
+	.tbl-calendar { 
+		border-top: 1px solid #d6d9db; border-bottom: 1px solid #d6d9db; font-family: $font4;
+		th { 
+			height: 60px; background: #ecf8fe; border-left: 1px solid #d6d9db; font-family: $font4; font-weight: normal;
+			&:first-child { border-left: 0 none; color: #f40723; }
+			&:last-child { color: #1277cd; }
+		}
+		td { 
+			height: 60px; padding: 12px 0 0 12px; position: relative; text-align: left; vertical-align: top; border-top: 1px solid #d6d9db; border-left: 1px solid #d6d9db; 
+			&:first-child { border-left: 0 none; color: #f40723; }
+			&:last-child { color: #1277cd; }
+			.holiday { padding-left: 5px; color: #aeaeae; font-size: 14px; }
+			&.has {
+				padding:0; 
+				button {
+					display: block; position: relative; width:100%; height:100%;
+					.date {position: absolute; top:12px; left:12px; }
+					.bul-lst {
+						position: absolute; bottom:8px; left:12px; text-align:left; width:100px;
+						strong + strong {margin-left:2px}
+					}
+				}
+			}
+			&.today {
+				@include background("culture/bg-today.jpg", repeat 0 0);
+			}
+			&.mevent {
+				background: #ffeda9;
+			}
+		}
+	}
+}
+.bul-infor-lst {
+	padding:22px 17px 24px 17px; margin-top:25px;
+	border-top:1px dashed #b1b1b1; border-bottom:1px dashed #b1b1b1;
+	&:after {display:block; clear:both; content:""}
+	& > li {float:left; margin-right:25px;}
+	& > li:last-child {margin-right:0}
+	strong[class*="bul"] {position: relative; top:-2px; }
+}
+.event-noti {
+	margin-top:25px; background: #f3f9fc;
+	dt {
+		padding:20px 0; font-size:20px; color:#272727; text-align:center;
+		&:before {display: inline-block; content:""; width:49px; height:48px; @include background("culture/icon-noti.png",no-repeat 50% 50%); margin-right:15px; vertical-align: middle;}
+	}
+	dd {
+		padding:30px 25px 85px; min-height:250px; border-top:1px solid #d6d9db; box-sizing:border-box;
+		.lst {
+			li {padding-left:20px; position: relative; color:#111; font-size:16px; line-height: 36px; }
+			li:before {display: inline-block;content:""; position:absolute; left:0; top:16px; width:6px; height: 6px; background: #b9cdda;}
+			.bulet {
+				display: inline-block; width:66px; height:26px; padding-bottom:2px; margin-right:10px; vertical-align: middle;font-size:14px; color:#fff; line-height: 24px; border-radius: 3px; text-align: center; box-sizing:border-box;
+				&.on {background: #e06769}
+				&.off {background: #797d7e}
+			}
+		}
+	}
+}
+
+
+/* 수강신청 */
+.complete-box {
+	padding: 66px 0 65px; border-top: 2px solid #666; border-bottom: 1px solid #f0f0f0; background: #f7f7f7; text-align: center; color: #777; line-height: 24px; font-size: 16px;
+	.point {margin-bottom: 19px; color: #027bc0; font-size: 22px; font-weight: bold;} 
+	.btn-type2 {width: 120px; margin-top: 38px;}
+}
+.class-lst {
+	margin-top:25px; 
+	& > li {padding:25px; margin-top:20px;border:1px solid #d6d9db; border-top:2px solid #474747; color:#000;}
+	& > li:first-child { margin-top:0;}
+
+	dt {font-size:22px; }
+	dd {
+		position: relative; margin-top:15px;
+		.date {display: block; padding:0 20px; color:#2a5caa; font-size:18px; background: #ecf8fe; line-height: 45px}
+		.txt-dotted2 {
+			margin:13px 0 0 10px;
+			li {font-size:16px; line-height: 26px; color:#000;}
+			li:before {background:#4089c1; top:11px;}
+		}
+		.btn-group	{position: absolute; bottom:0; right:0;}
+	}
+}
+
+
+/* 알림사항 */
+.culture {
+	.ui--searchzone {margin-bottom:40px;}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 미디어쿼리 */
+@media (max-width:1680px) {}
+@media (max-width:1319px) {}
+@media (max-width:1024px) {
+	/* 무료영상상영안내 - 상단 알림 영역 */
+	.culture .box-infor {
+		display: table; padding:3rem 2rem; margin-bottom:3rem; width: 100%; box-sizing:border-box;
+		.img {display: table-cell; padding-right:2rem;}
+		.txt-dotted2 {
+			display: table-cell;
+			height:136px; margin-left:0; padding-left:2rem;
+			& > li {line-height: 1.6; font-size:1.1rem; }
+		}
+	}
+
+	/* 이달의 행사 - 달력 */
+	strong[class*="bul"] {
+		width:1rem; height:1rem;
+		&.bul6 {border:3px solid #b233c9;}
+	}
+	.culture .calendar-zone { 
+		margin-bottom: 30px; padding-top: 1.5rem; 
+		.month { font-size: 1.8rem; }
+		.arrow { top: 4px; width: 1.8rem; height: 1.8rem; }
+		.info { 
+			margin: -10px 0 5px 0; font-size: 1.2rem; 
+			span { margin-right: 3px; padding: 3px 6px 3px 6px; }
+		}
+		.tbl-calendar td { 
+			padding: 6px 0 0 6px; 
+			.holiday { display: block; overflow: hidden; width: 100%; text-overflow: ellipsis; white-space: nowrap; padding: 0; font-size: 1rem; }
+			&.has {
+				button {
+					.date {top:6px; left:6px;}
+					.bul-lst {
+						left:0; bottom:inherit; top:25px; width:100%; padding:0 6px; box-sizing:border-box;
+						strong {margin:0 2px 0 0 !important; vertical-align: top !important;}
+					}
+				}
+			}
+		}
+	}
+
+
+}
+@media (max-width:768px) {
+	/* 무료영상상영안내 - 상단 알림 영역 */
+	.culture .box-infor {
+		.txt-dotted2 {
+			width:60%; 
+			> li:before {top:0.8rem}
+		}
+	}
+	/* 무료영상상영안내 - 달력 탭 */
+	.month-tab {
+		display: block; width:100%; margin-top:20px; 
+		&:after {display:block; clear:both; content:""}
+		li {
+			display: block; float:left; width:16.6%; height:4rem;
+			&:nth-child(7) {border-left:0;}
+			&:nth-child(6) ~ li {border-top:1px solid #d6d9db}
+		}
+		a {font-size:1.2rem; line-height: 4rem;}
+		.current a {background: #ecf8fe }
+	}
+	/* 무료영상상영안내 - 리스트 */
+	.month-movie-lst {
+		& > ul > li {
+			display: block; padding:1.5rem 1rem; margin-top:2rem;
+			&:first-child {margin-top:3rem;}
+		}
+		.poster {display:block; width:100%; text-align: center;}
+		.infor {
+			display: block; width:100%; padding:1rem 0 0; box-sizing:border-box;
+			.title {font-size:1.4rem}
+			.actor {font-size:1rem;}
+			.detail-infor {padding-top:1rem; margin-top:1.3rem;}
+			.time {height:3rem; padding:0 1rem; font-size:1.2rem; line-height: 3rem}
+			.txt-dotted2 {
+				margin:0.5rem 0 0 0.5rem;
+				li {font-size:1.1rem;line-height: 1.6}
+				li:before {top:0.8rem;}
+			}
+		}
+	}
+	.bul-infor-lst {
+		padding:1rem; margin-top:2rem;
+		& > li {float:left; margin-right:1rem; line-height:2}
+		& > li:last-child {margin-right:0}
+		strong[class*="bul"] {position: relative; top:-1px; }
+	}
+	.event-noti {
+		margin-top:2rem;
+		dt {
+			padding:1rem 0; font-size:1.5rem; line-height: 2.8rem;
+			&:before {width:2.8rem; height:2.8rem; margin-right:1rem; background-size:100% auto;}
+		}
+		dd {
+			padding:1rem 1rem 3rem; min-height:15rem;
+			.lst {
+				li {padding-left:1.2rem; font-size:1.2rem; line-height:2}
+				li:before {top:1.2rem; width:3px; height: 3px;}
+				.bulet {
+					width:5.5rem; height:2.2rem; padding-bottom:2px; margin-right:0.5rem;  font-size:1rem; line-height:2rem; 
+				}
+			}
+		}
+	}
+
+
+	/* 수강신청 */
+	.complete-box {
+		padding: 3rem 1rem 4rem; line-height: 1.6; font-size: 1.1rem; word-break: keep-all;
+		.point {margin-bottom: 1rem; font-size: 1.5rem;}
+		.btn-type2 {width: 8rem; margin-top: 2rem;}
+	}
+	.class-lst {
+		margin-top:2rem; 
+		& > li {padding:1.5rem 1rem; margin-top:2rem; }
+		& > li:first-child { margin-top:0;}
+
+		dt {font-size:1.5rem; }
+		dd {
+			margin-top:1rem;
+			.date {padding:0.5rem 1rem; font-size:1.2rem; line-height:1.6}
+			.txt-dotted2 {
+				margin:1rem 0 0 0.5rem;
+				li {font-size:1.1rem; line-height:1.6;}
+				li:before {top:0.9rem;}
+			}
+			.btn-group	{position: static; margin-top: 0.5rem; text-align: center;}
+		}
+	}
+
+
+
+
+
+}
+@media (max-width:360px) {
+}
+@media (max-width:321px) {}

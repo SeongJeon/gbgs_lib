@@ -156,7 +156,7 @@ select::-ms-expand { display: none; }
 .openboard .survey-area .result-list li .example { width: 14.8rem; word-break: break-all; }
 .openboard .survey-area .result-list li .graph-area { position: absolute; top: 50%; margin: -8px 0 0 10px; width: calc(89% - 14.8rem - 20px); }
 .openboard .survey-area .result-list li .graph-area .graph { position: relative; display: inline-block; height: 15px; }
-.openboard .survey-area .result-list li .graph-area .graph-txt { position: absolute; top: -3px; left: 103%; width: 100%; line-height: 1.1; }
+.openboard .survey-area .result-list li .graph-area .graph-txt { position: absolute; display: inline-block; top: -3px; left: 103%; width: 100px; line-height: 1.1; }
 .openboard .survey-area .result-list li .graph-area .color01 { background: #30809f; }
 .openboard .survey-area .result-list li .graph-area .color02 { background: #f08d0d; }
 .openboard .survey-area .result-list li .graph-area .color03 { background: #3bc9a9; }

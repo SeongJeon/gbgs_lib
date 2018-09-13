@@ -609,6 +609,17 @@ $(".ipt-datepicker input").datepicker({
     buttonText: "Select date"
 });
 
+// ADD FILE
+$(document).on("click", ".form--addfile .fileadd", function(){
+    $(this).next("input:file").trigger("click");
+});
+// File change
+$(document).on("change", ".form--addfile input:file", function(){
+    var path = $(this).val();
+    $(this).closest(".form--addfile").find("input:text").val(path);
+})
+
+
 /* -----------------------------------------------------------------
 DOCUMENT READY
 ----------------------------------------------------------------- */

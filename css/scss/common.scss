@@ -309,6 +309,15 @@ br.mo {display: none}
 .font-bold {font-family:$font3}
 
 
+/* ICON */
+.icon-file {
+	display: inline-block; vertical-align: middle; width: 24px; height: 21px; @include background("icon/icon-file.png", no-repeat 50% 50%); text-indent:-9999em;	
+}
+.icon-secret {
+	display: inline-block; width:16px; height:23px; @include background("icon/icon-secret.png",no-repeat 50% 50%); text-indent:-9999em;
+}
+
+
 
 /* BUTTON */
 .btn-print {
@@ -331,6 +340,8 @@ br.mo {display: none}
 	&.green {border-color:#028090; border-width:2px; line-height:38px; color:#028090; font-weight:bold;}
 	&.orange {background: #f94607; border-color:#f94607; color:#fff;}
 	&.red {background: #e06769; border-color:#e06769; color:#fff;}
+	&.lightblue {background: #8aa9be; border-color:#8aa9be; color:#fff;}
+	&.lightgray {background: #acacac; border-color:#acacac; color:#fff;}
 
 	&.write {
 		padding-bottom:0; line-height:43px; border-color:#006ebd; background:#006ebd; color:#fff;  font-family:$font1;
@@ -339,17 +350,38 @@ br.mo {display: none}
 }
 .btn-type3 {
 	display:inline-block; min-width:98px; height:38px; padding:0 10px; color:#575757; line-height:38px; font-family:$font3; font-size:16px; box-sizing:content-box; text-align:center; border-width:1px; border-style:solid; border-color:#c8c8c8;
+	&.fileadd {
+	   padding: 0 10px; width: 100px;  
+	   &:before {display: inline-block; content: ""; width: 16px; height: 14px; background: url(../images/icon/icon-fileadd.png) no-repeat 50% 50%; margin-right: 5px; vertical-align: -2px;}
+	}
+}
+.btn-type4 {
+	display:inline-block; min-width:130px; height:41px; padding:0 10px 2px; color:#3a3a3a; line-height:41px; font-family:$font6; font-size:16px; box-sizing:content-box; text-align:center; border-width:1px; border-radius: 3px; border-style:solid; border-color:#d6d5d5; font-weight: bold;
+	&.blue {background: #2f6ab9; border-color:#2f6ab9; color:#fff}
+	&.green {background: #257d92; border-color:#257d92; color:#fff}
+	&.gray {background: #525252; border-color:#525252; color:#fff}
+	&.fileadd {
+	   font-weight: normal;
+	   &:before {display: inline-block; content: ""; width: 16px; height: 14px; background: url(../images/icon/icon-fileadd.png) no-repeat 50% 50%; margin-right: 5px; vertical-align: -2px;}
+	}
 }
 /* BUTTON GROUP */
 .btn-submit-group {
 	margin-top:55px; text-align:center;
+	&:after {display:block; clear:both; content:""}
 	* + * {margin-left:5px;}
 	.btn-type2 {min-width:88px; padding:0 35px 3px}
-	&.right {text-align:right;}
-	&.left {text-align:left;}
+	.right {
+		float:right;
+		.btn-type2 {min-width:60px; padding:0 23px 3px}
+	}
+	.left {
+		float:left;
+		.btn-type2 {min-width:60px; padding:0 23px 3px}
+	}
 }
 
-
+ 
 
 
 /* TITLE */
@@ -470,7 +502,9 @@ p.txt-important {
 		&:before {display:block; position:absolute; left:0; top:1px; content: "※"; }
 	}
 }
-
+.txt-daeshed {
+	li:before {display: inline-block;content:"-"; margin-right:7px;}
+}
 
 
 
@@ -503,6 +537,7 @@ p.txt-important {
 		text-align:left;
 		a {display:inline-block; overflow:hidden; max-width:90%; text-overflow:ellipsis;  white-space:nowrap; color:#333; }
 		a:hover {text-decoration:underline;}
+		.icon-secret {margin-right:5px;}
 	}
 }
 .tbl-type3 {// 폼 형
@@ -518,11 +553,25 @@ p.txt-important {
 		.important {color:#ee0808; font-family:$font3;}
 		.important + span {margin-left:10px}
 	}
+
+	&.type2 {
+		border-top-color:#30809f; border-bottom-color:#ddd;
+		th {background: #f5f5f5; vertical-align: middle;}
+	}
+	&.type3 {
+		border-top-color:#30809f; border-bottom-color:#ddd; 
+		th {width:auto; background: #f5f5f5; text-align:center;}
+		td {color:#333333;}
+		.tit {font-weight: bold; color:#333;}
+	}
 }
 
 .tbl-top {
 	text-align:right; margin-bottom:12px; color:#535353;
 	.point04 {font-family:$font3;}
+}
+.tbl-btm {
+	margin-top:15px; text-align: right; color: #333333;
 }
 
 
@@ -686,6 +735,26 @@ p.txt-important {
 		}
 		.btn-type3 {vertical-align: top; }
 	}
+	/* 학년/학교 */
+	.form--school {
+		.sel-type3 {display:inline-block; width:120px;}
+		.inp-type2 {width:315px;}
+	}
+	/* 첨부파일 */
+	.form--addfile {
+		position: relative;
+		.inp-type2 {float:left; width:438px;}
+		.btn-type3 {float:left; margin-left: -1px; vertical-align: top;} 
+		input[type=file] {position: absolute; left: -9999em; width: 1px; height: 1px;}
+		.txt {display: inline-block; width: 100px; margin-left: 8px; font-size: 15px; color: #2b90d6; line-height: 34px;}
+	}
+	/* 에디터 영역 */
+	.form--texteditor {
+		height:290px; width:100%; overflow: hidden;
+	}
+	.form--content {
+	   overflow: hidden; width: 100%; min-height: 300px; padding:20px 10px; color: #525252; font-size: 16px; line-height: 40px; box-sizing:border-box;
+	}
 }
 /* DATEPICKER */
 .ui-datepicker {
@@ -712,6 +781,38 @@ p.txt-important {
 				&:last-child {padding-right:10px}
 			}
 		}
+	}
+}
+/* PW CONFIRM */
+.pw-confiirm-zone {
+    position: relative; width: 475px; padding: 24px 115px 24px 23px; margin: 80px auto 100px; background: #f5f5f5; border: 1px solid #d2d2d2; box-sizing: border-box;
+   input {
+		height:45px; width:100%; padding:0 15px; color:$color1; box-sizing:border-box; color:#333; font-size:16px; font-family:$font6;
+		&::-webkit-input-placeholder {color:#c4c4c4;}
+		&::-moz-placeholder {color:#c4c4c4;}
+		&:-ms-input-placeholder {color:#c4c4c4;}
+		&:-moz-placeholder {color:#c4c4c4;}
+	}
+	.btn-type2 {position: absolute; top: 24px; right: 23px; width: 110px; box-sizing: border-box;}
+}
+/* RIPLY */
+.ui--reply { 
+	margin: 20px 0 -20px; border-top: 2px solid #d7d6d6; 
+	.form-reply { 
+		display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; padding: 20px; background: #eff0f1; 
+		.form-textarea {
+			flex: 1; display: inline-block; position: relative; vertical-align: top; 
+			textarea { width: 100%; height: 80px; border: 1px solid #dcdcdc; background: #fff; font-size: 14px; padding: 10px 10px 25px; resize: none; box-sizing: border-box; font-family:$font6; vertical-align: top; }
+			.byte { position: absolute; right: 10px; bottom: 10px; font-size: 12px; font-weight: bold; color: #adadad; }
+		}
+		button { width: 132px; margin-left: 5px; background: #30809f; height: 80px; color: #fff; font-weight: bold; font-size: 16px; text-align: center; }
+	}
+	.lst-reply {
+		li { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; overflow: hidden; padding: 14px 20px 16px; border-bottom: 1px solid #e2e1e1; font-size: 14px; color: #adadad; }
+		.cont { width: 730px; padding-right: 10px; box-sizing: border-box; }
+		.writer { flex: 1; }
+		.date { width: 85px; text-align: right; }
+		.btn-remove { position: relative; top: -1px; width: 24px; height: 24px; margin-left: 18px; text-indent: -9999em; background: url("../images/button/btn-remove.png") no-repeat 50% 50%; vertical-align: top; }
 	}
 }
 
@@ -1232,11 +1333,22 @@ p.txt-important {
 	}
 	.btn-type3 {
 		min-width:7rem; height:2.7rem; padding:0 0.5rem; line-height: 2.5rem; font-size:1rem; box-sizing:border-box;
+		&.fileadd {padding: 0 0.2rem; width: 7rem; font-size: 1rem;} 
+	}
+	.btn-type4 {
+		min-width:8rem; height:3rem; padding:0 10px 2px; 
+		line-height:3rem; font-size:1.2rem;
+		&.fileadd {
+		   &:before {display: inline-block; content: ""; width: 1.4rem; height: 1.2rem; background-size:100% auto; margin-right: 5px; vertical-align: -2px;}
+		}
 	}
 	/* BUTTON GROUP */
 	.btn-submit-group {
 		margin-top:3rem;
 		.btn-type2 {min-width:7rem; padding:0 2rem 3px}
+		.left, .right {
+			.btn-type2 {min-width:3rem;}
+		}
 	}
 
 
@@ -1244,6 +1356,14 @@ p.txt-important {
 
 
 	/* ICON */
+	.icon-file {
+		width:1.5rem; height: 1.5rem;background-size:100% auto;
+	}
+	.icon-secret {
+		width:1.2rem; height: 1.4rem;background-size:auto 100%;
+	}
+
+
 
 
 	/* TABLE */
@@ -1255,6 +1375,7 @@ p.txt-important {
 		font-size:1rem;
 		tr > * {height:3.5rem; }
 		.pc {display:none}
+		.lnk a {padding-left:0.5rem}
 	}
 	.tbl-type3 {// 폼 형
 		font-size:1rem;
@@ -1263,6 +1384,9 @@ p.txt-important {
 			width:25%; line-height:1.4; padding-top:1.2rem; letter-spacing:-0.7px;
 			span {margin-left:1rem}
 			.important + span {margin-left:0.3rem}
+		}
+		&.type3 {
+			th {padding-top:0;vertical-align: middle;}
 		}
 	}
 
@@ -1403,7 +1527,51 @@ p.txt-important {
 			.inp-type2 {flex:1}
 			.btn-type3 {margin-left:0.3rem;}
 		}
+		/* 학년/학교 */
+		.form--school {
+			&:after {display:block; clear:both; content:""}
+			.sel-type3 {
+				float:left; width:49.5%;
+				&:nth-of-type(1) {margin-right:1%}
+			}
+			.inp-type2 {width:100%; margin-top:0.3rem;}
+		}
+		/* 첨부파일 */
+		.form--addfile {
+			position: relative; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
+			padding-bottom:1.5rem; 
+			.inp-type2 {flex:1; }
+			.txt {position:absolute; bottom:0; left:0; width: auto; margin-left: 0.3rem; font-size:1rem; line-height:1.5rem}
+		}
+		.form--content {
+			padding:1rem 0 ; line-height: 2; font-size:1.1rem;
+		}
 	}
+	/* PW CONFIRM */
+	.pw-confiirm-zone {
+	   width: 100%; padding: 1rem 5rem 1rem 1rem; margin: 3rem auto 5rem;
+	   input {height: 3rem; font-size:1.1rem}
+		.btn-type2 {top: 1rem; right:1rem; width:6rem;}
+	}
+	/* RIPLY */
+	.ui--reply { 
+		margin-top: 1rem; 
+		.form-reply {
+			display: block; padding: 1rem; 
+		  .form-textarea { flex: inherit; display: block; }
+		  .form-textarea textarea { width: 100%; height: 6rem; font-size: 1.1rem; padding: 0.5rem 0.5rem 1.2rem; }
+		  .form-textarea .byte { right: 0.5rem; bottom: 0.5rem; font-size: 0.9rem; }
+		  button { width: 100%; margin: 0.2rem 0 0; height: 3rem; font-size: 1.1rem; }
+		}
+		.lst-reply {
+			li { padding: 1rem 0.5rem; font-size: 1.1rem; }
+			.cont { width: 67%; padding-right: 1rem; }
+			.date { width: 6rem; }
+			.btn-remove { top: 0; width: 1.2rem; height: 1.1rem; margin-left: 0.5rem; background-size: auto 100%; }
+		}
+	}
+	 
+
 
 
 

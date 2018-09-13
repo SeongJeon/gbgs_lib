@@ -450,9 +450,10 @@
                     }
                     .graph-txt {
                         position: absolute;
+                        display: inline-block;
                         top: -3px;
                         left: 103%;
-                        width: 100%;
+                        width: 100px;
                         line-height: 1.1;
 
                     }
